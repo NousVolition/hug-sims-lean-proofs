@@ -10,8 +10,8 @@ theorem backward_step_is_reversed_wall (h gAB gBA q a : ℝ) :
       eulerIncrement h (viscousRate (reversedWall gAB gBA) q a)
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 314](../ViscousTimeReversalProofs.lean#L314)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 176](../ViscousTimeReversalChallenge.lean#L176)
+- Proof: [ViscousTimeReversalProofs.lean line 303](../ViscousTimeReversalProofs.lean#L303)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 170](../ViscousTimeReversalChallenge.lean#L170)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

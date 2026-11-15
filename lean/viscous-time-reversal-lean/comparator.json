@@ -20,7 +20,6 @@
     "ViscousTimeReversal.split_at_tick_two",
     "ViscousTimeReversal.reverse_twice",
     "ViscousTimeReversal.reversal_keeps_one",
-    "ViscousTimeReversal.fifth_and_four_fifths",
     "ViscousTimeReversal.reflect_flips_margin",
     "ViscousTimeReversal.forward_gap_becomes_backward_overlap",
     "ViscousTimeReversal.touch_stays_touch",

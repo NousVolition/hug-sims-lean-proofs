@@ -12,8 +12,8 @@ theorem freeze_at_tick23_both_ways (p : Placement) :
     aroundSplit (aroundSplit (4/5)) = 4/5
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 189](../ViscousTimeReversalProofs.lean#L189)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 113](../ViscousTimeReversalChallenge.lean#L113)
+- Proof: [ViscousTimeReversalProofs.lean line 178](../ViscousTimeReversalProofs.lean#L178)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 107](../ViscousTimeReversalChallenge.lean#L107)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

@@ -10,8 +10,8 @@ theorem wall_between_thin_and_thick (gAB gBA : ℝ)
     wall gAB gBA ∈ Set.Icc (1/50 : ℝ) (1/10)
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 223](../ViscousTimeReversalProofs.lean#L223)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 135](../ViscousTimeReversalChallenge.lean#L135)
+- Proof: [ViscousTimeReversalProofs.lean line 212](../ViscousTimeReversalProofs.lean#L212)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 129](../ViscousTimeReversalChallenge.lean#L129)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

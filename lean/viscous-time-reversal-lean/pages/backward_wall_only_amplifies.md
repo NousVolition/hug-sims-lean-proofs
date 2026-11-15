@@ -10,8 +10,8 @@ theorem backward_wall_only_amplifies (gAB gBA q t : ℝ)
     1 ≤ backwardFactor (wall gAB gBA) q t
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 259](../ViscousTimeReversalProofs.lean#L259)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 155](../ViscousTimeReversalChallenge.lean#L155)
+- Proof: [ViscousTimeReversalProofs.lean line 248](../ViscousTimeReversalProofs.lean#L248)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 149](../ViscousTimeReversalChallenge.lean#L149)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

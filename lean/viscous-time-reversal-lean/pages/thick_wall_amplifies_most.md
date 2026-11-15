@@ -11,8 +11,8 @@ theorem thick_wall_amplifies_most (gAB gBA q t : ℝ)
     backwardFactor (wall gAB gBA) q t ≤ backwardFactor thickWall q t
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 270](../ViscousTimeReversalProofs.lean#L270)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 160](../ViscousTimeReversalChallenge.lean#L160)
+- Proof: [ViscousTimeReversalProofs.lean line 259](../ViscousTimeReversalProofs.lean#L259)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 154](../ViscousTimeReversalChallenge.lean#L154)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

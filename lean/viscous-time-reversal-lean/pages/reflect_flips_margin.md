@@ -9,8 +9,8 @@ theorem reflect_flips_margin (b e : ℝ) :
     margin (reflect b) (reflect e) = -(margin b e)
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 142](../ViscousTimeReversalProofs.lean#L142)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 91](../ViscousTimeReversalChallenge.lean#L91)
+- Proof: [ViscousTimeReversalProofs.lean line 131](../ViscousTimeReversalProofs.lean#L131)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 85](../ViscousTimeReversalChallenge.lean#L85)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

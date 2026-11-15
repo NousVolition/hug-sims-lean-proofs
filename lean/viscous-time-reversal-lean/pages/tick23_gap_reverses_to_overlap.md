@@ -12,8 +12,8 @@ theorem tick23_gap_reverses_to_overlap :
     overlapSize (reflect 256) (reflect 200) = 56
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 177](../ViscousTimeReversalProofs.lean#L177)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 105](../ViscousTimeReversalChallenge.lean#L105)
+- Proof: [ViscousTimeReversalProofs.lean line 166](../ViscousTimeReversalProofs.lean#L166)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 99](../ViscousTimeReversalChallenge.lean#L99)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

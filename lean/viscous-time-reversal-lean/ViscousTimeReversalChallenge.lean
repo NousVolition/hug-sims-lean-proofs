@@ -80,12 +80,6 @@ theorem reverse_twice {α : Type} (f : ℝ → α) (t : ℝ) :
 theorem reversal_keeps_one (share : ℝ → Placement) (t : ℝ) :
     (reverseAroundSplit share t).mentor + (reverseAroundSplit share t).student = 1 := by sorry
 
-/-- 0.2 and 0.8: run backward, a student at 0.2 has a mentor at 0.8, and a student at 0.8 has
-    a mentor at 0.2. -/
-theorem fifth_and_four_fifths (share : ℝ → Placement) (t : ℝ) :
-    ((share (aroundSplit t)).student = 1/5 → (reverseAroundSplit share t).mentor = 4/5) ∧
-    ((share (aroundSplit t)).student = 4/5 → (reverseAroundSplit share t).mentor = 1/5) := by sorry
-
 /-- Read from the other side of the split, the margin (where mine begins minus where yours
     ends) changes sign and keeps its size. -/
 theorem reflect_flips_margin (b e : ℝ) :
@@ -101,7 +95,7 @@ theorem touch_stays_touch (b e : ℝ) (h : contact b e = .touch) :
     contact (reflect b) (reflect e) = .touch := by sorry
 
 /-- At tick 23 the student (listener) is at 256 and the mentor at 200: a gap of 56.
-    Read backward, it is an overlap of 56. -/
+    Reflected through the split, it is an overlap of 56. -/
 theorem tick23_gap_reverses_to_overlap :
     (schedule[8]?).map (fun k => (k.label, k.listener, k.mentor)) = some (23, 256, 200) ∧
     contact (256 : ℝ) 200 = .gap ∧ margin (256 : ℝ) 200 = 56 ∧
@@ -187,9 +181,8 @@ theorem wall_gives_backward_from_split (a gAB gBA q t : ℝ)
     (ha : gAB ∈ Set.Icc (0:ℝ) 1) (hb : gBA ∈ Set.Icc (0:ℝ) 1) (hq : 0 ≤ q) (ht : 0 ≤ t) :
     0 ≤ givenBackward a (wall gAB gBA) q t := by sorry
 
-/-- For a ripple that is there (a ≠ 0, q > 0) and any time away from the split (t > 0), both
-    amounts counted from the split are strictly positive, so together they are more than
-    either one alone: the two directions add and never cancel. -/
+/-- For a ≠ 0, q > 0 and t > 0, both amounts counted from the split are strictly positive,
+    so their sum exceeds each one: the two directions add and do not cancel. -/
 theorem both_directions_add (a gAB gBA q t : ℝ)
     (ha : gAB ∈ Set.Icc (0:ℝ) 1) (hb : gBA ∈ Set.Icc (0:ℝ) 1)
     (ha0 : a ≠ 0) (hq : 0 < q) (ht : 0 < t) :

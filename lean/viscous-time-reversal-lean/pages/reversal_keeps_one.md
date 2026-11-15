@@ -145,6 +145,6 @@ $$
 
 Comes from: [reverse_twice](reverse_twice.md)
 
-Leads to: [fifth_and_four_fifths](fifth_and_four_fifths.md), [share_change_undone](share_change_undone.md)
+Leads to: [share_change_undone](share_change_undone.md)
 
 [Back to the tree](../TREE.md)

@@ -9,8 +9,8 @@ theorem touch_stays_touch (b e : ℝ) (h : contact b e = .touch) :
     contact (reflect b) (reflect e) = .touch
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 163](../ViscousTimeReversalProofs.lean#L163)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 100](../ViscousTimeReversalChallenge.lean#L100)
+- Proof: [ViscousTimeReversalProofs.lean line 152](../ViscousTimeReversalProofs.lean#L152)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 94](../ViscousTimeReversalChallenge.lean#L94)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

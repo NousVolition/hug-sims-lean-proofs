@@ -3,14 +3,14 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Order.Lattice
 import Mathlib.Data.Finset.Filter
 
-/-! Michele's mentor and student rules.
+/-! Mentor and student rules.
 
 1. Tick 2 starts as mentor 1 + student 1 = 2.
 2. The 0,0 event splits the 2, leaving one shared 1.
 3. After the split, mentor + student always make 1. The relationship places
    the share: the student holds `s` and the mentor holds `1 - s`.
 4. Movement speeds: mentor step 25*i and student (listener) step 32*i at the
-   i-th prime tick, mirrored from
+   i-th prime tick, as in
    `lean/sims-mentor-first-thought-lean/MentorThoughtModel.lean`. -/
 namespace MentorStudent
 
@@ -40,13 +40,13 @@ structure Placement where
 /-- The mentor's part for a placement. -/
 def Placement.mentor (p : Placement) : ℚ := mentorOf p.student
 
-/-- Her toddler example: student 0.1. -/
+/-- Toddler example: student 0.1. -/
 def toddler : Placement := ⟨1/10, by norm_num, by norm_num⟩
 
-/-- Her highly skilled student example: student 0.9. -/
+/-- Highly skilled student example: student 0.9. -/
 def skilledStudent : Placement := ⟨9/10, by norm_num, by norm_num⟩
 
-/-! ## Rule 4: movement speeds (mirrored exactly from MentorThoughtModel.lean) -/
+/-! ## Rule 4: movement speeds (as in MentorThoughtModel.lean) -/
 
 def primeLabel (p : Nat) : Bool :=
   2 ≤ p && (List.range (p - 2)).all (fun i => p % (i + 2) != 0)
@@ -66,20 +66,20 @@ def schedule : List Tick :=
 /-- The gap: how far the student (listener) is ahead of the mentor. -/
 def gap (t : Tick) : Nat := t.listener - t.mentor
 
-/-- The PrimeMeter labels, copied exactly from
+/-- The PrimeMeter labels, as in
     `lean/hug-prime-meter-lean/PrimeMeter/Types.lean`. -/
 def meterLabels : List Nat := [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,
   61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157]
 
 /-! ## (A) Three separate switches -/
 
-/-- Her Hug cutoff value. -/
+/-- The Hug cutoff value. -/
 def herCutoff : ℚ := 1
 
-/-- 0.015: an assistant-added cutoff, kept only as a record value. -/
+/-- 0.015: a record value, separate from the Hug cutoff. -/
 def recordCutoff : ℚ := 0.015
 
-/-- `pos`, mirrored from `lean/as-lean/ASModel.lean`. -/
+/-- `pos`, as in `lean/as-lean/ASModel.lean`. -/
 def pos (x : ℝ) : ℝ := max x 0
 
 /-- The three switch settings: Hug cutoff, Hug breathing on or off, and the
@@ -145,29 +145,27 @@ def window (candidates : Finset ℤ) (back front : ℤ) : Finset ℤ :=
 def Closest {α : Type} [LinearOrder α] (g : ℤ → α) (W : Finset ℤ) (w : ℤ) : Prop :=
   w ∈ W ∧ ∀ q ∈ W, g w ≤ g q
 
-/-! ## Her further rules, taken as definitions -/
+/-! ## Further rules, taken as definitions -/
 
-/-- "it starts at tick 2 because both student and mentor are at 1 and 1+1=2":
-    the total before the 0,0 event. -/
+/-- The total before the 0,0 event: mentor 1 + student 1 at tick 2. -/
 def beforeSplit : ℚ := startMentor + startStudent
 
-/-- "both at 0 is the event that splits the 2/1 leaving 1 since the mentor and the
-    student equal 1": after the split, student `s` plus mentor `1 - s`. -/
+/-- The 0,0 event splits the 2 and leaves 1: after the split, student `s` plus
+    mentor `1 - s`. -/
 def splitEvent (s : ℚ) : ℚ := s + mentorOf s
 
-/-- "the 1/2 the other 1/2 is 23" and "it comes from the mentor and student":
-    at prime tick index `i` the tick is 23, the mentor part plus the student part
-    is 1 there, and a write happens at that tick. -/
+/-- The freeze at prime tick index `i`: the tick is 23, the mentor part plus the
+    student part is 1 there, and a write happens at that tick. -/
 def Freeze (p : Placement) (i : Nat) : Prop :=
   labels[i]? = some 23 ∧ p.mentor + p.student = 1 ∧ (labels[i]?).any (· ∈ writeTicks) = true
 
-/-- "is it forward or back". -/
+/-- Forward or back. -/
 inductive Direction where
   | forward | back
   deriving DecidableEq, Repr
 
-/-- "the triage or the either back or front cousin, twin or sexy prime open a
-    space that overlap can go to": cousin 4, twin 2, sexy 6. -/
+/-- Triage: a cousin, twin or sexy prime, back or forward, opens a space that an
+    overlap can move into. Cousin 4, twin 2, sexy 6. -/
 def partnerGaps : List Nat := [4, 2, 6]
 
 /-- The space a partner opens from tick `p` with gap `k`: forward `p + k`, back `p - k`. -/
@@ -180,13 +178,13 @@ def primePartners (p : Nat) : List (Nat × Direction × Nat) :=
   (partnerGaps.flatMap fun k => [Direction.forward, Direction.back].map fun d => (k, d, opening p k d)).filter
     fun x => primeLabel x.2.2
 
-/-- "that overlap can go to": the overlap `d` moves into the opened space; the
-    student holds `s + d` and the mentor the rest. -/
+/-- The overlap `d` moves into the opened space; the student holds `s + d` and the
+    mentor the rest. -/
 def moveOverlap (s d : ℚ) : ℚ × ℚ := (s + d, mentorOf (s + d))
 
-/-- Her signed margin rule ("where mine begins minus where yours ends"): changing the
+/-- Signed margin rule (where mine begins minus where yours ends): changing the
     student's share by `d` moves where the student begins from `b` to `b + d`.
-    This is not "the gap": to Michele the gap is the tick 23 freeze. -/
+    This is not the gap; the gap is the tick 23 freeze. -/
 def moveBegin (b : ℝ) (d : ℚ) : ℝ := b + d
 
 /-- Held counts prime ticks: the index of the last write tick (11, 23, 41) at or

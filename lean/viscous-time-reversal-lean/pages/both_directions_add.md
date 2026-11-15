@@ -15,8 +15,8 @@ theorem both_directions_add (a gAB gBA q t : ℝ)
       takenForward a (wall gAB gBA) q t + givenBackward a (wall gAB gBA) q t
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 346](../ViscousTimeReversalProofs.lean#L346)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 193](../ViscousTimeReversalChallenge.lean#L193)
+- Proof: [ViscousTimeReversalProofs.lean line 334](../ViscousTimeReversalProofs.lean#L334)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 186](../ViscousTimeReversalChallenge.lean#L186)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

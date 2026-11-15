@@ -12,8 +12,8 @@ theorem share_change_undone (s d : ℚ) (b e : ℝ) :
     (s + d + -d) + mentorOf (s + d + -d) = 1
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 201](../ViscousTimeReversalProofs.lean#L201)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 121](../ViscousTimeReversalChallenge.lean#L121)
+- Proof: [ViscousTimeReversalProofs.lean line 190](../ViscousTimeReversalProofs.lean#L190)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 115](../ViscousTimeReversalChallenge.lean#L115)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

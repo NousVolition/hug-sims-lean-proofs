@@ -10,8 +10,8 @@ theorem reversed_wall_range (gAB gBA : ℝ)
     reversedWall gAB gBA ∈ Set.Icc (-1/10 : ℝ) (-1/50)
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 231](../ViscousTimeReversalProofs.lean#L231)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 140](../ViscousTimeReversalChallenge.lean#L140)
+- Proof: [ViscousTimeReversalProofs.lean line 220](../ViscousTimeReversalProofs.lean#L220)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 134](../ViscousTimeReversalChallenge.lean#L134)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

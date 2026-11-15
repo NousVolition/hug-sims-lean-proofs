@@ -9,8 +9,8 @@ theorem wall_is_single_system_viscosity (z : HugNavierSingle.Fields) (r : HugNav
     HugNavierSingle.viscosity z r = wall (z.gAB r) (z.gBA r)
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 215](../ViscousTimeReversalProofs.lean#L215)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 128](../ViscousTimeReversalChallenge.lean#L128)
+- Proof: [ViscousTimeReversalProofs.lean line 204](../ViscousTimeReversalProofs.lean#L204)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 122](../ViscousTimeReversalChallenge.lean#L122)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

@@ -9,8 +9,8 @@ theorem wall_factors_multiply_to_one (gAB gBA q t : ℝ) :
     forwardFactor (wall gAB gBA) q t * backwardFactor (wall gAB gBA) q t = 1
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 306](../ViscousTimeReversalProofs.lean#L306)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 172](../ViscousTimeReversalChallenge.lean#L172)
+- Proof: [ViscousTimeReversalProofs.lean line 295](../ViscousTimeReversalProofs.lean#L295)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 166](../ViscousTimeReversalChallenge.lean#L166)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

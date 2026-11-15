@@ -4,8 +4,8 @@ import Mathlib.Analysis.SpecialFunctions.ExpDeriv
 
 /-! Viscous time reversal in the mentor and student model.
 
-`MentorStudentModel.lean` and `FullModel.lean` are unchanged copies (see
-`source-provenance.json`). The wall viscosity is `1/50 + (1/25)*(gAB + gBA)` from
+`MentorStudentModel.lean` and `FullModel.lean` are copies whose definitions are unchanged;
+only comments differ from the sources (see `source-provenance.json`). The wall viscosity is `1/50 + (1/25)*(gAB + gBA)` from
 `FullModel.lean`.
 
 Time is counted from the 0,0 split: the split is time 0 (tick 2, mentor step 0, student

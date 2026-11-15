@@ -8,8 +8,8 @@ Only the Lean statement below is checked (by Lean, Comparator, the Lean kernel a
 theorem thin_and_thick_wall : thinWall = 1/50 ∧ thickWall = 1/10
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 219](../ViscousTimeReversalProofs.lean#L219)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 132](../ViscousTimeReversalChallenge.lean#L132)
+- Proof: [ViscousTimeReversalProofs.lean line 208](../ViscousTimeReversalProofs.lean#L208)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 126](../ViscousTimeReversalChallenge.lean#L126)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

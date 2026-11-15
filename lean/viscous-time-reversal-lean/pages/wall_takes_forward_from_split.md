@@ -10,8 +10,8 @@ theorem wall_takes_forward_from_split (a gAB gBA q t : ℝ)
     0 ≤ takenForward a (wall gAB gBA) q t
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 323](../ViscousTimeReversalProofs.lean#L323)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 181](../ViscousTimeReversalChallenge.lean#L181)
+- Proof: [ViscousTimeReversalProofs.lean line 312](../ViscousTimeReversalProofs.lean#L312)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 175](../ViscousTimeReversalChallenge.lean#L175)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

@@ -2,14 +2,18 @@
   "copied_files": {
     "MentorStudentModel.lean": {
       "source": "lean/mentor-student-lean/MentorStudentModel.lean (mentor-student package, not published in this repository)",
-      "sha256": "6e9ab8fa24a3cd8f36786261b87d0a388e61d61acebd663670c9f63d6a9aabea",
-      "unchanged": true
+      "source_sha256": "6e9ab8fa24a3cd8f36786261b87d0a388e61d61acebd663670c9f63d6a9aabea",
+      "sha256": "05ef696788f1e8d790d57922dac8687cc449945f8f5652833a6058bbb8ad7ad5",
+      "definitions_unchanged": true,
+      "differs_only_in": "comments and docstrings"
     },
     "FullModel.lean": {
       "source": "lean/hug-navier-single-system-lean/FullModel.lean",
       "source_commit": "b0ac331d38da8131002d5abace1190f031248cb8",
-      "sha256": "edbb83823ea0b59fb76477166c3b5020f8de549ef7da3ff81cdb451f213d9723",
-      "unchanged": true
+      "source_sha256": "edbb83823ea0b59fb76477166c3b5020f8de549ef7da3ff81cdb451f213d9723",
+      "sha256": "928e00f664817fe3c85144265ff824d7014334b1866d4904741f8d367a2119c6",
+      "definitions_unchanged": true,
+      "differs_only_in": "one comment line; line endings are LF instead of CRLF"
     }
   }
 }

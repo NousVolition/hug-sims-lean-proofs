@@ -10,8 +10,8 @@ theorem wall_flips_under_reversal (f lap : ℝ → ℝ) (gAB gBA t : ℝ)
     HasDerivAt (reverseAroundSplit f) (reversedWall gAB gBA * lap (aroundSplit t)) t
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 238](../ViscousTimeReversalProofs.lean#L238)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 145](../ViscousTimeReversalChallenge.lean#L145)
+- Proof: [ViscousTimeReversalProofs.lean line 227](../ViscousTimeReversalProofs.lean#L227)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 139](../ViscousTimeReversalChallenge.lean#L139)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

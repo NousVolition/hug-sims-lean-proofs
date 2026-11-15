@@ -11,8 +11,8 @@ theorem thick_wall_damps_most (gAB gBA q t : ℝ)
     forwardFactor (wall gAB gBA) q t ≤ forwardFactor thinWall q t
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 288](../ViscousTimeReversalProofs.lean#L288)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 166](../ViscousTimeReversalChallenge.lean#L166)
+- Proof: [ViscousTimeReversalProofs.lean line 277](../ViscousTimeReversalProofs.lean#L277)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 160](../ViscousTimeReversalChallenge.lean#L160)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

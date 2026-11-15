@@ -20,33 +20,32 @@ graph TD
   n14[split_at_tick_two] --> n15[reverse_twice]
   n0[reverseTime_twice] --> n15[reverse_twice]
   n15[reverse_twice] --> n16[reversal_keeps_one]
-  n16[reversal_keeps_one] --> n17[fifth_and_four_fifths]
-  n16[reversal_keeps_one] --> n23[share_change_undone]
-  n15[reverse_twice] --> n18[reflect_flips_margin]
-  n18[reflect_flips_margin] --> n19[forward_gap_becomes_backward_overlap]
-  n18[reflect_flips_margin] --> n20[touch_stays_touch]
-  n19[forward_gap_becomes_backward_overlap] --> n21[tick23_gap_reverses_to_overlap]
-  n14[split_at_tick_two] --> n22[freeze_at_tick23_both_ways]
-  n22[freeze_at_tick23_both_ways] --> n21[tick23_gap_reverses_to_overlap]
-  n24[wall_is_single_system_viscosity] --> n25[thin_and_thick_wall]
-  n25[thin_and_thick_wall] --> n26[wall_between_thin_and_thick]
-  n26[wall_between_thin_and_thick] --> n27[reversed_wall_range]
-  n2[viscosity_reversal] --> n28[wall_flips_under_reversal]
-  n15[reverse_twice] --> n28[wall_flips_under_reversal]
-  n27[reversed_wall_range] --> n28[wall_flips_under_reversal]
-  n28[wall_flips_under_reversal] --> n34[backward_step_is_reversed_wall]
-  n13[double_sign_flip_restores_forward] --> n34[backward_step_is_reversed_wall]
-  n26[wall_between_thin_and_thick] --> n29[forward_wall_only_damps]
-  n6[forward_damping] --> n29[forward_wall_only_damps]
-  n26[wall_between_thin_and_thick] --> n30[backward_wall_only_amplifies]
-  n7[backward_amplification] --> n30[backward_wall_only_amplifies]
-  n29[forward_wall_only_damps] --> n32[thick_wall_damps_most]
-  n30[backward_wall_only_amplifies] --> n31[thick_wall_amplifies_most]
-  n11[factor_cancellation] --> n33[wall_factors_multiply_to_one]
-  n29[forward_wall_only_damps] --> n35[wall_takes_forward_from_split]
-  n30[backward_wall_only_amplifies] --> n36[wall_gives_backward_from_split]
-  n35[wall_takes_forward_from_split] --> n37[both_directions_add]
-  n36[wall_gives_backward_from_split] --> n37[both_directions_add]
+  n16[reversal_keeps_one] --> n22[share_change_undone]
+  n15[reverse_twice] --> n17[reflect_flips_margin]
+  n17[reflect_flips_margin] --> n18[forward_gap_becomes_backward_overlap]
+  n17[reflect_flips_margin] --> n19[touch_stays_touch]
+  n18[forward_gap_becomes_backward_overlap] --> n20[tick23_gap_reverses_to_overlap]
+  n14[split_at_tick_two] --> n21[freeze_at_tick23_both_ways]
+  n21[freeze_at_tick23_both_ways] --> n20[tick23_gap_reverses_to_overlap]
+  n23[wall_is_single_system_viscosity] --> n24[thin_and_thick_wall]
+  n24[thin_and_thick_wall] --> n25[wall_between_thin_and_thick]
+  n25[wall_between_thin_and_thick] --> n26[reversed_wall_range]
+  n2[viscosity_reversal] --> n27[wall_flips_under_reversal]
+  n15[reverse_twice] --> n27[wall_flips_under_reversal]
+  n26[reversed_wall_range] --> n27[wall_flips_under_reversal]
+  n27[wall_flips_under_reversal] --> n33[backward_step_is_reversed_wall]
+  n13[double_sign_flip_restores_forward] --> n33[backward_step_is_reversed_wall]
+  n25[wall_between_thin_and_thick] --> n28[forward_wall_only_damps]
+  n6[forward_damping] --> n28[forward_wall_only_damps]
+  n25[wall_between_thin_and_thick] --> n29[backward_wall_only_amplifies]
+  n7[backward_amplification] --> n29[backward_wall_only_amplifies]
+  n28[forward_wall_only_damps] --> n31[thick_wall_damps_most]
+  n29[backward_wall_only_amplifies] --> n30[thick_wall_amplifies_most]
+  n11[factor_cancellation] --> n32[wall_factors_multiply_to_one]
+  n28[forward_wall_only_damps] --> n34[wall_takes_forward_from_split]
+  n29[backward_wall_only_amplifies] --> n35[wall_gives_backward_from_split]
+  n34[wall_takes_forward_from_split] --> n36[both_directions_add]
+  n35[wall_gives_backward_from_split] --> n36[both_directions_add]
 ```
 
 - Time reversal and ripple factors
@@ -56,7 +55,7 @@ graph TD
   - [factor_cancellation](pages/factor_cancellation.md)
   - [negative_step_reverses_rate](pages/negative_step_reverses_rate.md) → [double_sign_flip_restores_forward](pages/double_sign_flip_restores_forward.md)
 - The 0,0 split: [split_at_tick_two](pages/split_at_tick_two.md) → [reverse_twice](pages/reverse_twice.md)
-  - Shares: [reversal_keeps_one](pages/reversal_keeps_one.md) → [fifth_and_four_fifths](pages/fifth_and_four_fifths.md), [share_change_undone](pages/share_change_undone.md)
+  - Shares: [reversal_keeps_one](pages/reversal_keeps_one.md) → [share_change_undone](pages/share_change_undone.md)
   - Gap, touch, overlap: [reflect_flips_margin](pages/reflect_flips_margin.md) → [forward_gap_becomes_backward_overlap](pages/forward_gap_becomes_backward_overlap.md), [touch_stays_touch](pages/touch_stays_touch.md)
     - Tick 23: [freeze_at_tick23_both_ways](pages/freeze_at_tick23_both_ways.md) → [tick23_gap_reverses_to_overlap](pages/tick23_gap_reverses_to_overlap.md)
   - The wall run backward: [wall_flips_under_reversal](pages/wall_flips_under_reversal.md) → [backward_step_is_reversed_wall](pages/backward_step_is_reversed_wall.md)

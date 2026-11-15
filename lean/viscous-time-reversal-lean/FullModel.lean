@@ -9,7 +9,7 @@ import Mathlib.Tactic
    This does not import, attach, or substitute the reduced mechanical Hug ODE.
    Encoding the equations is NOT an existence theorem.
    This corpus closure is explicitly provisional, not a unique derivation
-   of the author's entire conceptual framework. -/
+   of the entire source framework. -/
 namespace HugNavierSingle
 noncomputable section
 open Set

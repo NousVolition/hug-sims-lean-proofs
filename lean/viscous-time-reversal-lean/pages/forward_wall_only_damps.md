@@ -10,8 +10,8 @@ theorem forward_wall_only_damps (gAB gBA q t : ℝ)
     forwardFactor (wall gAB gBA) q t ≤ 1
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 248](../ViscousTimeReversalProofs.lean#L248)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 150](../ViscousTimeReversalChallenge.lean#L150)
+- Proof: [ViscousTimeReversalProofs.lean line 237](../ViscousTimeReversalProofs.lean#L237)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 144](../ViscousTimeReversalChallenge.lean#L144)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words

@@ -10,8 +10,8 @@ theorem forward_gap_becomes_backward_overlap (b e : ℝ) (h : contact b e = .gap
     overlapSize (reflect b) (reflect e) = margin b e
 ```
 
-- Proof: [ViscousTimeReversalProofs.lean line 147](../ViscousTimeReversalProofs.lean#L147)
-- Frozen statement: [ViscousTimeReversalChallenge.lean line 95](../ViscousTimeReversalChallenge.lean#L95)
+- Proof: [ViscousTimeReversalProofs.lean line 136](../ViscousTimeReversalProofs.lean#L136)
+- Frozen statement: [ViscousTimeReversalChallenge.lean line 89](../ViscousTimeReversalChallenge.lean#L89)
 - Definitions: [ViscousTimeReversalDefinitions.lean](../ViscousTimeReversalDefinitions.lean), [MentorStudentModel.lean](../MentorStudentModel.lean), [FullModel.lean](../FullModel.lean)
 
 ## Plain words
