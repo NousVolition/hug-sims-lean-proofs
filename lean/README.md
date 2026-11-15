@@ -385,7 +385,7 @@ Each `verification-report.json` contains exactly six fields. `comparator`, `lean
 
 ## Viscous time reversal
 
-[viscous-time-reversal-lean](viscous-time-reversal-lean/) adds 14 scoped statements for the time-reversal chain rule, scalar Fourier-mode damping and amplification, and the effect of changing both step and viscosity signs. It uses the standard Comparator and two-kernel workflow above. The package README distinguishes these statements from the full coupled solver and points to the live CI evidence.
+[viscous-time-reversal-lean](viscous-time-reversal-lean/) adds 14 scoped statements for the time-reversal chain rule, scalar Fourier-mode damping and amplification, and the effect of changing both step and viscosity signs. It uses the standard Comparator and two-kernel workflow above. All 14 passed Comparator, Lean’s kernel, nanoda, the default build and the axiom check; the [report](viscous-time-reversal-lean/verification-report.json) and [saved Linux evidence](viscous-time-reversal-lean/evidence-linux/source.json) are in the package. The package README distinguishes these statements from the full coupled solver.
 
 ## Standalone Lean-kernel checks
 

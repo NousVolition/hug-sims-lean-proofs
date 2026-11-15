@@ -1,6 +1,8 @@
 # Viscosity under time reversal
 
-The user's question is whether forward viscosity stabilizes a mode while reversing its sign gives anti-diffusion. This package checks the corresponding real-scalar statements with the repository's pinned Lean, mathlib, Comparator, Lean kernel and nanoda workflow.
+**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build. All 14 configured statements passed in [GitHub run 43699094986](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43699094986), and every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The actual [report](verification-report.json), [logs and axiom lists](evidence-linux/), and [checked revision and input hashes](evidence-linux/source.json) are saved in this package.
+
+The question is whether forward viscosity stabilizes a mode while reversing its sign gives anti-diffusion. This package checks the corresponding real-scalar statements with the repository's pinned Lean, mathlib, Comparator, Lean kernel and nanoda workflow.
 
 For a differentiable trace `f`, set `v(t) = f(T - t)`. The chain rule gives `v'(t) = -f'(T - t)`. Therefore an assumed equation `f' = ν lap` becomes `v' = -ν lap` at the reversed time. The supplied `lap` trace stands for the Laplacian evaluated along a field; the package does not construct that field or prove its regularity. The complete scalar right-hand side changes sign, including its transport and coupling contributions.
 
@@ -17,7 +19,7 @@ At the Euler-increment level, a negative step already reverses the rate. Negatin
 
 There are 14 declarations in `comparator.json`. The challenge freezes their statements and is excluded from the solution's imports. The proof file contains the completed arguments. Definitions, statements, solution and dependency pins are hashed in `verification-inputs.json`.
 
-From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks all 14 theorem dependency lists. Its `proof-viscous-time-reversal-lean-1` artifact contains the actual run evidence. The checked-in report starts at NOT_RUN because no local Linux evidence is bundled; use the workflow result for this branch's fresh verification.
+From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks all 14 theorem dependency lists. Its `proof-viscous-time-reversal-lean-1` artifact is saved unchanged in `evidence-linux/`.
 
 ## Scope
 

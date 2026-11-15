@@ -1,0 +1,35 @@
+Running as unit: run-u0.service; invocation ID: 87e49c4a5ca3485297404f54adb456c8
+Building ViscousTimeReversalChallenge
+✔ [2116/2118] Built ViscousTimeReversalDefinitions (1.4s)
+⚠ [2117/2118] Built ViscousTimeReversalChallenge (1.3s)
+warning: ViscousTimeReversalChallenge.lean:5:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:8:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:12:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:16:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:22:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:25:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:28:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:31:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:34:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:37:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:40:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:43:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:46:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:49:8: declaration uses `sorry`
+Build completed successfully (2118 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, ViscousTimeReversal.reverseTime_twice, ViscousTimeReversal.timeReverse_derivative, ViscousTimeReversal.viscosity_reversal, ViscousTimeReversal.whole_rhs_reversal, ViscousTimeReversal.forwardFactor_derivative, ViscousTimeReversal.backwardFactor_derivative, ViscousTimeReversal.forward_damping, ViscousTimeReversal.backward_amplification, ViscousTimeReversal.forward_strict_damping, ViscousTimeReversal.backward_strict_amplification, ViscousTimeReversal.higher_frequency_amplification, ViscousTimeReversal.factor_cancellation, ViscousTimeReversal.negative_step_reverses_rate, ViscousTimeReversal.double_sign_flip_restores_forward, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ViscousTimeReversalChallenge
+Building ViscousTimeReversalProofs
+✔ [2117/2118] Built ViscousTimeReversalProofs (1.4s)
+Build completed successfully (2118 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, ViscousTimeReversal.reverseTime_twice, ViscousTimeReversal.timeReverse_derivative, ViscousTimeReversal.viscosity_reversal, ViscousTimeReversal.whole_rhs_reversal, ViscousTimeReversal.forwardFactor_derivative, ViscousTimeReversal.backwardFactor_derivative, ViscousTimeReversal.forward_damping, ViscousTimeReversal.backward_amplification, ViscousTimeReversal.forward_strict_damping, ViscousTimeReversal.backward_strict_amplification, ViscousTimeReversal.higher_frequency_amplification, ViscousTimeReversal.factor_cancellation, ViscousTimeReversal.negative_step_reverses_rate, ViscousTimeReversal.double_sign_flip_restores_forward, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ViscousTimeReversalProofs
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+Finished with result: success
+Main processes terminated with: code=exited/status=0
+Service runtime: 27.327s
+CPU time consumed: 28.648s
+Memory peak: 256.0K
+Memory swap peak: 0B
