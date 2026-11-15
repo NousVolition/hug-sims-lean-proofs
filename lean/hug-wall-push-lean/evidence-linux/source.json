@@ -1,0 +1,38 @@
+{
+  "repository": "NousVolition/hug-sims-lean-proofs",
+  "event": "push",
+  "workflow": "Lean verification",
+  "workflow_input_package": "hug-wall-push-lean",
+  "workflow_run_id": 43708345457,
+  "workflow_run_attempt": 1,
+  "workflow_url": "https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43708345457",
+  "job_id": 132794722290,
+  "workflow_head_sha": "9405ef78f4be457b91da222c834767058bfde045",
+  "checked_out_commit": "9405ef78f4be457b91da222c834767058bfde045",
+  "checkout_evidence": "The job log records the fetch of 9405ef78f4be457b91da222c834767058bfde045 before checkout.",
+  "target_count": 52,
+  "artifact_id": 14159203826,
+  "artifact_name": "proof-hug-wall-push-lean-1",
+  "artifact_url": "https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43708345457/artifacts/14159203826",
+  "artifact_sha256": "267c8b53a22f7ff497c94ade30d12bcf47d2423cd2044237a020e9dcb6939c4a",
+  "artifact_files_copied_without_changes": true,
+  "files": {
+    "axioms.json": "5110663379e8a1f6abb1af74fc081527672ed995a32e4071f319e64e1c9e628e",
+    "comparator.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "comparator.log": "710df51f9ef37822ef31f1b8330e2b729567ae6fef76f70427fe91174116c053",
+    "lake-build.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "lake-build.log": "75ec2957c74d2d1fa7568f2f1e5c85b1570cf9ce822d640ebaf83be64f8fb9bb",
+    "verification-report.json": "9fd047a53d45f63fc4d5415eed076ec70b63254792b271bd07912184bbe13f19"
+  },
+  "proof_inputs_sha256": {
+    "HugWallPushDefinitions.lean": "c69bcc6d1173459f276ee7dd24e1c14f9d215be0a657ab95925c58ffdadf61b7",
+    "HugWallPushChallenge.lean": "1ecdddd6dea5fc577609402e86dea86462fff5a08f5624be5eb964e454193fdd",
+    "HugWallPushProofs.lean": "0b79eb5539790a55dc0ff1d6abaf6f64cd4b6c10357c348c6c2906f3e11f2f52",
+    "comparator.json": "235381ff0e0c7d28d8bd425ab12b52cfcfd1068913b7bba618eeda4e27aba688",
+    "lakefile.toml": "ddc4d0289fbc89333689e6e539a84c8687fe0922a042a0877078de233ead8f32",
+    "lake-manifest.json": "6a3075efecfcf996b1f490fc971e18d7805602ab363617c81acfd9ba029f17b5",
+    "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+    "verification-inputs.json": "a2d346ebe620c7f14391b83438b5991609c67060fc8bb047ead11a0947ba8810"
+  },
+  "publication_note": "Successful Linux evidence for the unchanged proof inputs checked at the recorded commit."
+}

@@ -1,0 +1,14 @@
+{
+  "comparator": "PASS",
+  "lean_kernel": "PASS",
+  "nanoda": "PASS",
+  "lean_build": "PASS",
+  "scope": "Fifty-two statements in seven groups: on a periodic grid the wall never changes the total and only takes motion away as heat; a one-way push changes the total by exactly the push's total; two sides joined by a wall of thickness k meet at a fixed average, with the difference fading as exp(-(2k)t) and the motion lost equal to the heat made; the tanh dip is bounded below by -\u03b5/(2e), so a large enough base viscosity stays nonnegative; a delayed baseline cannot pile up the record, while a frozen baseline only fills; the mentor and student clocks meet at whole prime ticks, and closing the gap at the tick 23 freeze keeps the shared total and gives off a nonnegative 2/25 of the squared gap; the clay drag -K g \u03c7 u takes K g \u03c7 u\u00b2 as heat, brakes a box moving together toward the settling speed -\u03c3 \u03a3 a / (K \u03a3 g \u03c7), and the integrity step stays between 0 and 1.",
+  "open_items": [
+    "No proof of the three-dimensional Navier\u2013Stokes prize problem, of blowup, or of global regularity.",
+    "These are identities on a periodic finite grid and exact one-dimensional or box-averaged models, not a construction of a smooth three-dimensional solution or a singularity.",
+    "No proof of the coupled Hug solver, threshold switching, or residual energy balance for the full system.",
+    "The clay wall and its yield and recovery step are the model's drag and integrity rules; they are not derived from the Navier\u2013Stokes equations.",
+    "No claim that a numerical run's take-off is a true singularity."
+  ]
+}

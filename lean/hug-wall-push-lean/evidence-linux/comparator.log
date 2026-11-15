@@ -1,0 +1,127 @@
+Running as unit: run-u0.service; invocation ID: 386173db9abb4d68a7eaa758deb894b9
+Building HugWallPushChallenge
+✔ [8763/8765] Built HugWallPushDefinitions (3.9s)
+⚠ [8764/8765] Built HugWallPushChallenge (4.4s)
+warning: HugWallPushChallenge.lean:16:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:20:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:23:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:27:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:31:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:35:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:40:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:45:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:51:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:66:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:71:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:76:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:82:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:92:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:95:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:99:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:103:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:106:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:110:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:113:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:117:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:122:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:126:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:135:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:138:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:142:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:147:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:165:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:171:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:178:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:185:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:203:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:208:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:212:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:215:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:219:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:223:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:228:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:233:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:252:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:256:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:260:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:266:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:272:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:278:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:284:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:292:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:296:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:301:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:305:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:311:8: declaration uses `sorry`
+warning: HugWallPushChallenge.lean:315:8: declaration uses `sorry`
+Build completed successfully (8765 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, HugWallPush.shifted_flux_sum, HugWallPush.wall_total_zero, HugWallPush.wall_energy, HugWallPush.wallHeat_nonneg, HugWallPush.wall_only_takes, HugWallPush.grid_total_zero, HugWallPush.grid_energy, HugWallPush.wall_keeps_total, HugWallPush.count_closes, HugWallPush.push_changes_total, HugWallPush.push_moves_one_way, HugWallPush.balanced_push_keeps_total, HugWallPush.push_moves_box, HugWallPush.lin_deriv, HugWallPush.sideA_deriv, HugWallPush.sideB_deriv, HugWallPush.average_fixed, HugWallPush.difference_fades, HugWallPush.thicker_balances_faster, HugWallPush.exp_double, HugWallPush.two_sides_count_closes, HugWallPush.twoSideHeat_deriv, HugWallPush.twoSideHeat_nonneg, HugWallPush.half_one_add_tanh_le, HugWallPush.dip_floor_normalized, HugWallPush.dip_floor, HugWallPush.total_viscosity_never_negative, HugWallPush.breath_telescopes, HugWallPush.delayed_baseline_record, HugWallPush.delayed_baseline_bounded, HugWallPush.frozen_baseline_fills, HugWallPush.freeze_step_counts, HugWallPush.clocks_meet_at_ticks, HugWallPush.shares_whole, HugWallPush.balance_between, HugWallPush.gap_split, HugWallPush.freeze_keeps_total, HugWallPush.freeze_gives_off, HugWallPush.freeze_gives_off_nonneg, HugWallPush.clayHeat_nonneg, HugWallPush.clay_energy, HugWallPush.wall_clay_energy, HugWallPush.clay_push_total, HugWallPush.uniform_box_rate, HugWallPush.uniform_box_toward_settling, HugWallPush.clay_brakes_box, HugWallPush.broken_clay_no_brake, HugWallPush.boxSpeed_deriv, HugWallPush.boxSpeed_settles, HugWallPush.integrity_stays, HugWallPush.integrity_yields, HugWallPush.integrity_recovers, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from HugWallPushChallenge
+Building HugWallPushProofs
+⚠ [8764/8765] Built HugWallPushProofs (6.1s)
+warning: HugWallPushProofs.lean:20:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:20:4: Unused tactic linter: `exact Fintype.sum_equiv (Equiv.subRight e) _ _ (fun _ => rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:35:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:35:6: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:159:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:159:4: Unused tactic linter: `simpa using (hasDerivAt_id' (x := t)).const_mul c` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:268:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:270:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:268:21: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:270:23: Unused tactic linter: `nlinarith [ha, hb]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:380:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:380:23: Unused tactic linter: `nlinarith [ih, hc]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:413:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:413:8: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:472:0: automatically included section variable(s) unused in theorem `HugWallPush.clayHeat_nonneg`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HugWallPushProofs.lean:478:0: automatically included section variable(s) unused in theorem `HugWallPush.clay_energy`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+Build completed successfully (8765 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, HugWallPush.shifted_flux_sum, HugWallPush.wall_total_zero, HugWallPush.wall_energy, HugWallPush.wallHeat_nonneg, HugWallPush.wall_only_takes, HugWallPush.grid_total_zero, HugWallPush.grid_energy, HugWallPush.wall_keeps_total, HugWallPush.count_closes, HugWallPush.push_changes_total, HugWallPush.push_moves_one_way, HugWallPush.balanced_push_keeps_total, HugWallPush.push_moves_box, HugWallPush.lin_deriv, HugWallPush.sideA_deriv, HugWallPush.sideB_deriv, HugWallPush.average_fixed, HugWallPush.difference_fades, HugWallPush.thicker_balances_faster, HugWallPush.exp_double, HugWallPush.two_sides_count_closes, HugWallPush.twoSideHeat_deriv, HugWallPush.twoSideHeat_nonneg, HugWallPush.half_one_add_tanh_le, HugWallPush.dip_floor_normalized, HugWallPush.dip_floor, HugWallPush.total_viscosity_never_negative, HugWallPush.breath_telescopes, HugWallPush.delayed_baseline_record, HugWallPush.delayed_baseline_bounded, HugWallPush.frozen_baseline_fills, HugWallPush.freeze_step_counts, HugWallPush.clocks_meet_at_ticks, HugWallPush.shares_whole, HugWallPush.balance_between, HugWallPush.gap_split, HugWallPush.freeze_keeps_total, HugWallPush.freeze_gives_off, HugWallPush.freeze_gives_off_nonneg, HugWallPush.clayHeat_nonneg, HugWallPush.clay_energy, HugWallPush.wall_clay_energy, HugWallPush.clay_push_total, HugWallPush.uniform_box_rate, HugWallPush.uniform_box_toward_settling, HugWallPush.clay_brakes_box, HugWallPush.broken_clay_no_brake, HugWallPush.boxSpeed_deriv, HugWallPush.boxSpeed_settles, HugWallPush.integrity_stays, HugWallPush.integrity_yields, HugWallPush.integrity_recovers, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from HugWallPushProofs
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!
+Finished with result: success
+Main processes terminated with: code=exited/status=0
+Service runtime: 1min 682ms
+CPU time consumed: 1min 14.665s
+Memory peak: 256.0K
+Memory swap peak: 0B

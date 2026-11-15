@@ -2,7 +2,7 @@
 
 Seven groups of results about the latest ideas in the Hug framework. Every proof is complete: there is no `sorry`, and nothing beyond Lean's three standard axioms (`propext`, `Classical.choice`, `Quot.sound`) is used. The package pins the same Lean (`v4.34.0-rc2`) and Mathlib (`85e3a25e…`) as the other packages.
 
-**Verification: NOT_RUN** for this revision. The [report](verification-report.json) records the status of Comparator, Lean’s kernel, nanoda and the default build.
+**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build. All 52 configured statements passed in [GitHub run 43708345457](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43708345457); every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The [report](verification-report.json), [logs and axiom lists](evidence-linux/) and [checked revision and input hashes](evidence-linux/source.json) are saved in this package.
 
 ## 1. The wall (`a` as viscosity)
 
@@ -73,4 +73,4 @@ Heat here is just heat: the energy given off.
 
 `HugWallPushDefinitions.lean` holds the definitions. `HugWallPushChallenge.lean` freezes the 52 statements and is excluded from the solution's imports. `HugWallPushProofs.lean` holds the proofs. Definitions, statements, solution and dependency pins are hashed in `verification-inputs.json`.
 
-From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 52 theorems.
+From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 52 theorems. Its `proof-hug-wall-push-lean-1` artifact is saved unchanged in `evidence-linux/`.
