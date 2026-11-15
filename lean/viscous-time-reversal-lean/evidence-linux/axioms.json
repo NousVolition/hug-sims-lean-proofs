@@ -1,0 +1,187 @@
+{
+  "ViscousTimeReversal.reverseTime_twice": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.timeReverse_derivative": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.viscosity_reversal": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.whole_rhs_reversal": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forwardFactor_derivative": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backwardFactor_derivative": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forward_damping": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backward_amplification": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forward_strict_damping": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backward_strict_amplification": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.higher_frequency_amplification": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.factor_cancellation": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.negative_step_reverses_rate": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.double_sign_flip_restores_forward": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.split_at_tick_two": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reverse_twice": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reversal_keeps_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reflect_flips_margin": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forward_gap_becomes_backward_overlap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.touch_stays_touch": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.tick23_gap_reverses_to_overlap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.freeze_at_tick23_both_ways": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.share_change_undone": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.wall_is_single_system_viscosity": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.thin_and_thick_wall": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.wall_between_thin_and_thick": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reversed_wall_range": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.wall_flips_under_reversal": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forward_wall_only_damps": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backward_wall_only_amplifies": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.thick_wall_amplifies_most": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.thick_wall_damps_most": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.wall_factors_multiply_to_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backward_step_is_reversed_wall": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.wall_takes_forward_from_split": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.wall_gives_backward_from_split": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.both_directions_add": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ]
+}

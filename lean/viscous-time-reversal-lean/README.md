@@ -1,6 +1,6 @@
 # Viscosity under time reversal
 
-**Verification: NOT_RUN** for this revision. See [verification-report.json](verification-report.json).
+**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build. All 37 configured statements passed in [GitHub run 43703185290](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43703185290); every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The [report](verification-report.json), [logs and axiom lists](evidence-linux/) and [checked revision and input hashes](evidence-linux/source.json) are saved in this package.
 
 ## At a glance
 
@@ -31,7 +31,7 @@ The wall (14). The wall equals `HugNavierSingle.viscosity` point by point. It li
 
 `ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalChallenge.lean` freezes the 37 statements and is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs. `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
 
-From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 37 theorems.
+From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 37 theorems. Its `proof-viscous-time-reversal-lean-1` artifact is saved unchanged in `evidence-linux/`.
 
 ## Scope
 
