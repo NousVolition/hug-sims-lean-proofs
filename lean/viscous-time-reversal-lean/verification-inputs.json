@@ -1,12 +1,14 @@
 {
   "files": {
-    "ViscousTimeReversalDefinitions.lean": "adcbcbd8dcedeac9cb6336d740468fd6fa5f20ed740edf5bdb98ce5db3b86810",
-    "ViscousTimeReversalChallenge.lean": "35b9e74f470f755eb0ea0a5210be0848570b6cedda974ebccb85231af2c4db98",
-    "ViscousTimeReversalProofs.lean": "9d9ad45142d9c8974495da5217b83dc56768d605c1bbb35a1c7c9fc80165adea",
-    "comparator.json": "a40dd78bc693e065dc20c84498c2d2af40f58b470928c9899908bdb80d8131c3",
-    "lakefile.toml": "05a5b10ba80278aef97cf0a7cd501dc4a95ccb8c2a2e8d4112e945e7f988ae4b",
+    "ViscousTimeReversalDefinitions.lean": "c3a54679b4034e5b0437ddea6b6e67f2ca9ed5599ead73697c749c2366b5f54a",
+    "ViscousTimeReversalChallenge.lean": "8bb18ef2c528374b0651b726ff537e4b8d08b2f7b0fbb939bd0a3adc86b47036",
+    "ViscousTimeReversalProofs.lean": "cd735d66b3087694ea3562d262daeaf0d1ef993632bea4e9c580568dfe6805dc",
+    "MentorStudentModel.lean": "6e9ab8fa24a3cd8f36786261b87d0a388e61d61acebd663670c9f63d6a9aabea",
+    "FullModel.lean": "edbb83823ea0b59fb76477166c3b5020f8de549ef7da3ff81cdb451f213d9723",
+    "comparator.json": "25760662d55bb07f56ad7fb23b163b68d462b391695c9146178e5d8820adde43",
+    "lakefile.toml": "d9952ece3ceab5e23ede6b6862583c3d325d33e07550bda1f7e46aa43e3c64e4",
     "lake-manifest.json": "10b1ae73dc69f16c055fe9fef3b3271670780276c27dae479a13652ad34e4605",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
   },
-  "scope": "Fourteen real-scalar statements: the time-reversal chain rule, sign reversal of a given viscous rate and complete scalar RHS, exponential damping/amplification for an assumed Laplacian eigenmode, and Euler-increment sign identities."
+  "scope": "Thirty-eight statements: the time-reversal chain rule, sign reversal of a given viscous rate and complete scalar RHS, exponential damping/amplification for an assumed Laplacian eigenmode, Euler-increment sign identities, and their form in the mentor and student model: reversal around the 0,0 split, shares, gap/touch/overlap, the tick 23 freeze, the wall viscosity 1/50 + (1/25)(gAB + gBA), and what the wall takes forward and gives backward on one ripple counted from the split."
 }
