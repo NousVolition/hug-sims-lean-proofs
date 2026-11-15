@@ -1,8 +1,8 @@
 {
-  "comparator": "NOT_RUN",
-  "lean_kernel": "NOT_RUN",
-  "nanoda": "NOT_RUN",
-  "lean_build": "NOT_RUN",
+  "comparator": "PASS",
+  "lean_kernel": "PASS",
+  "nanoda": "PASS",
+  "lean_build": "PASS",
   "scope": "Thirty-eight statements: the time-reversal chain rule, sign reversal of a given viscous rate and complete scalar RHS, exponential damping/amplification for an assumed Laplacian eigenmode, Euler-increment sign identities, and their form in the mentor and student model: reversal around the 0,0 split, shares, gap/touch/overlap, the tick 23 freeze, the wall viscosity 1/50 + (1/25)(gAB + gBA), and what the wall takes forward and gives backward on one ripple counted from the split.",
   "open_items": [
     "No proof of the coupled Hug solver, threshold switching, path convergence, or residual balance.",
