@@ -1,5 +1,5 @@
 {
-  "lean/hug-v3-clay-boundary-lean/evidence-linux/preflight.json": {
+  "lean/HugV3ClayBoundary/evidence-linux/preflight.json": {
     "raw_private_sha256": "3f0176c446089a1fa3d74e2e25df68f8787ff6c98f7535a4d623862b4c9bdb34",
     "published_sha256": "9a6ffb859dd8e279adb6c3f411f5db857160f8d7a10c524b7d8cc20f95333f64",
     "change": "Personal verifier/workspace paths replaced by environment-variable placeholders; raw private originals retained."

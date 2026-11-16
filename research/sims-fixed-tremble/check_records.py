@@ -16,7 +16,7 @@ def check(data=None, grades=None):
     assert digest((HERE/"inputs.py").read_bytes())==plan["source_hashes"]["inputs"]
     for key,name in {
         "prior_protocol":"research/sims-continuing-evidence/protocol.json",
-        "original_reports":"lean/sims-meeting-thread-lean/observations/pager-return/reports.json"
+        "original_reports":"lean/SimsMeetingThread/observations/pager-return/reports.json"
     }.items():
         assert digest((ROOT/name).read_bytes())==plan["source_hashes"][key]
     assert text_digest(plan["original_tremble"])==plan["original_tremble_sha256"]

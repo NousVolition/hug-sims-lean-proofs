@@ -116,7 +116,7 @@ This work asks how a record can persist while its carrier, context, relationship
 
 Tick 41 is the organizing checkpoint for this reading path. In the fluid studies below, it labels **model time 1.2**. In the continuing Traveller B study, it labels **1.2 simulated seconds after the mentor's last word**. Each study retains its own clock and protocol.
 
-The intended HugandNavier system keeps the carrying relationship continuous while its configuration changes. Flow and participant states affect the guards on their relationships; those guards shape interaction and stress, which feed into later flow and states. The intended underlying system is unforced. Some recorded experiments add breathing as a controlled intervention. [Retained meaning and source correction](research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations) · [Single-system formulation](lean/hug-navier-single-system-lean/README.md)
+The intended HugandNavier system keeps the carrying relationship continuous while its configuration changes. Flow and participant states affect the guards on their relationships; those guards shape interaction and stress, which feed into later flow and states. The intended underlying system is unforced. Some recorded experiments add breathing as a controlled intervention. [Retained meaning and source correction](research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations) · [Single-system formulation](lean/HugNavierSingleSystem/README.md)
 
 [**Read the tick-41 guide**](docs/tick-41/README.md) for the full sequence, definitions and links to the evidence.
 
@@ -154,7 +154,7 @@ The settings travel with each result. The two threshold studies and the language
 | **Threshold 0.015: grids through tick 41** | At ticks 37 and 41, **all 25 pairs** meet the 0.001 target between 40³ and 48³. Every-step readings between them show **16 pairs** above target; the largest difference is **0.102666868** at time 1.169. | Pair 3 also exceeds the target outside the fixed transition windows. Full-history time refinement at the new extrema, material-quadrature and continuum convergence remain open. [Audit and source readings](research/tick-35-41-audit/README.md) |
 | **Threshold 1: same A and original B** | With breathing on, three resolved late closest-point exchanges precede tick 41. The matched off branch has none in those late windows and has five resolved earlier examples. | These are resolved examples; 24 rapid route changes and spatial/full-history convergence remain open. [Study and control](research/hug-v3/threshold-one-follow-up/README.md) |
 | **Threshold 1: evolve from the post-write state** | In the breathing-off 32³ continuation from 1.2 to 1.22, a fine-only velocity difference falls 75.97% while a small broad difference develops; time-step and amplitude controls agree. | Its connection to the large frozen-curve return misses remains open. [Result, plots and replay](research/hug-v3/tick-41-wave-transfer/README.md) |
-| **SIMS: one continuing Traveller B** | At tick 41, B says: “I’m unsure whether that was the buzz I felt.” The same encounter retains earlier replies through thirteen checkpoints. | The repeated interviews may affect later answers; private experience and recognition after 1.2 seconds remain open. [Verbatim record and protocol](lean/sims-mentor-first-thought-lean/one-traveller/README.md) |
+| **SIMS: one continuing Traveller B** | At tick 41, B says: “I’m unsure whether that was the buzz I felt.” The same encounter retains earlier replies through thirteen checkpoints. | The repeated interviews may affect later answers; private experience and recognition after 1.2 seconds remain open. [Verbatim record and protocol](lean/SimsMentorFirstThought/one-traveller/README.md) |
 
 The water particle B, the penne's viewing window B and the restaurant listener B have different roles. The guide keeps those referents visible.
 
@@ -197,7 +197,7 @@ For a real 3 × 3 deformation matrix `F` and an orthogonal frame change `Q`, Lea
 
 The finite-window package proves a different, directly useful rule for the viewing question: enlarging a nested search window on the same path, at the same time and against the same target, cannot increase its minimum distance. Its recorded-number checks and numerical solver checks have different scopes. [Window proofs and exact inputs](research/hug-v3/finite-window-lean/README.md)
 
-The single-system package contains ten completed theorems and an unfinished full PDE evolution target. The broader Hug v3 all-write continuation question also remains open. [Single-system results](lean/hug-navier-single-system-lean/RESULTS.md) · [Hug v3 continuation work](research/hug-v3/continuation-proof/continuation-proof.md)
+The single-system package contains ten completed theorems and an unfinished full PDE evolution target. The broader Hug v3 all-write continuation question also remains open. [Single-system results](lean/HugNavierSingleSystem/RESULTS.md) · [Hug v3 continuation work](research/hug-v3/continuation-proof/continuation-proof.md)
 
 <a id="find-a-specific-study"></a>
 <a id="traveller-b-and-cue-replay"></a>
@@ -209,10 +209,10 @@ The single-system package contains ten completed theorems and an unfinished full
 
 | Question | Record |
 | --- | --- |
-| How does a witness account change what Traveller B says? | [Memory, witness and cue replay](lean/sims-meeting-thread-lean/README.md) |
-| What changes between the first thought and later certainty questions? | [First-thought, fresh-listener and continuing-session studies](lean/sims-mentor-first-thought-lean/README.md) |
-| Which of two similar trembles matches the witnessed event? | [Two-tremble study](lean/sims-meeting-thread-lean/observations/two-trembles/README.md) |
-| Can a remembered action correct a reversed sound replay? | [Reversed-replay study](lean/sims-meeting-thread-lean/observations/reversed-replay/README.md) |
+| How does a witness account change what Traveller B says? | [Memory, witness and cue replay](lean/SimsMeetingThread/README.md) |
+| What changes between the first thought and later certainty questions? | [First-thought, fresh-listener and continuing-session studies](lean/SimsMentorFirstThought/README.md) |
+| Which of two similar trembles matches the witnessed event? | [Two-tremble study](lean/SimsMeetingThread/observations/two-trembles/README.md) |
+| Can a remembered action correct a reversed sound replay? | [Reversed-replay study](lean/SimsMeetingThread/observations/reversed-replay/README.md) |
 | What do the completed breathing, history and repetition controls change? | [Recounted results and corrected conclusions](research/review-updates/2026-11-11/README.md) |
 | What survives matched-stretch numerical checks? | [48-run report and convergence results](research/matched-stretch/final-matrix/README.md) |
 | What do the energy-account and two-memory proofs check? | [Exact scope and receipts in PR #14](https://github.com/NousVolition/hug-sims-lean-proofs/pull/14) |
@@ -241,7 +241,7 @@ Those questions organize the next reading and measurement. The current results r
 
 | Term | Meaning |
 | --- | --- |
-| **Traveller B** | A language model playing a listener in a fictional restaurant. The continuing-B run records `gpt-6-astra`; the earlier default actor's version was not pinned. [Model record](lean/sims-mentor-first-thought-lean/one-traveller/reports.json) · [Earlier disclosure](lean/sims-mentor-first-thought-lean/reports.json) |
+| **Traveller B** | A language model playing a listener in a fictional restaurant. The continuing-B run records `gpt-6-astra`; the earlier default actor's version was not pinned. [Model record](lean/SimsMentorFirstThought/one-traveller/reports.json) · [Earlier disclosure](lean/SimsMentorFirstThought/reports.json) |
 | **Pager** | The restaurant's order buzzer, one candidate source of the pocket vibration. |
 | **Witness / mentor** | A character reporting firsthand information about pressing TEST and seeing the pager respond. |
 | **Basin refills** | Successive simulation stages, each beginning from the preceding saved ending state. |

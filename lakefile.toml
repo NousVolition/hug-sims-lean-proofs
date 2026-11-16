@@ -1,0 +1,951 @@
+name = "HugSimsLeanProofs"
+version = "0.1.0"
+defaultTargets = ["ViscousTimeReversalWirtingerProofs", "ViscousTimeReversalWirtingerChallenge", "ViscousTimeReversalWirtingerDefinitions", "ViscousTimeReversalPoincareProofs", "ViscousTimeReversalPoincareChallenge", "ViscousTimeReversalPoincareDefinitions", "ViscousTimeReversalFilterProofs", "ViscousTimeReversalFilterChallenge", "ViscousTimeReversalFilterDefinitions", "ViscousTimeReversalMeterProofs", "ViscousTimeReversalMeterChallenge", "ViscousTimeReversalMeterDefinitions", "ViscousTimeReversalBucketProofs", "ViscousTimeReversalBucketChallenge", "ViscousTimeReversalBucketDefinitions", "ASChallenge", "ASExistenceChallenge", "ASExistenceSolution", "ASInvarianceChallenge", "ASInvarianceSolution", "ASModel", "ASOpenClaims", "ASProofs", "ASSuppressionChallenge", "ASSuppressionSolution", "AccessChallenge", "AccessDefinitions", "AccessProofs", "AccountChallenge", "AccountDefinitions", "AccountProofs", "ActiveHugChallenge", "ActiveHugModel", "ActiveHugSolution", "AppleBandChallenge", "AppleBandDefinitions", "AppleBandProofs", "AppleBandTopology", "AppleCarrierUniqueness", "AppleExistenceChallenge", "AppleExistenceDefinitions", "AppleExistenceProofs", "AppleFlowBounds", "AppleFlowChallenge", "AppleFlowDefinitions", "AppleInitialProofs", "ApplePackedProofs", "AppleRealFlow", "AppleScheduleProofs", "AppleSkinChallenge", "AppleTraceVelocity", "AppleTubeProofs", "ApplicationControls", "ApplicationRejections", "AuditChallenge", "AuditSolution", "BridgeChallenge", "BridgeModel", "BridgeSolution", "CWAll", "CWBalance", "CWChallenge", "CWDefinitions", "CWEnergyChallenge", "CWProofs", "CWSpectral", "CWWork", "ClippedConstruction", "ConstantField", "ContextChallenge", "ContextDefinitions", "ContextProofs", "CoupledMeaningBounds", "CueReturnChallenge", "CueReturnModel", "CueReturnProofs", "FullAssembly", "FullEquationSpecification", "FullModel", "HRAll", "HRChallenge", "HRDefinitions", "HRProofs", "HRQuadratic", "HRWitnessChallenge", "HRWitnessData", "HearthChallenge", "HearthDefinitions", "HearthProofs", "HugAllChallenge", "HugAllSolution", "HugBarrier", "HugBounds", "HugBox", "HugChallenge", "HugConstruction", "HugExistenceChallenge", "HugExistenceSolution", "HugFullClaim", "HugModel", "HugSolution", "HugTools", "HugWallPushChallenge", "HugWallPushDefinitions", "HugWallPushProofs", "HybridChallenge", "HybridProofs", "HybridSpecification", "InfluenceSubsystem", "InputRegularity", "IntegralBarrier", "MeaningBounds", "MeaningSubsystem", "MeetingModel", "MeetingObservations", "MeetingThread", "MeetingThreadChallenge", "MentorStudentModel", "MentorThought", "MentorThoughtChallenge", "MentorThoughtModel", "MiraLocalChallenge", "MiraLocalDefinitions", "MiraLocalExamples", "MiraLocalProofs", "OneTraveller", "OneTravellerChallenge", "PagerReturn", "PagerReturnChallenge", "PagerReturnModel", "PagerReturnReadings", "PaintCalibrationChallenge", "PaintCalibrationDefinitions", "PaintCalibrationProofs", "PairTools", "PersonEnvironmentChallenge", "PersonEnvironmentDefinitions", "PersonEnvironmentExamples", "PersonEnvironmentProofs", "PrimeMeter", "PrimeMeter.Recorded", "PrimeMeter.Study", "PrimeMeter.Types", "PrimeMeterChallenge", "PrimeSweep", "PrimeSweepChallenge", "ReplayAuditChallenge", "ReplayAuditModel", "ReplayAuditProofs", "ReplayAuditReadings", "ScalarSubsystems", "SevenWizardAlgebra", "SimsMeeting", "Stages", "StatementInventory", "StreetWholeChallenge", "StreetWholeDefinitions", "StreetWholeExamples", "StreetWholeProofs", "SuppressionComparison", "TransitionChallenge", "TransitionDefinitions", "TransitionProofs", "TwoMemory", "TwoMemoryModel", "TwoMemoryTransport", "TwoTrembleChallenge", "TwoTrembleModel", "TwoTrembleProofs", "TwoTrembleReadings", "V3BridgeReturnChallenge", "V3BridgeReturnDefinitions", "V3BridgeReturnProofs", "V3ClayDefinitions", "V3ClayProofs", "V3ClayTrajectoryProofs", "V3CoexistenceChallenge", "V3CoexistenceDefinitions", "V3CoexistenceProofs", "V3CovarianceChallenge", "V3CovarianceDefinitions", "V3CovarianceProofs", "V3DelayChallenge", "V3DelayDefinitions", "V3DelayProofs", "V3EventChallenge", "V3EventProofs", "V3EventSpecification", "V3FullCoordinates", "V3FullDelayChallenge", "V3FullDelayProofs", "V3HybridSpecification", "V3JointFrameChallenge", "V3JointFrameDefinitions", "V3JointFrameProofs", "V3MemoryRulesChallenge", "V3MemoryRulesDefinitions", "V3MemoryRulesProofs", "V3ORuminationChallenge", "V3ORuminationDefinitions", "V3ORuminationProofs", "V3OccupiedSpaceChallenge", "V3OccupiedSpaceDefinitions", "V3OccupiedSpaceProofs", "V3SourceChallenge", "V3SourceCore", "V3SourceFlow", "V3SourceGeometry", "V3SourceMemory", "V3SourceProofs", "V3SourceSocial", "V3SourceSystem", "V3TransferChallenge", "V3TransferDefinitions", "V3TransferProofs", "V3YangMillsAuditChallenge", "V3YangMillsAuditDefinitions", "V3YangMillsAuditProofs", "ViscousTimeReversalChallenge", "ViscousTimeReversalDefinitions", "ViscousTimeReversalProofs", "Volterra", "WitnessChallenge", "WitnessDefinitions", "WitnessProofs", "WizardBracket", "WizardDefinitions"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "85e3a25e006c35636f0e53b0e9296caca2685bc0"
+
+[[input_file]]
+name = "pagerReturnLedger"
+path = "lean/SimsMeetingThread/observations/pager-return/readings.tsv"
+text = true
+
+[[input_file]]
+name = "twoTrembleLedger"
+path = "lean/SimsMeetingThread/observations/two-trembles/readings.tsv"
+text = true
+
+[[input_file]]
+name = "reversedReplayLedger"
+path = "lean/SimsMeetingThread/observations/reversed-replay/readings.tsv"
+text = true
+
+[[input_file]]
+name = "roomReadings"
+path = "lean/SimsMentorFirstThought/readings.tsv"
+text = true
+
+[[input_file]]
+name = "sweepReadings"
+path = "lean/SimsMentorFirstThought/prime-sweep/readings.tsv"
+text = true
+
+[[input_file]]
+name = "continuingReadings"
+path = "lean/SimsMentorFirstThought/one-traveller/readings.tsv"
+text = true
+
+[[lean_lib]]
+name = "ASChallenge"
+srcDir = "lean/AS"
+
+[[lean_lib]]
+name = "ASExistenceChallenge"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "ASExistenceSolution"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "ASInvarianceChallenge"
+srcDir = "lean/ASInvariance"
+
+[[lean_lib]]
+name = "ASInvarianceSolution"
+srcDir = "lean/ASInvariance"
+
+[[lean_lib]]
+name = "ASModel"
+srcDir = "lean/AS"
+
+[[lean_lib]]
+name = "ASOpenClaims"
+srcDir = "lean/AS"
+
+[[lean_lib]]
+name = "ASProofs"
+srcDir = "lean/AS"
+
+[[lean_lib]]
+name = "ASSuppressionChallenge"
+srcDir = "lean/ASSuppression"
+
+[[lean_lib]]
+name = "ASSuppressionSolution"
+srcDir = "lean/ASSuppression"
+
+[[lean_lib]]
+name = "AccessChallenge"
+srcDir = "lean/HugV3ChildAccess"
+
+[[lean_lib]]
+name = "AccessDefinitions"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AccessProofs"
+srcDir = "lean/HugV3ChildAccess"
+
+[[lean_lib]]
+name = "AccountChallenge"
+srcDir = "lean/HugV3ChildAccount"
+
+[[lean_lib]]
+name = "AccountDefinitions"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AccountProofs"
+srcDir = "lean/HugV3ChildAccount"
+
+[[lean_lib]]
+name = "ActiveHugChallenge"
+srcDir = "lean/HugSqueeze"
+
+[[lean_lib]]
+name = "ActiveHugModel"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "ActiveHugSolution"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "AppleBandChallenge"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleBandDefinitions"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleBandProofs"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleBandTopology"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleCarrierUniqueness"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "AppleExistenceChallenge"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "AppleExistenceDefinitions"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "AppleExistenceProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "AppleFlowBounds"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleFlowChallenge"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleFlowDefinitions"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleInitialProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "ApplePackedProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "AppleRealFlow"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleScheduleProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "AppleSkinChallenge"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleTraceVelocity"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "AppleTubeProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "ApplicationControls"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "ApplicationRejections"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "AuditChallenge"
+srcDir = "lean/HugNavierFullAudit"
+
+[[lean_lib]]
+name = "AuditSolution"
+srcDir = "lean/HugNavierFullAudit"
+
+[[lean_lib]]
+name = "BridgeChallenge"
+srcDir = "lean/HugNavierBridge"
+
+[[lean_lib]]
+name = "BridgeModel"
+srcDir = "lean/HugNavierBridge"
+
+[[lean_lib]]
+name = "BridgeSolution"
+srcDir = "lean/HugNavierBridge"
+
+[[lean_lib]]
+name = "CWAll"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWBalance"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWChallenge"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWDefinitions"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWEnergyChallenge"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWProofs"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWSpectral"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "CWWork"
+srcDir = "lean/HugV3CourierWeaver"
+
+[[lean_lib]]
+name = "ClippedConstruction"
+srcDir = "lean/ASInvariance"
+
+[[lean_lib]]
+name = "ConstantField"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "ContextChallenge"
+srcDir = "lean/ClayProblemsAudit"
+
+[[lean_lib]]
+name = "ContextDefinitions"
+srcDir = "lean/ClayProblemsAudit"
+
+[[lean_lib]]
+name = "ContextProofs"
+srcDir = "lean/ClayProblemsAudit"
+
+[[lean_lib]]
+name = "CoupledMeaningBounds"
+srcDir = "lean/ASInvariance"
+
+[[lean_lib]]
+name = "CueReturnChallenge"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "CueReturnModel"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "CueReturnProofs"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "FullAssembly"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "FullEquationSpecification"
+srcDir = "lean/HugNavierFullAudit"
+
+[[lean_lib]]
+name = "FullModel"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "HRAll"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HRChallenge"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HRDefinitions"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HRProofs"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HRQuadratic"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HRWitnessChallenge"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HRWitnessData"
+srcDir = "lean/HugV3HearthReadout"
+
+[[lean_lib]]
+name = "HearthChallenge"
+srcDir = "lean/HearthWizard"
+
+[[lean_lib]]
+name = "HearthDefinitions"
+srcDir = "lean/HearthWizard"
+
+[[lean_lib]]
+name = "HearthProofs"
+srcDir = "lean/HearthWizard"
+
+[[lean_lib]]
+name = "HugAllChallenge"
+srcDir = "lean/HugSqueeze"
+
+[[lean_lib]]
+name = "HugAllSolution"
+srcDir = "lean/HugSqueeze"
+
+[[lean_lib]]
+name = "HugBarrier"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugBounds"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugBox"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugChallenge"
+srcDir = "lean/HugSqueeze"
+
+[[lean_lib]]
+name = "HugConstruction"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugExistenceChallenge"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugExistenceSolution"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugFullClaim"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugModel"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugSolution"
+srcDir = "lean/HugSqueeze"
+
+[[lean_lib]]
+name = "HugTools"
+srcDir = "lean/HugExistence"
+
+[[lean_lib]]
+name = "HugWallPushChallenge"
+srcDir = "lean/HugWallPush"
+
+[[lean_lib]]
+name = "HugWallPushDefinitions"
+srcDir = "lean/HugWallPush"
+
+[[lean_lib]]
+name = "HugWallPushProofs"
+srcDir = "lean/HugWallPush"
+
+[[lean_lib]]
+name = "HybridChallenge"
+srcDir = "lean/HugV3Hybrid"
+
+[[lean_lib]]
+name = "HybridProofs"
+srcDir = "lean/HugV3Hybrid"
+
+[[lean_lib]]
+name = "HybridSpecification"
+srcDir = "lean/HugV3Hybrid"
+
+[[lean_lib]]
+name = "InfluenceSubsystem"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "InputRegularity"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "IntegralBarrier"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "MeaningBounds"
+srcDir = "lean/ASInvariance"
+
+[[lean_lib]]
+name = "MeaningSubsystem"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "MeetingModel"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "MeetingObservations"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "MeetingThread"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "MeetingThreadChallenge"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "MentorStudentModel"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "MentorThought"
+srcDir = "lean/SimsMentorFirstThought"
+
+[[lean_lib]]
+name = "MentorThoughtChallenge"
+srcDir = "lean/SimsMentorFirstThought"
+
+[[lean_lib]]
+name = "MentorThoughtModel"
+srcDir = "lean/SimsMentorFirstThought"
+needs = ["continuingReadings", "roomReadings", "sweepReadings"]
+
+[[lean_lib]]
+name = "MiraLocalChallenge"
+srcDir = "lean/MiraLocalPaths"
+
+[[lean_lib]]
+name = "MiraLocalDefinitions"
+srcDir = "lean/MiraLocalPaths"
+
+[[lean_lib]]
+name = "MiraLocalExamples"
+srcDir = "lean/MiraLocalPaths"
+
+[[lean_lib]]
+name = "MiraLocalProofs"
+srcDir = "lean/MiraLocalPaths"
+
+[[lean_lib]]
+name = "OneTraveller"
+srcDir = "lean/SimsMentorFirstThought"
+
+[[lean_lib]]
+name = "OneTravellerChallenge"
+srcDir = "lean/SimsMentorFirstThought"
+
+[[lean_lib]]
+name = "PagerReturn"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "PagerReturnChallenge"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "PagerReturnModel"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "PagerReturnReadings"
+srcDir = "lean/SimsMeetingThread"
+needs = ["pagerReturnLedger"]
+
+[[lean_lib]]
+name = "PaintCalibrationChallenge"
+srcDir = "lean/HugV3PaintValue"
+
+[[lean_lib]]
+name = "PaintCalibrationDefinitions"
+srcDir = "lean/HugV3PaintValue"
+
+[[lean_lib]]
+name = "PaintCalibrationProofs"
+srcDir = "lean/HugV3PaintValue"
+
+[[lean_lib]]
+name = "PairTools"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "PersonEnvironmentChallenge"
+srcDir = "lean/PersonEnvironmentPNP"
+
+[[lean_lib]]
+name = "PersonEnvironmentDefinitions"
+srcDir = "lean/MiraLocalPaths"
+
+[[lean_lib]]
+name = "PersonEnvironmentExamples"
+srcDir = "lean/PersonEnvironmentPNP"
+
+[[lean_lib]]
+name = "PersonEnvironmentProofs"
+srcDir = "lean/PersonEnvironmentPNP"
+
+[[lean_lib]]
+name = "PrimeMeter"
+srcDir = "lean/HugPrimeMeter"
+
+[[lean_lib]]
+name = "PrimeMeter.Recorded"
+srcDir = "lean/HugPrimeMeter"
+
+[[lean_lib]]
+name = "PrimeMeter.Study"
+srcDir = "lean/HugPrimeMeter"
+
+[[lean_lib]]
+name = "PrimeMeter.Types"
+srcDir = "lean/HugPrimeMeter"
+
+[[lean_lib]]
+name = "PrimeMeterChallenge"
+srcDir = "lean/HugPrimeMeter"
+
+[[lean_lib]]
+name = "PrimeSweep"
+srcDir = "lean/SimsMentorFirstThought"
+
+[[lean_lib]]
+name = "PrimeSweepChallenge"
+srcDir = "lean/SimsMentorFirstThought"
+
+[[lean_lib]]
+name = "ReplayAuditChallenge"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "ReplayAuditModel"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "ReplayAuditProofs"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "ReplayAuditReadings"
+srcDir = "lean/SimsMeetingThread"
+needs = ["reversedReplayLedger"]
+
+[[lean_lib]]
+name = "ScalarSubsystems"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "SevenWizardAlgebra"
+srcDir = "lean/HearthWizard"
+
+[[lean_lib]]
+name = "SimsMeeting"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "Stages"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "StatementInventory"
+srcDir = "lean/ClayProblemsAudit"
+
+[[lean_lib]]
+name = "StreetWholeChallenge"
+srcDir = "lean/HugV3StreetWhole"
+
+[[lean_lib]]
+name = "StreetWholeDefinitions"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "StreetWholeExamples"
+srcDir = "lean/HugV3StreetWhole"
+
+[[lean_lib]]
+name = "StreetWholeProofs"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "SuppressionComparison"
+srcDir = "lean/ASSuppression"
+
+[[lean_lib]]
+name = "TransitionChallenge"
+srcDir = "lean/FabricFrameTransitionAudit"
+
+[[lean_lib]]
+name = "TransitionDefinitions"
+srcDir = "lean/FabricFrameTransitionAudit"
+
+[[lean_lib]]
+name = "TransitionProofs"
+srcDir = "lean/FabricFrameTransitionAudit"
+
+[[lean_lib]]
+name = "TwoMemory"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "TwoMemoryModel"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "TwoMemoryTransport"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "TwoTrembleChallenge"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "TwoTrembleModel"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "TwoTrembleProofs"
+srcDir = "lean/SimsMeetingThread"
+
+[[lean_lib]]
+name = "TwoTrembleReadings"
+srcDir = "lean/SimsMeetingThread"
+needs = ["twoTrembleLedger"]
+
+[[lean_lib]]
+name = "V3BridgeReturnChallenge"
+srcDir = "lean/HugV3BridgeReturn"
+
+[[lean_lib]]
+name = "V3BridgeReturnDefinitions"
+srcDir = "lean/HugV3BridgeReturn"
+
+[[lean_lib]]
+name = "V3BridgeReturnProofs"
+srcDir = "lean/HugV3BridgeReturn"
+
+[[lean_lib]]
+name = "V3ClayDefinitions"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "V3ClayProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "V3ClayTrajectoryProofs"
+srcDir = "lean/HugV3AppleExistence"
+
+[[lean_lib]]
+name = "V3CoexistenceChallenge"
+srcDir = "lean/HugV3Coexistence"
+
+[[lean_lib]]
+name = "V3CoexistenceDefinitions"
+srcDir = "lean/HugV3Coexistence"
+
+[[lean_lib]]
+name = "V3CoexistenceProofs"
+srcDir = "lean/HugV3Coexistence"
+
+[[lean_lib]]
+name = "V3CovarianceChallenge"
+srcDir = "lean/HugV3FullCovariance"
+
+[[lean_lib]]
+name = "V3CovarianceDefinitions"
+srcDir = "lean/HugV3FullCovariance"
+
+[[lean_lib]]
+name = "V3CovarianceProofs"
+srcDir = "lean/HugV3FullCovariance"
+
+[[lean_lib]]
+name = "V3DelayChallenge"
+srcDir = "lean/HugV3Delay"
+
+[[lean_lib]]
+name = "V3DelayDefinitions"
+srcDir = "lean/HugV3Delay"
+
+[[lean_lib]]
+name = "V3DelayProofs"
+srcDir = "lean/HugV3Delay"
+
+[[lean_lib]]
+name = "V3EventChallenge"
+srcDir = "lean/HugV3ProofAttempt"
+
+[[lean_lib]]
+name = "V3EventProofs"
+srcDir = "lean/HugV3ProofAttempt"
+
+[[lean_lib]]
+name = "V3EventSpecification"
+srcDir = "lean/HugV3ProofAttempt"
+
+[[lean_lib]]
+name = "V3FullCoordinates"
+srcDir = "lean/HugV3FullDelayProof"
+
+[[lean_lib]]
+name = "V3FullDelayChallenge"
+srcDir = "lean/HugV3FullDelayProof"
+
+[[lean_lib]]
+name = "V3FullDelayProofs"
+srcDir = "lean/HugV3FullDelayProof"
+
+[[lean_lib]]
+name = "V3HybridSpecification"
+srcDir = "lean/HugV3Hybrid"
+
+[[lean_lib]]
+name = "V3JointFrameChallenge"
+srcDir = "lean/HugV3JointFrame"
+
+[[lean_lib]]
+name = "V3JointFrameDefinitions"
+srcDir = "lean/HugV3JointFrame"
+
+[[lean_lib]]
+name = "V3JointFrameProofs"
+srcDir = "lean/HugV3JointFrame"
+
+[[lean_lib]]
+name = "V3MemoryRulesChallenge"
+srcDir = "lean/HugV3MemoryRules"
+
+[[lean_lib]]
+name = "V3MemoryRulesDefinitions"
+srcDir = "lean/HugV3MemoryRules"
+
+[[lean_lib]]
+name = "V3MemoryRulesProofs"
+srcDir = "lean/HugV3MemoryRules"
+
+[[lean_lib]]
+name = "V3ORuminationChallenge"
+srcDir = "lean/HugV3ORumination"
+
+[[lean_lib]]
+name = "V3ORuminationDefinitions"
+srcDir = "lean/HugV3ORumination"
+
+[[lean_lib]]
+name = "V3ORuminationProofs"
+srcDir = "lean/HugV3ORumination"
+
+[[lean_lib]]
+name = "V3OccupiedSpaceChallenge"
+srcDir = "lean/HugV3OccupiedSpace"
+
+[[lean_lib]]
+name = "V3OccupiedSpaceDefinitions"
+srcDir = "lean/HugV3OccupiedSpace"
+
+[[lean_lib]]
+name = "V3OccupiedSpaceProofs"
+srcDir = "lean/HugV3OccupiedSpace"
+
+[[lean_lib]]
+name = "V3SourceChallenge"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceCore"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceFlow"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceGeometry"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceMemory"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceProofs"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceSocial"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3SourceSystem"
+srcDir = "lean/HugV3Source"
+
+[[lean_lib]]
+name = "V3TransferChallenge"
+srcDir = "lean/HugV3Transfer"
+
+[[lean_lib]]
+name = "V3TransferDefinitions"
+srcDir = "lean/HugV3Transfer"
+
+[[lean_lib]]
+name = "V3TransferProofs"
+srcDir = "lean/HugV3Transfer"
+
+[[lean_lib]]
+name = "V3YangMillsAuditChallenge"
+srcDir = "lean/HugV3YangMillsAudit"
+
+[[lean_lib]]
+name = "V3YangMillsAuditDefinitions"
+srcDir = "lean/HugV3YangMillsAudit"
+
+[[lean_lib]]
+name = "V3YangMillsAuditProofs"
+srcDir = "lean/HugV3YangMillsAudit"
+
+[[lean_lib]]
+name = "ViscousTimeReversalChallenge"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalDefinitions"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalProofs"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "Volterra"
+srcDir = "lean/ASExistence"
+
+[[lean_lib]]
+name = "WitnessChallenge"
+srcDir = "lean/HugV3ChildWitness"
+
+[[lean_lib]]
+name = "WitnessDefinitions"
+srcDir = "lean/HugV3AppleBand"
+
+[[lean_lib]]
+name = "WitnessProofs"
+srcDir = "lean/HugV3ChildAccess"
+
+[[lean_lib]]
+name = "WizardBracket"
+srcDir = "lean/HearthWizard"
+
+[[lean_lib]]
+name = "WizardDefinitions"
+srcDir = "lean/HearthWizard"
+
+[[lean_lib]]
+name = "ViscousTimeReversalBucketDefinitions"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalBucketChallenge"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalBucketProofs"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalMeterDefinitions"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalMeterChallenge"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalMeterProofs"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalFilterDefinitions"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalFilterChallenge"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalFilterProofs"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalPoincareDefinitions"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalPoincareChallenge"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalPoincareProofs"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalWirtingerDefinitions"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalWirtingerChallenge"
+srcDir = "lean/ViscousTimeReversal"
+
+[[lean_lib]]
+name = "ViscousTimeReversalWirtingerProofs"
+srcDir = "lean/ViscousTimeReversal"

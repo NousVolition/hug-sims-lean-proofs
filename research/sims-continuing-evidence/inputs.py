@@ -6,7 +6,7 @@ import sys
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
-ORIGINAL = ROOT / "lean" / "sims-mentor-first-thought-lean"
+ORIGINAL = ROOT / "lean" / "SimsMentorFirstThought"
 sys.path.insert(0, str(ORIGINAL))
 import room_inputs
 

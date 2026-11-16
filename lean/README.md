@@ -4,7 +4,7 @@ These packages retain their own model definitions, assumptions and verification 
 
 The fresh reports below preserve the original theorem scopes and unfinished-proof lists. Earlier reports remain linked separately. The 306 configured declarations overlap across packages and must not be added as independent discoveries.
 
-The later [A/S suppression comparison](as-suppression-lean/) has its own verification receipt and closes the S-history comparison; the repeated-encounter process remains open.
+The later [A/S suppression comparison](ASSuppression/) has its own verification receipt and closes the S-history comparison; the repeated-encounter process remains open.
 
 Newer standalone results are described below: [observation and field-equation checks](#separate-observation-and-field-equation-checks), [Pair-25 origins](#separate-finite-origin-checks), [540/872 histories](#following-540-and-872), and [heat from writing](#heat-from-writing).
 
@@ -28,25 +28,25 @@ The **first three packages concern the seven-variable A/S model**. In its interp
 
 We start here because this smaller model separates three questions that recur later: **what follows from the rules, does a unique evolution exist, and which bounds persist?** Packages 1–3 address them in that order. Pair 25 introduces what observations can reveal; A/S introduces what can be proved about evolution under stated assumptions. The A/S results concern their own equations and do not verify the Pair 25 simulation.
 
-1. **[as-lean](as-lean/) — The basic rules.**
+1. **[AS](AS/) — The basic rules.**
 
    **Proved:** 30 consequences of the equations, including bounds on opening and reception, how an encounter updates understanding, and how adverse history affects exchange.
 
-   **Unfinished:** Constructing the full repeated-encounter process. The next two packages address evolution and bounds; the [later suppression proof](as-suppression-lean/) compares both S coordinates across complete evolving histories.
+   **Unfinished:** Constructing the full repeated-encounter process. The next two packages address evolution and bounds; the [later suppression proof](ASSuppression/) compares both S coordinates across complete evolving histories.
 
-2. **[as-existence-lean](as-existence-lean/) — The model has a definite evolution.**
+2. **[ASExistence](ASExistence/) — The model has a definite evolution.**
 
    **Proved:** Under the original assumptions, a solution exists and is unique over any chosen finite period. “Unique” means the same specified starting data and inputs determine the same evolution.
 
-   **Unfinished:** The repeated-encounter process, numerical solver error certification, and empirical validation. The [suppression comparison is now proved](as-suppression-lean/).
+   **Unfinished:** The repeated-encounter process, numerical solver error certification, and empirical validation. The [suppression comparison is now proved](ASSuppression/).
 
-3. **[as-invariance-lean](as-invariance-lean/) — Certain quantities stay within their allowed ranges.**
+3. **[ASInvariance](ASInvariance/) — Certain quantities stay within their allowed ranges.**
 
    **Proved:** Both meaning variables remain between 0 and 1, and both adverse-history loads remain nonnegative, under the original assumptions.
 
-   **Unfinished:** The repeated-encounter process and comparisons of meaning, reception and understanding. The [suppression proof](as-suppression-lean/) now compares the two S coordinates throughout each finite interval.
+   **Unfinished:** The repeated-encounter process and comparisons of meaning, reception and understanding. The [suppression proof](ASSuppression/) now compares the two S coordinates throughout each finite interval.
 
-**A/S follow-up — [Suppression across evolving histories](as-suppression-lean/).**
+**A/S follow-up — [Suppression across evolving histories](ASSuppression/).**
 
 **Proved:** With matched starting data and inputs, both S coordinates remain at or below their values without suppression at every time in each finite interval.
 
@@ -56,21 +56,21 @@ The **next two concern particular reduced Hug models**.
 
 After A/S, we ask the same questions in models involving pressure, shape, guards and energy: **which component rules hold, and can a specified model evolve uniquely while keeping its guards within bounds?** Package 4 checks particular properties and limitations; package 5 answers the evolution question for the specified eight-variable model. These packages have their own equations and assumptions. The full unforced continuum and separate memory-field evolution remain unfinished; the spatial questions follow in packages 6–9.
 
-4. **[hug-squeeze-lean](hug-squeeze-lean/) — Pressure, shape, guards and energy.**
+4. **[HugSqueeze](HugSqueeze/) — Pressure, shape, guards and energy.**
 
    **Proved:** 51 specified properties, including pressure-response formulas, retention, reversible geometric transformations, guard bounds and energy accounting. It also proves limitations: a numerical “connected” flag can allow a small gap, and the active model can gain energy.
 
    **Energy-chart connection:** The supplied chart, “Where the extra driving work goes”, illustrates **extra work = extra dissipated energy + stored-energy difference**. At `t = 2`, its labels show about 15 extra units of work, split into 13.5 dissipated and 1.5 stored. More work need not remain as stored energy.
 
-   The [checked energy results](hug-squeeze-lean/ActiveHugSolution.lean#L51) establish an exact energy balance and nonnegative losses for this package’s reduced active Hug model, under their stated assumptions; active power can exceed those losses. **The chart’s curves and numbers have not been verified against these equations or by Lean.**
+   The [checked energy results](HugSqueeze/ActiveHugSolution.lean#L51) establish an exact energy balance and nonnegative losses for this package’s reduced active Hug model, under their stated assumptions; active power can exceed those losses. **The chart’s curves and numbers have not been verified against these equations or by Lean.**
 
    **Unfinished:** The full separate memory-field evolution, long-term synchronization and recovery claims. The next package supplies an existence result for a particular reduced model.
 
-5. **[hug-existence-lean](hug-existence-lean/) — The reduced eight-variable Hug model can evolve consistently.**
+5. **[HugExistence](HugExistence/) — The reduced eight-variable Hug model can evolve consistently.**
 
    **Proved:** Existence, uniqueness and preservation of the allowed guard ranges over any finite forward period, with the specified fixed parameters, continuous prescribed force and admissible initial guards.
 
-   **What “full coupled” means:** The [theorem](hug-existence-lean/HugExistenceSolution.lean) covers all eight equations together: displacement, velocity, two mechanical strains, two participant states and two guards. Under the assumptions above, a solution exists over any finite forward period, and two solutions with the same starting state and prescribed force agree throughout that period. Both guards stay between 0 and 1. **“Full” refers to this specified eight-variable model.** The [full spatial evolution](hug-navier-wellposedness-lean/PROOF-STATUS.md) and [separate memory-field evolution](hug-squeeze-lean/README.md#what-remains-unproved-or-untested) remain unfinished.
+   **What “full coupled” means:** The [theorem](HugExistence/HugExistenceSolution.lean) covers all eight equations together: displacement, velocity, two mechanical strains, two participant states and two guards. Under the assumptions above, a solution exists over any finite forward period, and two solutions with the same starting state and prescribed force agree throughout that period. Both guards stay between 0 and 1. **“Full” refers to this specified eight-variable model.** The [full spatial evolution](HugNavierWellposedness/PROOF-STATUS.md) and [separate memory-field evolution](HugSqueeze/README.md#what-remains-unproved-or-untested) remain unfinished.
 
    **Unfinished:** The separate memory-field extension and broader long-term claims. This result belongs to that reduced implementation; NousVolition’s intended unforced continuum system retains its own proof obligations.
 
@@ -78,7 +78,7 @@ Packages **6–9 approach the spatial Hug–Navier problem**. Package 5 follows 
 
 The numbering follows the investigation. Packages 6–7 preserve an earlier comparison between the reduced model and a field model; packages 8–9 examine the shared spatial equations themselves. NousVolition’s intended Hug–Navier formulation remains **one continuing system**. The earlier comparison’s mathematical results retain their stated scope, while its interpretation was subsequently corrected. Read the [single-system scope correction](../research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations).
 
-6. **[hug-navier-bridge-lean](hug-navier-bridge-lean/) — Checking a proposed connection.**
+6. **[HugNavierBridge](HugNavierBridge/) — Checking a proposed connection.**
 
    This tests when selected parts of the reduced model and a field model agree under a specified comparison.
 
@@ -86,7 +86,7 @@ The numbering follows the investigation. Packages 6–7 preserve an earlier comp
 
    **Unfinished:** A complete evolving spatial solution. Matching some rates or losses does not establish the whole evolution. These results concern the particular comparison’s assumptions; they do not establish that the intended single system lacks a connection.
 
-7. **[hug-navier-full-audit-lean](hug-navier-full-audit-lean/) — Checking what that comparison establishes.**
+7. **[HugNavierFullAudit](HugNavierFullAudit/) — Checking what that comparison establishes.**
 
    This examines the force, energy and state relationships more closely.
 
@@ -94,27 +94,27 @@ The numbering follows the investigation. Packages 6–7 preserve an earlier comp
 
    **Unfinished:** Full evolution and uniqueness for the earlier proposed construction. Its interface requirements belong to that construction; they do not establish that the intended single continuum lacks a connection.
 
-8. **[hug-navier-single-system-lean](hug-navier-single-system-lean/) — Working directly with the spatial equations.**
+8. **[HugNavierSingleSystem](HugNavierSingleSystem/) — Working directly with the spatial equations.**
 
    The recorded spatial realization has six evolving fields: two velocity components, two participant-state fields and two directional guards, with pressure enforcing incompressibility.
 
-   **Proved:** Ten checks: seven concerning this formulation and three concerning the separately preserved original A/S branch. They include the starting flow’s zero divergence, the correct expansion of variable stress, and conditions under which guard rates point back into their allowed range. The [detailed results](hug-navier-single-system-lean/RESULTS.md) state each check’s assumptions and limits.
+   **Proved:** Ten checks: seven concerning this formulation and three concerning the separately preserved original A/S branch. They include the starting flow’s zero divergence, the correct expansion of variable stress, and conditions under which guard rates point back into their allowed range. The [detailed results](HugNavierSingleSystem/RESULTS.md) state each check’s assumptions and limits.
 
    **Unfinished:** Constructing the full spatial solution, proving uniqueness, showing that guards stay within bounds throughout evolution, and obtaining the estimates needed to continue the solution over the requested time interval. A verified inward-pointing rate is an ingredient in the guard-bound proof.
 
-9. **[hug-navier-wellposedness-lean](hug-navier-wellposedness-lean/) — Tackling the estimates needed for evolution.**
+9. **[HugNavierWellposedness](HugNavierWellposedness/) — Tackling the estimates needed for evolution.**
 
    Spatial variation creates an additional difficulty: **a field can change very little in value while changing sharply across space**. Consequently, the eight-variable existence argument cannot simply be reused without controlling spatial derivatives.
 
-   **Proved:** Four diagnostic results establish this obstacle. Six additional guard-transport theorems provide identities, bounds and a cancellation used when comparing candidate solutions, under their stated assumptions. These ten results have a [separate verification record](hug-navier-wellposedness-lean/evidence-linux/source.json); the 19-package recheck above covered the four diagnostics.
+   **Proved:** Four diagnostic results establish this obstacle. Six additional guard-transport theorems provide identities, bounds and a cancellation used when comparing candidate solutions, under their stated assumptions. These ten results have a [separate verification record](HugNavierWellposedness/evidence-linux/source.json); the 19-package recheck above covered the four diagnostics.
 
-   **Unfinished:** Full spatial existence, continuation to every requested finite horizon, and uniqueness. Parts of a written classical uniqueness argument are now formalized; the complete argument remains uncertified by Lean. The [proof-status page](hug-navier-wellposedness-lean/PROOF-STATUS.md) identifies the remaining work.
+   **Unfinished:** Full spatial existence, continuation to every requested finite horizon, and uniqueness. Parts of a written classical uniqueness argument are now formalized; the complete argument remains uncertified by Lean. The [proof-status page](HugNavierWellposedness/PROOF-STATUS.md) identifies the remaining work.
 
 Packages **10–17 concern Hug v3’s evolution, memory writes, transfer and delays**. They follow the spatial discussion because **evolution also has to account for what gets recorded, what remains readable, and how earlier events affect later ones**. A write can change the material state abruptly; retrieval can influence another encounter; a delay changes which past state an equation reads.
 
 This is the order of the investigation. The spatial proof remains unfinished, and these packages concern the selected **finite Hug v3 realization and its extensions**. Here, “hybrid” means continuous evolution interrupted by discrete events such as writing a memory.
 
-10. **[hug-v3-proof-attempt](hug-v3-proof-attempt/) — Recognizing that writing is an event.**
+10. **[HugV3ProofAttempt](HugV3ProofAttempt/) — Recognizing that writing is an event.**
 
     A stored record can change abruptly at a write, so one smooth trajectory across every write would be the wrong mathematical target.
 
@@ -122,7 +122,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** Proving that the complete trajectory exists, reaches those writes and supplies the required conditions, together with full correspondence to program execution. A jump does not itself prevent a valid evolution with events.
 
-11. **[hug-v3-hybrid-lean](hug-v3-hybrid-lean/) — Joining the stretches between writes.**
+11. **[HugV3Hybrid](HugV3Hybrid/) — Joining the stretches between writes.**
 
     This supplies a general way to join continuous evolution with discrete updates.
 
@@ -130,7 +130,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** Establishing those assumptions for the actual full equations, initial state, captures and writer. Segment solvability and uniqueness are hypotheses here, not achievements for the source model.
 
-12. **[hug-v3-source-lean](hug-v3-source-lean/) — Connecting the mathematics to the selected source.**
+12. **[HugV3Source](HugV3Source/) — Connecting the mathematics to the selected source.**
 
     This gives an exact-real transcription of the fixed-grid model, including its coupled state and events.
 
@@ -138,7 +138,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** Full evolution, successful writing and recovery, and a proof that the transcription corresponds to Python’s floating-point execution. A fixed-grid result also leaves the spatial continuum question open.
 
-13. **[hug-v3-transfer-lean](hug-v3-transfer-lean/) — Tracing influence into another encounter.**
+13. **[HugV3Transfer](HugV3Transfer/) — Tracing influence into another encounter.**
 
     A record retains its original participants, while its influence can pass through shared state into a later relationship.
 
@@ -146,7 +146,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** Showing the complete causal transfer unfolds along actual admissible trajectories within finite time, through the required events and writes. A favorable instantaneous rate comparison does not prove a later threshold crossing.
 
-14. **[hug-v3-delay-lean](hug-v3-delay-lean/) — Specifying which time gets read.**
+14. **[HugV3Delay](HugV3Delay/) — Specifying which time gets read.**
 
     This introduces a fixed-delay extension: social rates combine present physical information and records with buffered social state.
 
@@ -154,7 +154,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** A complete delayed evolution theorem, preservation of bounds, stability and correct handling of delayed discontinuities.
 
-15. **[hug-v3-full-delay-proof](hug-v3-full-delay-proof/) — Constructing a local delayed solution conditionally.**
+15. **[HugV3FullDelayProof](HugV3FullDelayProof/) — Constructing a local delayed solution conditionally.**
 
     This goes beyond timing identities.
 
@@ -162,7 +162,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** Deriving those assumptions for the actual trajectory, establishing memory readability, continuing through every required interval and proving every write succeeds. **“Full” in the filename does not mean the complete target is proved.**
 
-16. **[hug-v3-memory-rules-lean](hug-v3-memory-rules-lean/) — Checking what retrieval actually preserves.**
+16. **[HugV3MemoryRules](HugV3MemoryRules/) — Checking what retrieval actually preserves.**
 
     This examines attribution, missing or conflicting accounts, weighted records and changing relevance.
 
@@ -170,7 +170,7 @@ This is the order of the investigation. The spatial proof remains unfinished, an
 
     **Unfinished:** Several fuller mechanisms still need specification: variable timing, partial or mixed reconstruction with provenance, new solo episodes and anticipation-effort accounting. Full hybrid delayed existence and uniqueness also remain unproved.
 
-17. **[hug-v3-clay-boundary-lean](hug-v3-clay-boundary-lean/) — Keeping records readable while material changes.**
+17. **[HugV3ClayBoundary](HugV3ClayBoundary/) — Keeping records readable while material changes.**
 
     This examines preservation of encoded records as the material adapts.
 
@@ -201,19 +201,19 @@ The review checked saved data and final-state readback; it **did not rerun the f
 
 The **last two examine the wider comparisons and supplied proof arguments**. After the model, spatial and memory packages, they ask how far the proposed connections and existing arguments actually reach. They finish this reading path by identifying what survives those checks and where the claims stop. The full-system existence and uniqueness proof remains unfinished.
 
-18. **[hug-v3-yang-mills-audit-lean](hug-v3-yang-mills-audit-lean/) — Which changes preserve the model's readings?**
+18. **[HugV3YangMillsAudit](HugV3YangMillsAudit/) — Which changes preserve the model's readings?**
 
     This audit starts from the Hug v3 definitions and examines specified transformations. Rotating the fabric without changing its stretch preserves Green strain, a measure of deformation. Under the stated conditions, that sameness carries through to particular observations, retrieval, responses and memory-write behavior.
 
-    **Proved:** 20 statements about strain, changes of frame and evolution, including a limit: rotating only the fabric while holding the flow fixed need not preserve the deformation evolution. Preserving a reading therefore does not automatically make the transformation a symmetry of the complete dynamics. [Exact comparisons and assumptions](hug-v3-yang-mills-audit-lean/AUDIT.md).
+    **Proved:** 20 statements about strain, changes of frame and evolution, including a limit: rotating only the fabric while holding the flow fixed need not preserve the deformation evolution. Preserving a reading therefore does not automatically make the transformation a symmetry of the complete dynamics. [Exact comparisons and assumptions](HugV3YangMillsAudit/AUDIT.md).
 
     **Unfinished:** A full Yang–Mills connection, curvature and field-equation structure within Hug; equivalence of the dynamics; and full hybrid or delayed evolution. No quantum mass-gap theorem is established. This audit retains its own scope and verification record, separate from the two observation examples below.
 
-19. **[hug-v3-gemini-review](hug-v3-gemini-review/) — How much do the supplied arguments establish?**
+19. **[HugV3GeminiReview](HugV3GeminiReview/) — How much do the supplied arguments establish?**
 
     This review checks four supplied Lean modules, repairing imports and proof steps while retaining their theorem statements. Their results include component bounds, event results and a limited delayed uniqueness argument.
 
-    **Proved:** 77 statements under their stated assumptions. The delayed uniqueness result says that **two already-existing seven-variable A/S solutions**, with the same parameters, inputs and past history, agree over the **first delay interval**. The needed delayed values come from that shared history. This result does not construct either solution or include the full physical state. [Detailed proof review](hug-v3-gemini-review/Lean-review.md).
+    **Proved:** 77 statements under their stated assumptions. The delayed uniqueness result says that **two already-existing seven-variable A/S solutions**, with the same parameters, inputs and past history, agree over the **first delay interval**. The needed delayed values come from that shared history. This result does not construct either solution or include the full physical state. [Detailed proof review](HugV3GeminiReview/Lean-review.md).
 
     **Unfinished:** Full Hug v3 delayed evolution, continuation through all events, successful memory writes and the required state bounds. In particular, equal event outputs are proved assuming equal complete pre-event states; this does not establish that two full evolving paths reach those equal states. The 77 checked statements leave the larger existence and uniqueness problem open.
 
@@ -255,26 +255,26 @@ The geometry batch includes the collected `YangMillsCueTest` abelian field-equat
 
 | Package | Checked result and current limits | Evidence |
 | --- | --- | --- |
-| [as-lean](as-lean/) | 30 scoped A/S claims. Later [existence](as-existence-lean/), [invariance](as-invariance-lean/) and [suppression](as-suppression-lean/) results address evolution, bounds and S-history comparison. Repeated-encounter coupling remains open. | [fresh report](../provenance/core-package-recheck-2026-11-12/as-lean/verification-report.json) · [earlier](as-lean/verification-report.json) |
-| [as-existence-lean](as-existence-lean/) | Existence and uniqueness of the seven-coordinate continuous integral evolution on every finite interval, under the original assumptions. | [fresh report](../provenance/core-package-recheck-2026-11-12/as-existence-lean/verification-report.json) · [earlier](as-existence-lean/verification-report.json) |
-| [as-invariance-lean](as-invariance-lean/) | Both meaning states remain in [0,1] and both adverse-history loads remain nonnegative on every finite interval, under the original assumptions. | [fresh report](../provenance/core-package-recheck-2026-11-12/as-invariance-lean/verification-report.json) · [earlier](as-invariance-lean/verification-report.json) |
-| [as-suppression-lean](as-suppression-lean/) | Both suppressed S coordinates stay at or below their no-suppression counterparts throughout each finite interval, with matched starting data and inputs. Repeated encounters remain open. | [report](as-suppression-lean/verification-report.json) · [logs](as-suppression-lean/evidence-linux/) |
-| [hug-squeeze-lean](hug-squeeze-lean/) | 51 specified claims. [Later existence work](hug-existence-lean/) covers the primary eight-state model; the separate memory-field extension remains open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-squeeze-lean/verification-report.json) · [earlier](hug-squeeze-lean/verification-report.json) |
-| [hug-existence-lean](hug-existence-lean/) | Existence, uniqueness and guard preservation on every finite forward horizon for the reduced eight-state model, with frozen parameters, continuous prescribed force and admissible initial guards. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-existence-lean/verification-report.json) · [earlier](hug-existence-lean/verification-report.json) |
-| [hug-navier-bridge-lean](hug-navier-bridge-lean/) | 14 conditional compatibility statements for the earlier proposed coupling. Read the [single-system scope correction](../research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations); full PDE evolution remains unproved. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-navier-bridge-lean/verification-report.json) · [earlier](hug-navier-bridge-lean/verification-report.json) |
-| [hug-navier-full-audit-lean](hug-navier-full-audit-lean/) | 7 field/interface audit statements. The [later single-system correction](../research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations) revises that interpretation; full PDE evolution remains unproved. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-navier-full-audit-lean/verification-report.json) · [earlier](hug-navier-full-audit-lean/verification-report.json) |
-| [hug-navier-single-system-lean](hug-navier-single-system-lean/) | 10 identities and local checks for the six-field formulation. Full PDE existence, uniqueness and global guard invariance remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-navier-single-system-lean/verification-report.json) · [earlier](hug-navier-single-system-lean/verification-report.json) |
-| [hug-navier-wellposedness-lean](hug-navier-wellposedness-lean/) | 4 auxiliary well-posedness statements. Full PDE existence, continuation and uniqueness remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-navier-wellposedness-lean/verification-report.json) · [earlier](hug-navier-wellposedness-lean/verification-report.json) |
-| [hug-v3-proof-attempt](hug-v3-proof-attempt/) | 6 inter-event and write results under explicit event hypotheses. Full hybrid existence/uniqueness and execution correspondence remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-proof-attempt/verification-report.json) · [earlier](hug-v3-proof-attempt/verification-report.json) |
-| [hug-v3-hybrid-lean](hug-v3-hybrid-lean/) | 9 conditional assembly and event results. Actual segment solvability, successful admissible writes and full-rate uniqueness remain obligations. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-hybrid-lean/verification-report.json) · [earlier](hug-v3-hybrid-lean/verification-report.json) |
-| [hug-v3-source-lean](hug-v3-source-lean/) | 9 results for the exact-real fixed-grid transcription. Source-execution equivalence and successful continuation through every write remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-source-lean/verification-report.json) · [earlier](hug-v3-source-lean/verification-report.json) |
-| [hug-v3-transfer-lean](hug-v3-transfer-lean/) | 14 local transfer results under encounter and comparison hypotheses. End-to-end finite-time transfer and full existence/uniqueness remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-transfer-lean/verification-report.json) · [earlier](hug-v3-transfer-lean/verification-report.json) |
-| [hug-v3-delay-lean](hug-v3-delay-lean/) | 9 timing identities. Delay-equation existence, uniqueness, invariance and stability remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-delay-lean/verification-report.json) · [earlier](hug-v3-delay-lean/verification-report.json) |
-| [hug-v3-full-delay-proof](hug-v3-full-delay-proof/) | 14 conditional fixed-delay and hybrid results. Full-rate regularity, readability, successful writes and all-event continuation remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-full-delay-proof/verification-report.json) · [earlier](hug-v3-full-delay-proof/verification-report.json) |
-| [hug-v3-memory-rules-lean](hug-v3-memory-rules-lean/) | 17 retrieval, weighting, partner-identity and fixed-delay results. Variable timing, reconstructed episodes and anticipation accounting remain unspecified. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-memory-rules-lean/verification-report.json) · [earlier](hug-v3-memory-rules-lean/verification-report.json) |
-| [hug-v3-clay-boundary-lean](hug-v3-clay-boundary-lean/) | 17 results, including five new decoder-preservation lemmas. Full-rate existence, actual-trajectory bounds and write acceptance remain open. | [current report](hug-v3-clay-boundary-lean/verification-report.json) · [13 November proof change](../provenance/hug-v3-decoder-2026-11-13/README.md) · [12 November recheck of the original twelve](../provenance/core-package-recheck-2026-11-12/hug-v3-clay-boundary-lean/verification-report.json) |
-| [hug-v3-yang-mills-audit-lean](hug-v3-yang-mills-audit-lean/) | 20 strain, frame and evolution comparison statements, including `green_objective`. Full Yang–Mills structure, dynamical equivalence and a mass-gap theorem are not proved. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-yang-mills-audit-lean/verification-report.json) · [earlier](hug-v3-yang-mills-audit-lean/verification-report.json) · [recheck](../provenance/green-objective-2026-11-08/README.md) |
-| [hug-v3-gemini-review](hug-v3-gemini-review/) | 77 repaired supplied statements. Delayed uniqueness covers existing seven-coordinate A/S solutions on one delay interval; full Hug v3 delayed hybrid evolution remains open. | [fresh report](../provenance/core-package-recheck-2026-11-12/hug-v3-gemini-review/verification-report.json) · [earlier](hug-v3-gemini-review/verification-report.json) |
+| [AS](AS/) | 30 scoped A/S claims. Later [existence](ASExistence/), [invariance](ASInvariance/) and [suppression](ASSuppression/) results address evolution, bounds and S-history comparison. Repeated-encounter coupling remains open. | [fresh report](../provenance/core-package-recheck-2026-11-12/AS/verification-report.json) · [earlier](AS/verification-report.json) |
+| [ASExistence](ASExistence/) | Existence and uniqueness of the seven-coordinate continuous integral evolution on every finite interval, under the original assumptions. | [fresh report](../provenance/core-package-recheck-2026-11-12/ASExistence/verification-report.json) · [earlier](ASExistence/verification-report.json) |
+| [ASInvariance](ASInvariance/) | Both meaning states remain in [0,1] and both adverse-history loads remain nonnegative on every finite interval, under the original assumptions. | [fresh report](../provenance/core-package-recheck-2026-11-12/ASInvariance/verification-report.json) · [earlier](ASInvariance/verification-report.json) |
+| [ASSuppression](ASSuppression/) | Both suppressed S coordinates stay at or below their no-suppression counterparts throughout each finite interval, with matched starting data and inputs. Repeated encounters remain open. | [report](ASSuppression/verification-report.json) · [logs](ASSuppression/evidence-linux/) |
+| [HugSqueeze](HugSqueeze/) | 51 specified claims. [Later existence work](HugExistence/) covers the primary eight-state model; the separate memory-field extension remains open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugSqueeze/verification-report.json) · [earlier](HugSqueeze/verification-report.json) |
+| [HugExistence](HugExistence/) | Existence, uniqueness and guard preservation on every finite forward horizon for the reduced eight-state model, with frozen parameters, continuous prescribed force and admissible initial guards. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugExistence/verification-report.json) · [earlier](HugExistence/verification-report.json) |
+| [HugNavierBridge](HugNavierBridge/) | 14 conditional compatibility statements for the earlier proposed coupling. Read the [single-system scope correction](../research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations); full PDE evolution remains unproved. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugNavierBridge/verification-report.json) · [earlier](HugNavierBridge/verification-report.json) |
+| [HugNavierFullAudit](HugNavierFullAudit/) | 7 field/interface audit statements. The [later single-system correction](../research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations) revises that interpretation; full PDE evolution remains unproved. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugNavierFullAudit/verification-report.json) · [earlier](HugNavierFullAudit/verification-report.json) |
+| [HugNavierSingleSystem](HugNavierSingleSystem/) | 10 identities and local checks for the six-field formulation. Full PDE existence, uniqueness and global guard invariance remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugNavierSingleSystem/verification-report.json) · [earlier](HugNavierSingleSystem/verification-report.json) |
+| [HugNavierWellposedness](HugNavierWellposedness/) | 4 auxiliary well-posedness statements. Full PDE existence, continuation and uniqueness remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugNavierWellposedness/verification-report.json) · [earlier](HugNavierWellposedness/verification-report.json) |
+| [HugV3ProofAttempt](HugV3ProofAttempt/) | 6 inter-event and write results under explicit event hypotheses. Full hybrid existence/uniqueness and execution correspondence remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3ProofAttempt/verification-report.json) · [earlier](HugV3ProofAttempt/verification-report.json) |
+| [HugV3Hybrid](HugV3Hybrid/) | 9 conditional assembly and event results. Actual segment solvability, successful admissible writes and full-rate uniqueness remain obligations. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3Hybrid/verification-report.json) · [earlier](HugV3Hybrid/verification-report.json) |
+| [HugV3Source](HugV3Source/) | 9 results for the exact-real fixed-grid transcription. Source-execution equivalence and successful continuation through every write remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3Source/verification-report.json) · [earlier](HugV3Source/verification-report.json) |
+| [HugV3Transfer](HugV3Transfer/) | 14 local transfer results under encounter and comparison hypotheses. End-to-end finite-time transfer and full existence/uniqueness remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3Transfer/verification-report.json) · [earlier](HugV3Transfer/verification-report.json) |
+| [HugV3Delay](HugV3Delay/) | 9 timing identities. Delay-equation existence, uniqueness, invariance and stability remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3Delay/verification-report.json) · [earlier](HugV3Delay/verification-report.json) |
+| [HugV3FullDelayProof](HugV3FullDelayProof/) | 14 conditional fixed-delay and hybrid results. Full-rate regularity, readability, successful writes and all-event continuation remain open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3FullDelayProof/verification-report.json) · [earlier](HugV3FullDelayProof/verification-report.json) |
+| [HugV3MemoryRules](HugV3MemoryRules/) | 17 retrieval, weighting, partner-identity and fixed-delay results. Variable timing, reconstructed episodes and anticipation accounting remain unspecified. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3MemoryRules/verification-report.json) · [earlier](HugV3MemoryRules/verification-report.json) |
+| [HugV3ClayBoundary](HugV3ClayBoundary/) | 17 results, including five new decoder-preservation lemmas. Full-rate existence, actual-trajectory bounds and write acceptance remain open. | [current report](HugV3ClayBoundary/verification-report.json) · [13 November proof change](../provenance/hug-v3-decoder-2026-11-13/README.md) · [12 November recheck of the original twelve](../provenance/core-package-recheck-2026-11-12/HugV3ClayBoundary/verification-report.json) |
+| [HugV3YangMillsAudit](HugV3YangMillsAudit/) | 20 strain, frame and evolution comparison statements, including `green_objective`. Full Yang–Mills structure, dynamical equivalence and a mass-gap theorem are not proved. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3YangMillsAudit/verification-report.json) · [earlier](HugV3YangMillsAudit/verification-report.json) · [recheck](../provenance/green-objective-2026-11-08/README.md) |
+| [HugV3GeminiReview](HugV3GeminiReview/) | 77 repaired supplied statements. Delayed uniqueness covers existing seven-coordinate A/S solutions on one delay interval; full Hug v3 delayed hybrid evolution remains open. | [fresh report](../provenance/core-package-recheck-2026-11-12/HugV3GeminiReview/verification-report.json) · [earlier](HugV3GeminiReview/verification-report.json) |
 
 </details>
 
@@ -320,30 +320,30 @@ Each directory below is a separate Lake project. From that directory, use its pi
 
 | Package | Comparator targets | Saved verification |
 | --- | ---: | --- |
-| [clay-problems-lean-audit](clay-problems-lean-audit/) | 3 | [Verification report](clay-problems-lean-audit/verification-report.json) |
-| [fabric-frame-transition-audit](fabric-frame-transition-audit/) | 7 | [Verification report](fabric-frame-transition-audit/verification-report.json) |
-| [hearth-wizard-lean](hearth-wizard-lean/) | 22 | [Verification report](hearth-wizard-lean/verification-report.json) |
-| [hug-v3-apple-band-lean](hug-v3-apple-band-lean/) | 15 | [Verification report](hug-v3-apple-band-lean/verification-report.json) |
-| [hug-v3-apple-existence-lean](hug-v3-apple-existence-lean/) | 13 | [Verification report](hug-v3-apple-existence-lean/verification-report.json) |
-| [hug-v3-bridge-return-lean](hug-v3-bridge-return-lean/) | 18 | [Verification report](hug-v3-bridge-return-lean/verification-report.json) |
-| [hug-v3-child-access-lean](hug-v3-child-access-lean/) | 13 | [Verification report](hug-v3-child-access-lean/verification-report.json) |
-| [hug-v3-child-account-lean](hug-v3-child-account-lean/) | 14 | [Verification report](hug-v3-child-account-lean/verification-report.json) |
-| [hug-v3-child-witness-lean](hug-v3-child-witness-lean/) | 20 | [Verification report](hug-v3-child-witness-lean/verification-report.json) |
-| [hug-v3-coexistence-lean](hug-v3-coexistence-lean/) | 12 | [Verification report](hug-v3-coexistence-lean/verification-report.json) |
-| [hug-v3-courier-weaver-lean](hug-v3-courier-weaver-lean/) | 13 | [Verification report](hug-v3-courier-weaver-lean/verification-report.json) |
-| [hug-v3-full-covariance-lean](hug-v3-full-covariance-lean/) | 26 | [Verification report](hug-v3-full-covariance-lean/verification-report.json) |
-| [hug-v3-hearth-readout-lean](hug-v3-hearth-readout-lean/) | 12 | [Verification report](hug-v3-hearth-readout-lean/verification-report.json) |
-| [hug-v3-joint-frame-lean](hug-v3-joint-frame-lean/) | 31 | [Verification report](hug-v3-joint-frame-lean/verification-report.json) |
-| [hug-v3-o-rumination-lean](hug-v3-o-rumination-lean/) | 12 | [Verification report](hug-v3-o-rumination-lean/verification-report.json) |
-| [hug-v3-occupied-space-lean](hug-v3-occupied-space-lean/) | 15 | [Verification report](hug-v3-occupied-space-lean/verification-report.json) |
-| [hug-v3-paint-value-lean](hug-v3-paint-value-lean/) | 19 | [Verification report](hug-v3-paint-value-lean/verification-report.json) |
-| [hug-v3-street-whole-lean](hug-v3-street-whole-lean/) | 22 | [Verification report](hug-v3-street-whole-lean/verification-report.json) |
-| [mira-local-paths-lean](mira-local-paths-lean/) | 18 | [Verification report](mira-local-paths-lean/verification-report.json) |
-| [person-environment-pnp-lean](person-environment-pnp-lean/) | 21 | [Verification report](person-environment-pnp-lean/verification-report.json) |
-| [SIMS two memories and the restaurant meeting](sims-meeting-thread-lean/) | 90 | [Verification report](sims-meeting-thread-lean/verification-report.json) |
-| [Traveller B’s first thoughts, fresh listeners and one continuing encounter](sims-mentor-first-thought-lean/) | 20 | [Verification report](sims-mentor-first-thought-lean/verification-report.json) |
-| [Fourth write on the Hug prime meter](hug-prime-meter-lean/) | 9 | [Verification report](hug-prime-meter-lean/verification-report.json) |
-| [Original two-memory transport and supporting lemmas](original-two-memory-transport-lean/) | 16 | [Verification report](original-two-memory-transport-lean/verification-report.json) |
+| [ClayProblemsAudit](ClayProblemsAudit/) | 3 | [Verification report](ClayProblemsAudit/verification-report.json) |
+| [FabricFrameTransitionAudit](FabricFrameTransitionAudit/) | 7 | [Verification report](FabricFrameTransitionAudit/verification-report.json) |
+| [HearthWizard](HearthWizard/) | 22 | [Verification report](HearthWizard/verification-report.json) |
+| [HugV3AppleBand](HugV3AppleBand/) | 15 | [Verification report](HugV3AppleBand/verification-report.json) |
+| [HugV3AppleExistence](HugV3AppleExistence/) | 13 | [Verification report](HugV3AppleExistence/verification-report.json) |
+| [HugV3BridgeReturn](HugV3BridgeReturn/) | 18 | [Verification report](HugV3BridgeReturn/verification-report.json) |
+| [HugV3ChildAccess](HugV3ChildAccess/) | 13 | [Verification report](HugV3ChildAccess/verification-report.json) |
+| [HugV3ChildAccount](HugV3ChildAccount/) | 14 | [Verification report](HugV3ChildAccount/verification-report.json) |
+| [HugV3ChildWitness](HugV3ChildWitness/) | 20 | [Verification report](HugV3ChildWitness/verification-report.json) |
+| [HugV3Coexistence](HugV3Coexistence/) | 12 | [Verification report](HugV3Coexistence/verification-report.json) |
+| [HugV3CourierWeaver](HugV3CourierWeaver/) | 13 | [Verification report](HugV3CourierWeaver/verification-report.json) |
+| [HugV3FullCovariance](HugV3FullCovariance/) | 26 | [Verification report](HugV3FullCovariance/verification-report.json) |
+| [HugV3HearthReadout](HugV3HearthReadout/) | 12 | [Verification report](HugV3HearthReadout/verification-report.json) |
+| [HugV3JointFrame](HugV3JointFrame/) | 31 | [Verification report](HugV3JointFrame/verification-report.json) |
+| [HugV3ORumination](HugV3ORumination/) | 12 | [Verification report](HugV3ORumination/verification-report.json) |
+| [HugV3OccupiedSpace](HugV3OccupiedSpace/) | 15 | [Verification report](HugV3OccupiedSpace/verification-report.json) |
+| [HugV3PaintValue](HugV3PaintValue/) | 19 | [Verification report](HugV3PaintValue/verification-report.json) |
+| [HugV3StreetWhole](HugV3StreetWhole/) | 22 | [Verification report](HugV3StreetWhole/verification-report.json) |
+| [MiraLocalPaths](MiraLocalPaths/) | 18 | [Verification report](MiraLocalPaths/verification-report.json) |
+| [PersonEnvironmentPNP](PersonEnvironmentPNP/) | 21 | [Verification report](PersonEnvironmentPNP/verification-report.json) |
+| [SIMS two memories and the restaurant meeting](SimsMeetingThread/) | 90 | [Verification report](SimsMeetingThread/verification-report.json) |
+| [Traveller B’s first thoughts, fresh listeners and one continuing encounter](SimsMentorFirstThought/) | 20 | [Verification report](SimsMentorFirstThought/verification-report.json) |
+| [Fourth write on the Hug prime meter](HugPrimeMeter/) | 9 | [Verification report](HugPrimeMeter/verification-report.json) |
+| [Original two-memory transport and supporting lemmas](OriginalTwoMemoryTransport/) | 16 | [Verification report](OriginalTwoMemoryTransport/verification-report.json) |
 
 The apple existence package records a conditional schedule theorem. Unconditional existence and uniqueness through all three memory writes remains open. Files kept in original, portable, references and reference-history directories retain their separate roles.
 
@@ -366,7 +366,7 @@ To replay a package, start with a clean package checkout on Linux with the pinne
 ~~~bash
 set -euo pipefail
 repo=$PWD
-pkg=hug-v3-apple-existence-lean
+pkg=HugV3AppleExistence
 scratch=$(mktemp -d)
 bash scripts/build-comparator-tools.sh "$scratch/tools"
 cd "lean/$pkg"
@@ -380,12 +380,12 @@ python3 "$repo/scripts/lean_package_report.py" ci-report . "$scratch/evidence"
 
 Comparator runs before the local solution build. It compares the challenge and solution declarations and exports the solution for nanoda and the default Lean kernel. The default Apple build now builds the solution; its reference remains available as an explicit Comparator target. The axiom file lists the dependencies Lean reported for each named theorem. [Pinned Comparator documentation](https://github.com/leanprover/comparator/blob/19e111e2141cf333c7daff0f64c5f24acc91dd2e/README.md)
 
-Each `verification-report.json` contains exactly six fields. `comparator`, `lean_kernel`, `nanoda`, `lean_build` record the outcomes of the four checks. PASS requires explicit successful evidence, FAIL records a reported failure, NOT_RUN means there is no record that the check ran, and UNKNOWN means the available evidence cannot settle its outcome. `scope` describes the result, and `open_items` lists claims outside that result. Each package’s checked-in report reflects its saved Linux run. The 39 packages standardized together archive their prior reports in `evidence-linux/historical-report.json`. The SIMS meeting package keeps its earlier [49-target](sims-meeting-thread-lean/evidence-history/pr-4/), [58-target](sims-meeting-thread-lean/evidence-history/pr-5/), [65-target](sims-meeting-thread-lean/evidence-history/pr-6/) and [76-target](sims-meeting-thread-lean/evidence-history/pr-8/) receipts in its evidence history. Fresh CI reports and their logs are attached to the corresponding workflow run.
+Each `verification-report.json` contains exactly six fields. `comparator`, `lean_kernel`, `nanoda`, `lean_build` record the outcomes of the four checks. PASS requires explicit successful evidence, FAIL records a reported failure, NOT_RUN means there is no record that the check ran, and UNKNOWN means the available evidence cannot settle its outcome. `scope` describes the result, and `open_items` lists claims outside that result. Each package’s checked-in report reflects its saved Linux run. The 39 packages standardized together archive their prior reports in `evidence-linux/historical-report.json`. The SIMS meeting package keeps its earlier [49-target](SimsMeetingThread/evidence-history/pr-4/), [58-target](SimsMeetingThread/evidence-history/pr-5/), [65-target](SimsMeetingThread/evidence-history/pr-6/) and [76-target](SimsMeetingThread/evidence-history/pr-8/) receipts in its evidence history. Fresh CI reports and their logs are attached to the corresponding workflow run.
 
 
 ## Viscous time reversal
 
-[viscous-time-reversal-lean](viscous-time-reversal-lean/) states viscous time reversal in the mentor and student model in 37 scoped statements: the time-reversal chain rule, scalar Fourier-mode damping and amplification, the effect of changing both step and viscosity signs, and their form around the 0,0 split for shares, gap/touch/overlap, the tick 23 freeze and the wall viscosity. It uses the standard Comparator and two-kernel workflow above. The [tree](viscous-time-reversal-lean/TREE.md) gives each statement its own page, with plain-words versions in nine languages and Lean, ASCII and LaTeX forms; only the Lean files are checked. All 37 passed Comparator, Lean’s kernel, nanoda, the default build and the axiom check; the [report](viscous-time-reversal-lean/verification-report.json) and [saved Linux evidence](viscous-time-reversal-lean/evidence-linux/source.json) are in the package. The package README distinguishes these statements from the full coupled solver.
+[ViscousTimeReversal](ViscousTimeReversal/) states viscous time reversal in the mentor and student model in 37 scoped statements: the time-reversal chain rule, scalar Fourier-mode damping and amplification, the effect of changing both step and viscosity signs, and their form around the 0,0 split for shares, gap/touch/overlap, the tick 23 freeze and the wall viscosity. It uses the standard Comparator and two-kernel workflow above. The [tree](ViscousTimeReversal/TREE.md) gives each statement its own page, with plain-words versions in nine languages and Lean, ASCII and LaTeX forms; only the Lean files are checked. All 37 passed Comparator, Lean’s kernel, nanoda, the default build and the axiom check; the [report](ViscousTimeReversal/verification-report.json) and [saved Linux evidence](ViscousTimeReversal/evidence-linux/source.json) are in the package. The package README distinguishes these statements from the full coupled solver.
 
 ## Standalone Lean-kernel checks
 

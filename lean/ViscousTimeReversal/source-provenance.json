@@ -1,0 +1,107 @@
+{
+  "copied_files": {
+    "MentorStudentModel.lean": {
+      "source": "lean/mentor-student-lean/MentorStudentModel.lean (mentor-student package, not published in this repository)",
+      "source_sha256": "6e9ab8fa24a3cd8f36786261b87d0a388e61d61acebd663670c9f63d6a9aabea",
+      "sha256": "05ef696788f1e8d790d57922dac8687cc449945f8f5652833a6058bbb8ad7ad5",
+      "definitions_unchanged": true,
+      "differs_only_in": "comments and docstrings"
+    },
+    "FullModel.lean": {
+      "source": "lean/HugNavierSingleSystem/FullModel.lean",
+      "source_commit": "b0ac331d38da8131002d5abace1190f031248cb8",
+      "source_sha256": "edbb83823ea0b59fb76477166c3b5020f8de549ef7da3ff81cdb451f213d9723",
+      "sha256": "928e00f664817fe3c85144265ff824d7014334b1866d4904741f8d367a2119c6",
+      "definitions_unchanged": true,
+      "differs_only_in": "one comment line; line endings are LF instead of CRLF"
+    },
+    "HugWallPushDefinitions.lean": {
+      "source": "lean/HugWallPush/HugWallPushDefinitions.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "c69bcc6d1173459f276ee7dd24e1c14f9d215be0a657ab95925c58ffdadf61b7",
+      "sha256": "c69bcc6d1173459f276ee7dd24e1c14f9d215be0a657ab95925c58ffdadf61b7",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    },
+    "HugWallPushProofs.lean": {
+      "source": "lean/HugWallPush/HugWallPushProofs.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "0b79eb5539790a55dc0ff1d6abaf6f64cd4b6c10357c348c6c2906f3e11f2f52",
+      "sha256": "0b79eb5539790a55dc0ff1d6abaf6f64cd4b6c10357c348c6c2906f3e11f2f52",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    },
+    "V3SourceCore.lean": {
+      "source": "lean/HugV3Source/V3SourceCore.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "d32dbdc25d512c66f0f7c4b6ce3e9a1aaa2fd44ec472fa7672c51fd2b5a5ac27",
+      "sha256": "d32dbdc25d512c66f0f7c4b6ce3e9a1aaa2fd44ec472fa7672c51fd2b5a5ac27",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    },
+    "V3SourceMemory.lean": {
+      "source": "lean/HugV3Source/V3SourceMemory.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "77e3e4859708781de92993596004defadd4e77b61f27d452b39bd6b9c0245e07",
+      "sha256": "77e3e4859708781de92993596004defadd4e77b61f27d452b39bd6b9c0245e07",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    },
+    "V3SourceSocial.lean": {
+      "source": "lean/HugV3Source/V3SourceSocial.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "1f968992f77d8be1d9379532a613816b58dac6d924c2a4ebff475ff9e9d92007",
+      "sha256": "1f968992f77d8be1d9379532a613816b58dac6d924c2a4ebff475ff9e9d92007",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    },
+    "V3SourceFlow.lean": {
+      "source": "lean/HugV3Source/V3SourceFlow.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "6d0de72dd9ea0f2b72d612ae0bb79f05c1c215a3785c2f380b9a04681c35e651",
+      "sha256": "6d0de72dd9ea0f2b72d612ae0bb79f05c1c215a3785c2f380b9a04681c35e651",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    },
+    "V3SourceGeometry.lean": {
+      "source": "lean/HugV3Source/V3SourceGeometry.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "f0a7190864ae211ed9b141000dcc060f7ecf8d3f0f9141d43ccf0c3dc518304f",
+      "sha256": "9743ee670643f6b1c96b6f6d09b537dae06952c9bf791665d91b8f8f3835f7b9",
+      "definitions_unchanged": true,
+      "differs_only_in": "line endings are LF instead of CRLF (this package's .gitattributes); otherwise byte-for-byte"
+    },
+    "V3SourceSystem.lean": {
+      "source": "lean/HugV3Source/V3SourceSystem.lean",
+      "source_commit": "161f8e03d708c3a1090d80faaa778b81c6c2b4ef",
+      "source_sha256": "7d7fe007bbb2a9197563f6d755190e89fdc7ede96c42d8e3e6539960773a673d",
+      "sha256": "7d7fe007bbb2a9197563f6d755190e89fdc7ede96c42d8e3e6539960773a673d",
+      "definitions_unchanged": true,
+      "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
+    }
+  },
+  "added_files": {
+    "ViscousTimeReversalPoincareDefinitions.lean, ViscousTimeReversalPoincareChallenge.lean, ViscousTimeReversalPoincareProofs.lean": {
+      "source": "discrete-poincare-lean/Poincare.lean",
+      "source_sha256": "e4a76d125f57885221ac70ed59749b9ea12143bcbca3a71c56e74ee6c05b4fd0",
+      "changes": "split into definitions, statements and proofs; imports changed; statements, proofs and docstrings unchanged"
+    },
+    "ViscousTimeReversalWirtingerDefinitions.lean, ViscousTimeReversalWirtingerChallenge.lean, ViscousTimeReversalWirtingerProofs.lean": {
+      "source": "cycle-wirtinger-lean/Wirtinger.lean",
+      "source_sha256": "37cd9d37bc25ba9ec776accc23631b645f7d57f3932973ffbc850d06daa1546a",
+      "changes": "split into definitions, statements and proofs; imports changed; statements unchanged; two proof-only repairs",
+      "repairs": [
+        {
+          "where": "ortho, proof line",
+          "before": "  rw [AddChar.sum_mulShift m (ZMod.isPrimitive_stdAddChar n), ZMod.card]",
+          "after": "  rw [AddChar.sum_mulShift m (ZMod.isPrimitive_stdAddChar n), ZMod.card, Nat.cast_ite, Nat.cast_zero]"
+        },
+        {
+          "where": "wirtinger_sharp, inner `have hstep` (proof, not the statement)",
+          "before": "        = (ZMod.stdAddChar j * (ZMod.stdAddChar 1 - 1)).re := by",
+          "after": "        = (ZMod.stdAddChar j * (ZMod.stdAddChar (1 : ZMod n) - 1)).re := by"
+        }
+      ]
+    }
+  }
+}

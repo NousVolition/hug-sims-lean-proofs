@@ -41,7 +41,7 @@ To obtain the sources, run `git clone https://github.com/NousVolition/hug-sims-l
 ```bash
 set -euo pipefail
 rev=1f6fdc546eaedda451b5e38b6dff957260581023
-pkg=lean/hug-v3-yang-mills-audit-lean
+pkg=lean/HugV3YangMillsAudit
 scratch=$(mktemp -d "$HOME/green-objective.XXXXXXXX")
 mkdir "$scratch/input"
 git archive "$rev:$pkg" | tar -x -C "$scratch/input"

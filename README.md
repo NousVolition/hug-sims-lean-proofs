@@ -15,7 +15,7 @@ Hug and SIMS explores what persists as surroundings change, and what our observa
 
 **[Matching readings can hide different equation results](research/combined-yang-mills-lean/README.md):** A worked example: two fields give the same values and slopes in one slice of space. Checking how those slopes change reveals that one fits the tested equation and the other does not. Lean checked this exact example and its supporting results—12 in total.
 
-**A/S suppression comparison proved:** With matched starting data and inputs, both S coordinates stay at or below their values without suppression throughout each finite interval. [Proof and verification](lean/as-suppression-lean/README.md).
+**A/S suppression comparison proved:** With matched starting data and inputs, both S coordinates stay at or below their values without suppression throughout each finite interval. [Proof and verification](lean/ASSuppression/README.md).
 
 **Heat study on 16³–40³ grids:** time-step checks **passed**; the declared grid-settling test **failed**. Between 32³ and 40³, accumulated write heat differs by at most 0.203%; the new-write spatial patterns for writes 2 and 3 reach 1.1077% and 1.0291% against the 1% limit. [Results and diagrams](research/hug-v3/heat-grid-study/README.md). Separately, [414 passing Lean checks](research/hug-v3/heat-grid-lean/README.md) cover five finite accounting rules and 409 claims about recorded numbers and record bits.
 

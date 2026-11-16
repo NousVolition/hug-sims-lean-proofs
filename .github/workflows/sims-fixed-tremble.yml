@@ -6,7 +6,7 @@ on:
     paths:
       - "research/sims-fixed-tremble/**"
       - "research/sims-continuing-evidence/protocol.json"
-      - "lean/sims-meeting-thread-lean/observations/pager-return/**"
+      - "lean/SimsMeetingThread/observations/pager-return/**"
       - ".github/workflows/sims-fixed-tremble.yml"
       - "scripts/ci-lean-toolchain.sh"
   push:
@@ -14,7 +14,7 @@ on:
     paths:
       - "research/sims-fixed-tremble/**"
       - "research/sims-continuing-evidence/protocol.json"
-      - "lean/sims-meeting-thread-lean/observations/pager-return/**"
+      - "lean/SimsMeetingThread/observations/pager-return/**"
       - ".github/workflows/sims-fixed-tremble.yml"
       - "scripts/ci-lean-toolchain.sh"
   workflow_dispatch:

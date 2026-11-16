@@ -14,7 +14,7 @@ import statistics
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 FLUID = ROOT / "research/hug-v3/finer-grid-study"
-SIMS = ROOT / "lean/sims-mentor-first-thought-lean"
+SIMS = ROOT / "lean/SimsMentorFirstThought"
 TARGET = 0.001
 WINDOWS = ("local", "extended")
 
