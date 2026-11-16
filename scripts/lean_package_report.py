@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
@@ -29,13 +30,69 @@ def packages():
     return sorted(p for p in LEAN.iterdir() if p.is_dir() and (p / "lakefile.toml").is_file())
 
 
-def check_inputs(pkg):
+def root_libs():
+    """Map each library of the joined root project to its source directory."""
+    lake = tomllib.loads((ROOT / "lakefile.toml").read_text(encoding="utf-8-sig"))
+    return {lib["name"]: ROOT / lib.get("srcDir", lake.get("srcDir", ".")) for lib in lake.get("lean_lib", [])}
+
+
+def is_joined(pkg):
+    """A package is checked in the joined root project when every library it declares is a
+    root library and no package-local copy of a module differs from the file the root builds.
+    Any other package keeps its own Lake project."""
+    pkg = pkg.resolve()
+    if not pkg.is_relative_to(LEAN.resolve()) or not (ROOT / "lakefile.toml").is_file():
+        return False
+    lake = tomllib.loads((pkg / "lakefile.toml").read_text(encoding="utf-8-sig"))
+    libs = root_libs()
+    default_dir = lake.get("srcDir", ".")
+    for lib in lake.get("lean_lib", []):
+        name = lib["name"]
+        if name not in libs:
+            return False
+        joined = libs[name] / (name.replace(".", "/") + ".lean")
+        own = pkg / lib.get("srcDir", default_dir) / (name.replace(".", "/") + ".lean")
+        if not joined.is_file() or (own.is_file() and own.read_bytes() != joined.read_bytes()):
+            return False
+    return True
+
+
+def plan(pkg):
+    """Where CI runs Lake for one package, and which targets it builds there."""
+    pkg = pkg.resolve()
+    if not is_joined(pkg):
+        return {"directory": os.path.relpath(pkg, ROOT), "config": "comparator.json", "targets": []}
+    lake = tomllib.loads((pkg / "lakefile.toml").read_text(encoding="utf-8-sig"))
+    targets = lake.get("defaultTargets") or [lib["name"] for lib in lake.get("lean_lib", [])]
+    return {"directory": ".", "config": (pkg / "comparator.json").relative_to(ROOT).as_posix(), "targets": targets}
+
+
+def input_paths(pkg):
+    """Map each verification input name to the file it pins. In a joined package, a Lean
+    file that is not kept in the package is the module of that name built by the root
+    lakefile; its digest is still checked against those bytes."""
     files = read_json(pkg / "verification-inputs.json")["files"]
     if not isinstance(files, dict) or not files:
         raise ValueError(f"{pkg}: empty verification input manifest")
-    for name, digest in files.items():
+    joined = is_joined(pkg)
+    libs = root_libs() if joined else {}
+    paths = {}
+    for name in files:
         path = (pkg / name).resolve()
-        if not path.is_relative_to(pkg.resolve()) or not path.is_file():
+        module = name[:-5].replace("/", ".") if name.endswith(".lean") else None
+        if joined and not path.is_file() and module in libs:
+            path = (libs[module] / (module.replace(".", "/") + ".lean")).resolve()
+        paths[name] = path
+    return paths
+
+
+def check_inputs(pkg):
+    files = read_json(pkg / "verification-inputs.json")["files"]
+    # A joined package may pin a shared file kept in another package; it must stay under lean/.
+    base = LEAN.resolve() if is_joined(pkg) else pkg.resolve()
+    for name, path in input_paths(pkg).items():
+        digest = files[name]
+        if not path.is_relative_to(base) or not path.is_file():
             raise ValueError(f"{pkg}/{name}: missing or non-local verification input")
         if hashlib.sha256(path.read_bytes()).hexdigest() != digest:
             raise ValueError(f"{pkg}/{name}: verification input digest differs")
@@ -98,9 +155,15 @@ def imports(source):
 
 
 def solution_closure(pkg, cfg):
-    lake = tomllib.loads((pkg / "lakefile.toml").read_text(encoding="utf-8-sig"))
-    default_dir = lake.get("srcDir", ".")
-    lib_dirs = {lib["name"]: pkg / lib.get("srcDir", default_dir) for lib in lake.get("lean_lib", [])}
+    if is_joined(pkg):
+        # The joined root project builds this package: resolve modules as its lakefile does
+        # and allow only files under lean/.
+        lib_dirs, scope, default = root_libs(), LEAN.resolve(), None
+    else:
+        lake = tomllib.loads((pkg / "lakefile.toml").read_text(encoding="utf-8-sig"))
+        default_dir = lake.get("srcDir", ".")
+        lib_dirs = {lib["name"]: pkg / lib.get("srcDir", default_dir) for lib in lake.get("lean_lib", [])}
+        scope, default = pkg.resolve(), pkg / default_dir
     external = {"Init", "Lean", "Std", "Lake", "Mathlib", "Batteries", "Aesop", "Qq", "Plausible", "ProofWidgets"}
     stack = [cfg["solution_module"]]
     visited = {}
@@ -109,8 +172,13 @@ def solution_closure(pkg, cfg):
         if mod in visited:
             continue
         root = mod.split(".", 1)[0]
-        path = (lib_dirs.get(root, pkg / default_dir) / (mod.replace(".", "/") + ".lean")).resolve()
-        if not path.is_relative_to(pkg.resolve()):
+        home = lib_dirs.get(mod, lib_dirs.get(root, default))
+        if home is None:
+            if mod != cfg["solution_module"] and root in external:
+                continue
+            raise ValueError(f"{pkg.name}: unresolved local import: {mod}")
+        path = (home / (mod.replace(".", "/") + ".lean")).resolve()
+        if not path.is_relative_to(scope):
             raise ValueError(f"{pkg.name}: local module escapes package: {mod}")
         if not path.is_file():
             if mod != cfg["solution_module"] and root not in lib_dirs and root in external:
@@ -196,7 +264,7 @@ def audit_axioms(pkg, output=None):
     names = cfg["theorem_names"]
     program = "\n".join([f"import {cfg['solution_module']}",
                          *(f"#print axioms {n}" for n in names)]) + "\n"
-    check = subprocess.run(["lake", "env", "lean", "--json", "--stdin"], cwd=pkg,
+    check = subprocess.run(["lake", "env", "lean", "--json", "--stdin"], cwd=ROOT if is_joined(pkg) else pkg,
                            input=program, text=True, encoding="utf-8", capture_output=True)
     if check.returncode:
         raise ValueError(f"{pkg.name}: Lean failed ({check.returncode})\n{check.stdout}\n{check.stderr}")
@@ -227,6 +295,8 @@ def main():
     ax = sub.add_parser("axioms", help="query Lean for every configured solution theorem")
     ax.add_argument("package", type=Path)
     ax.add_argument("--output", type=Path)
+    where = sub.add_parser("plan", help="print where CI runs Lake for one package, as JSON")
+    where.add_argument("package", type=Path)
     receipt = sub.add_parser("ci-report", help="write a separate live report from this run's evidence")
     receipt.add_argument("package", type=Path)
     receipt.add_argument("evidence", type=Path)
@@ -239,8 +309,16 @@ def main():
             cfg = config(pkg)
             check_inputs(pkg)
             modules = solution_closure(pkg, cfg)
+            if is_joined(pkg):
+                # Every file a joined solution reads from another package must carry a digest.
+                listed = set(input_paths(pkg).values())
+                for mod, path in modules.items():
+                    if not path.is_relative_to(pkg.resolve()) and path not in listed:
+                        raise ValueError(f"{pkg.name}: shared module {mod} has no verification input digest")
             validate_report(pkg)
             print(f"{pkg.name}: {len(modules)} local solution modules, {len(cfg['theorem_names'])} targets")
+    elif args.command == "plan":
+        print(json.dumps(plan(args.package)))
     elif args.command == "axioms":
         audit_axioms(args.package, args.output)
     else:

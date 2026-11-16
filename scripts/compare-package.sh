@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
-# Run from a package root, before compiling any local solution.
+# Run from the Lake project that builds the package (its own root, or the joined
+# repository root with the package's comparator.json path), before compiling any solution.
 set -euo pipefail
 tools=$(realpath "${1:?directory containing landrun and nanoda_bin required}")
 evidence=$(realpath -m "${2:?new evidence directory required}")
+config=${3:-comparator.json}
+test -f "$config"
 mkdir -p "$evidence"
 test "$(id -u)" -ne 0
 test -x "$tools/landrun" && test -x "$tools/nanoda_bin"
@@ -33,7 +36,7 @@ set +e
   --setenv="PATH=$PATH" --setenv="HOME=$HOME" \
   --setenv="COMPARATOR_LANDRUN=$tools/landrun" --setenv="COMPARATOR_NANODA=$tools/nanoda_bin" \
   --setenv="COMPARATOR_LEAN4EXPORT=$exporter" \
-  -- "$(command -v lake)" env "$comparator" comparator.json 2>&1 | tee "$evidence/comparator.log"
+  -- "$(command -v lake)" env "$comparator" "$config" 2>&1 | tee "$evidence/comparator.log"
 status=${PIPESTATUS[0]}
 set -e
 printf '%s\n' "$status" > "$evidence/comparator.exit"

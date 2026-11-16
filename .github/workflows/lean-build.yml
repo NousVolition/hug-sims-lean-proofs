@@ -75,12 +75,25 @@ jobs:
                           "git", "diff", "--no-renames", "--name-only", "-z", base, "HEAD", "--"
                       ])
                       changed = set(os.fsdecode(delta).split("\0"))
-                      shared = ".github/workflows/lean-build.yml" in changed or any(
+                      shared = bool({".github/workflows/lean-build.yml", "lakefile.toml",
+                                     "lake-manifest.json", "lean-toolchain"} & changed) or any(
                           path.startswith("scripts/") for path in changed
                       )
                       if not shared:
                           roots = {"/".join(path.split("/")[:2]) for path in changed}
-                          selected = [p for p in packages if p.as_posix() in roots]
+
+                          import sys
+                          sys.path.insert(0, "scripts")
+                          import lean_package_report as audit
+
+                          def reads_changed(directory):
+                              # A joined package also depends on shared files kept in other packages.
+                              if not (directory / "verification-inputs.json").is_file():
+                                  return False
+                              paths = audit.input_paths(directory).values()
+                              return any(os.path.relpath(path, Path.cwd()) in changed for path in paths)
+
+                          selected = [p for p in packages if p.as_posix() in roots or reads_changed(p)]
 
           for directory in selected:
               for name in ("lean-toolchain", "lake-manifest.json"):
@@ -133,12 +146,21 @@ jobs:
         with:
           name: checker-tools
           path: ${{ runner.temp }}/checker-tools
+      - name: Locate this package's Lake project
+        id: plan
+        shell: bash
+        run: |
+          plan=$(python3 scripts/lean_package_report.py plan "${{ matrix.directory }}")
+          echo "$plan"
+          echo "directory=$(jq -r .directory <<<"$plan")" >> "$GITHUB_OUTPUT"
+          echo "config=$(jq -r .config <<<"$plan")" >> "$GITHUB_OUTPUT"
+          echo "targets=$(jq -r '.targets | join(" ")' <<<"$plan")" >> "$GITHUB_OUTPUT"
       - name: Install this package's pinned Lean from the checked archive
-        working-directory: ${{ matrix.directory }}
+        working-directory: ${{ steps.plan.outputs.directory }}
         run: bash "$GITHUB_WORKSPACE/scripts/ci-lean-toolchain.sh" install "$RUNNER_TEMP/checker-tools" "$RUNNER_TEMP/lean-toolchain"
       - name: Fetch mathlib build cache
         id: dependencies
-        working-directory: ${{ matrix.directory }}
+        working-directory: ${{ steps.plan.outputs.directory }}
         env:
           MATHLIB_CACHE_GET_URL: https://cache.mathlib.org/mathlib4
         shell: bash
@@ -154,19 +176,19 @@ jobs:
           done
           exit 1
       - name: Compare the frozen statements and check both kernels
-        working-directory: ${{ matrix.directory }}
+        working-directory: ${{ steps.plan.outputs.directory }}
         run: |
           chmod +x "$RUNNER_TEMP/checker-tools/landrun" "$RUNNER_TEMP/checker-tools/nanoda_bin"
-          bash "$GITHUB_WORKSPACE/scripts/compare-package.sh" "$RUNNER_TEMP/checker-tools" "$RUNNER_TEMP/proof-evidence"
+          bash "$GITHUB_WORKSPACE/scripts/compare-package.sh" "$RUNNER_TEMP/checker-tools" "$RUNNER_TEMP/proof-evidence" "${{ steps.plan.outputs.config }}"
       - name: Build declared targets
         id: lake_build
         if: ${{ !cancelled() && steps.dependencies.outcome == 'success' }}
-        working-directory: ${{ matrix.directory }}
+        working-directory: ${{ steps.plan.outputs.directory }}
         shell: bash
         run: |
           mkdir -p "$RUNNER_TEMP/proof-evidence"
           set +e
-          lake build 2>&1 | tee "$RUNNER_TEMP/proof-evidence/lake-build.log"
+          lake build ${{ steps.plan.outputs.targets }} 2>&1 | tee "$RUNNER_TEMP/proof-evidence/lake-build.log"
           status=${PIPESTATUS[0]}
           printf '%s\n' "$status" > "$RUNNER_TEMP/proof-evidence/lake-build.exit"
           exit "$status"
