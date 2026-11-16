@@ -796,5 +796,70 @@
     "propext",
     "Classical.choice",
     "Quot.sound"
+  ],
+  "ViscousTimeReversal.keptOverlap_fits": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.write_counts_whole": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.write_fits_no_remainder": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.write_fills_bucket": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_pass_counts_whole": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_pass_in_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_loop_counts_whole": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_loop_with_moves": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_share_settles": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.A_filter_settles": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_loop_settles": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.A_filter_limit": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.filter_loop_reversal": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }

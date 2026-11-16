@@ -1,6 +1,6 @@
 {
-  "challenge_module": "ViscousTimeReversalMeterChallenge",
-  "solution_module": "ViscousTimeReversalMeterProofs",
+  "challenge_module": "ViscousTimeReversalFilterChallenge",
+  "solution_module": "ViscousTimeReversalFilterProofs",
   "enable_nanoda": true,
   "theorem_names": [
     "ViscousTimeReversal.reverseTime_twice",
@@ -167,7 +167,20 @@
     "ViscousTimeReversal.back_ticks_at_reversed_time",
     "ViscousTimeReversal.zero_holds_past_and_future",
     "ViscousTimeReversal.count_through_zero",
-    "ViscousTimeReversal.count_meets_ticks"
+    "ViscousTimeReversal.count_meets_ticks",
+    "ViscousTimeReversal.keptOverlap_fits",
+    "ViscousTimeReversal.write_counts_whole",
+    "ViscousTimeReversal.write_fits_no_remainder",
+    "ViscousTimeReversal.write_fills_bucket",
+    "ViscousTimeReversal.filter_pass_counts_whole",
+    "ViscousTimeReversal.filter_pass_in_meter",
+    "ViscousTimeReversal.filter_loop_counts_whole",
+    "ViscousTimeReversal.filter_loop_with_moves",
+    "ViscousTimeReversal.filter_share_settles",
+    "ViscousTimeReversal.A_filter_settles",
+    "ViscousTimeReversal.filter_loop_settles",
+    "ViscousTimeReversal.A_filter_limit",
+    "ViscousTimeReversal.filter_loop_reversal"
   ],
   "permitted_axioms": [
     "propext",
