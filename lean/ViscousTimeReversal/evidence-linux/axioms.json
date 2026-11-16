@@ -971,5 +971,65 @@
     "propext",
     "Classical.choice",
     "Quot.sound"
+  ],
+  "TorusPoincare.mean_sq_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.step_mean_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.add_direction": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.plane": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.torus": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.gap_anti": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.gap_min": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.torus_sharp": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.torus_attained": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.mean_has_no_gap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.scaled_gap_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "TorusPoincare.scaled_gap_tendsto": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }
