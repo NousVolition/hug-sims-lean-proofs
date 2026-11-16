@@ -1,6 +1,6 @@
 {
-  "challenge_module": "ViscousTimeReversalFilterChallenge",
-  "solution_module": "ViscousTimeReversalFilterProofs",
+  "challenge_module": "ViscousTimeReversalPoincareChallenge",
+  "solution_module": "ViscousTimeReversalPoincareProofs",
   "enable_nanoda": true,
   "theorem_names": [
     "ViscousTimeReversal.reverseTime_twice",
@@ -182,7 +182,12 @@
     "ViscousTimeReversal.A_filter_limit",
     "ViscousTimeReversal.filter_loop_reversal",
     "ViscousTimeReversal.first_write_then_freeze",
-    "ViscousTimeReversal.freeze_shares_match_keep_and_loss"
+    "ViscousTimeReversal.freeze_shares_match_keep_and_loss",
+    "DiscretePoincare.telescope",
+    "DiscretePoincare.step_bound",
+    "DiscretePoincare.pair_sum",
+    "DiscretePoincare.poincare",
+    "DiscretePoincare.mean_has_no_gap"
   ],
   "permitted_axioms": [
     "propext",

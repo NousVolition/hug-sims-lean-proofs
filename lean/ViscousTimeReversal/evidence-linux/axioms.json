@@ -871,5 +871,30 @@
     "propext",
     "Classical.choice",
     "Quot.sound"
+  ],
+  "DiscretePoincare.telescope": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "DiscretePoincare.step_bound": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "DiscretePoincare.pair_sum": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "DiscretePoincare.poincare": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "DiscretePoincare.mean_has_no_gap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }

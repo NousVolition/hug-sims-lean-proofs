@@ -24,7 +24,12 @@ noncomputable def reverseTime (T : ℝ) (f : ℝ → ℝ) (t : ℝ) : ℝ := f (
     eigenvalue `-q`): `exp(-(ν q) t)`. -/
 noncomputable def forwardFactor (ν q t : ℝ) : ℝ := Real.exp (-(ν * q) * t)
 
-/-- Backward factor: `exp((ν q) t)`. -/
+/-- Backward factor: `exp((ν q) t)`.
+
+    On a path of `n` points, `DiscretePoincare.poincare` (in
+    `ViscousTimeReversalPoincareProofs.lean`) bounds the Dirichlet energy of mean-zero data
+    below by `2 / (n (n-1))` times its squared norm, a floor for mean-zero ripples on a path;
+    `DiscretePoincare.mean_has_no_gap` shows the mean has no gap. -/
 noncomputable def backwardFactor (ν q t : ℝ) : ℝ := Real.exp ((ν * q) * t)
 
 /-- The viscous rate of a ripple of size `a`. -/

@@ -1,16 +1,16 @@
 {
   "repository": "NousVolition/hug-sims-lean-proofs",
   "run": "local, on the box, not GitHub Actions",
-  "base_commit": "51ec855e18e4801762a7fd6e2f10112f9df71dba",
+  "base_commit": "19c1f837b5b4a700e710386a9c126a4db26a2313",
   "note": "Run from this package directory on uncommitted changes on top of base_commit; the inputs checked are the hashes below. scripts/compare-package.sh could not start its systemd-run wrapper (no systemd on the box), so the comparator was run directly with the same pinned landrun, nanoda and lean4export.",
-  "target_count": 180,
+  "target_count": 185,
   "files": {
-    "axioms.json": "78cab422df6ed53b1008d62eeea373502301cff769214d87a1f6abc438f1e973",
+    "axioms.json": "ae65caea3c73bb50569269853f3bbbf23060a5e8833068f48a50caeffa750a2e",
     "comparator.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
-    "comparator.log": "3277c4c66603ab6319b185fb18568dca98a1d289eadbb98114131de809a38949",
+    "comparator.log": "46423b883dd16cfb60c609be2573dbdffe1ec89eb576ade57fba2a644f0d65f2",
     "lake-build.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
-    "lake-build.log": "0f2dd952a1be2d6e4c9d1fe116781571f38edc9d74704232c3415dd4708dab51",
-    "verification-report.json": "b2d4226aaba298b3f3d29d453beb823e47806de935ee46a5dac864b1904a18ca"
+    "lake-build.log": "214b81aef1a74cc58f9d94b0d076cc6f613040551e3142c8548a3dd29ac87e15",
+    "verification-report.json": "e440f12ecb5853ac1a43e3790ea581ebea0b67c0e4586aba76f3d79aeb83755a"
   },
   "proof_inputs_sha256": {
     "FullModel.lean": "928e00f664817fe3c85144265ff824d7014334b1866d4904741f8d367a2119c6",
@@ -27,19 +27,22 @@
     "ViscousTimeReversalBucketDefinitions.lean": "357d70e6c3ea572ad76716c81427e6f8aad73bb0407c8f24cd32b58a6cce8c39",
     "ViscousTimeReversalBucketProofs.lean": "b87496ac0ec4ebf437c9665d6a26f7314887db178a0419bf03c31d95b60fd3b5",
     "ViscousTimeReversalChallenge.lean": "46f3b9c03c802243297335372857302426626c6cf7c50b8710e97f6d6303f608",
-    "ViscousTimeReversalDefinitions.lean": "fbcbbaae3b2487e424ba6f3a2180c93209393b51ed1abaff5658227eb1cc3ed4",
+    "ViscousTimeReversalDefinitions.lean": "95dc866da01dcada7b8b0a65b8a1744e73af6f5c59a1e69cf259f4ead4eb7859",
     "ViscousTimeReversalFilterChallenge.lean": "2753775fe67f24f9e91a820180a2bdc4802f4b078d947a0bc5949a2cc743c650",
     "ViscousTimeReversalFilterDefinitions.lean": "eea4b0a27121361aa3109f4d80a160adb971060042dac8a140f76e2663e43e7d",
     "ViscousTimeReversalFilterProofs.lean": "ca855afb7ad1127139560e000e3fcc38f96f3bfaf74110e36de165e9eafa8a14",
     "ViscousTimeReversalMeterChallenge.lean": "fa4cd1517e80535e68dd93cdecabc13df5fc8b53234105dd2e4509828fa2077f",
     "ViscousTimeReversalMeterDefinitions.lean": "a17b082e1ddd36c1418a9ea7080810f37cb301fcec33b8e6bbe4fb8976305e07",
     "ViscousTimeReversalMeterProofs.lean": "aa4391c123c230d65670c2c3e68171f3c09a23730e911f63cb42235090350686",
+    "ViscousTimeReversalPoincareChallenge.lean": "2fc9f38e5c991350a378dbf7a240f7793634612e1d4a73b5e2f914c39acd901f",
+    "ViscousTimeReversalPoincareDefinitions.lean": "0298a82314162b0fbdd9c582ff5b8aadb6701bd4ab04daa4fbabb4767a534da9",
+    "ViscousTimeReversalPoincareProofs.lean": "f64567f2ba39538f6aaa9be49a7d9c213eb1f33673a1134df77c54e56568af77",
     "ViscousTimeReversalProofs.lean": "3c78d3474e758679fb3ee75d71967a920c000cf71982b07eff8f9c9016aba4d7",
-    "comparator.json": "b7d6ee5a3e425edba687f93310ddf5158e6793988a001f336b5f2f508e17a69a",
-    "lakefile.toml": "8c125831d9e641b21894281f02b6994d4ee2f482a655be0ffc7659e7de6453bd",
+    "comparator.json": "a747bdff0a3b71520d30c1abbc9568f50609a02d328fc526ddb4612a27f9808c",
+    "lakefile.toml": "0137faa490ab33c10fd7652d65fe4bfa980d6e725015ab7264ab7728eca1cf16",
     "lake-manifest.json": "10b1ae73dc69f16c055fe9fef3b3271670780276c27dae479a13652ad34e4605",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
-    "verification-inputs.json": "5235830e27667ddd81f177617f48ddbfcb21115e1f78aa3087c7c0b8f004939a"
+    "verification-inputs.json": "3e0a42e91e80a8a0a6ed8af54ad9900fccf56088397596ff515db1ff69587fc3"
   },
   "replaces": "the GitHub run 43703185290 evidence for the 37 statements, kept in git history at 871e2d8"
 }

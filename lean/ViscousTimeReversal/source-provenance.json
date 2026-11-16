@@ -79,5 +79,12 @@
       "definitions_unchanged": true,
       "differs_only_in": "nothing; byte-for-byte copy so this package builds on its own"
     }
+  },
+  "added_files": {
+    "ViscousTimeReversalPoincareDefinitions.lean, ViscousTimeReversalPoincareChallenge.lean, ViscousTimeReversalPoincareProofs.lean": {
+      "source": "discrete-poincare-lean/Poincare.lean",
+      "source_sha256": "e4a76d125f57885221ac70ed59749b9ea12143bcbca3a71c56e74ee6c05b4fd0",
+      "changes": "split into definitions, statements and proofs; imports changed; statements, proofs and docstrings unchanged"
+    }
   }
 }
