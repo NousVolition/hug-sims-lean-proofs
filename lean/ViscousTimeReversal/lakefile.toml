@@ -1,6 +1,6 @@
 name = "ViscousTimeReversal"
 version = "0.1.0"
-defaultTargets = ["ViscousTimeReversalWirtingerProofs"]
+defaultTargets = ["ViscousTimeReversalTorusProofs"]
 
 [[require]]
 name = "mathlib"
@@ -97,3 +97,12 @@ name = "ViscousTimeReversalWirtingerChallenge"
 
 [[lean_lib]]
 name = "ViscousTimeReversalWirtingerProofs"
+
+[[lean_lib]]
+name = "ViscousTimeReversalTorusDefinitions"
+
+[[lean_lib]]
+name = "ViscousTimeReversalTorusChallenge"
+
+[[lean_lib]]
+name = "ViscousTimeReversalTorusProofs"

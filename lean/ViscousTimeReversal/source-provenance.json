@@ -102,6 +102,10 @@
           "after": "        = (ZMod.stdAddChar j * (ZMod.stdAddChar (1 : ZMod n) - 1)).re := by"
         }
       ]
+    },
+    "ViscousTimeReversalTorusDefinitions.lean, ViscousTimeReversalTorusChallenge.lean, ViscousTimeReversalTorusProofs.lean": {
+      "source": "new in this package; built on CycleWirtinger.wirtinger and CycleWirtinger.wirtinger_sharp in ViscousTimeReversalWirtingerProofs.lean",
+      "changes": "none; written for this package"
     }
   }
 }
