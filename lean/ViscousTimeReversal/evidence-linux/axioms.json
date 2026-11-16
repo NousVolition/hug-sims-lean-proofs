@@ -896,5 +896,80 @@
     "propext",
     "Classical.choice",
     "Quot.sound"
+  ],
+  "CycleWirtinger.ortho": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.conj_e": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.e_eq_exp": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.normSq_e_sub_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.normSq_e_neg_sub_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.cos_step": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.cos_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.fourier_neg": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.parseval": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.parseval_real": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.fourier_step": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.wirtinger": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.re_sq": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.sum_re_sq": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "CycleWirtinger.wirtinger_sharp": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }

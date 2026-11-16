@@ -1,6 +1,6 @@
 # Viscosity under time reversal
 
-**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build, for all 185 configured statements, in a local run on this package (not yet a GitHub run); every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The first 37 also passed in [GitHub run 43703185290](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43703185290). The [report](verification-report.json), [logs and axiom lists](evidence-linux/) and [input hashes](evidence-linux/source.json) are saved in this package.
+**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build, for all 200 configured statements, in a local run on this package (not yet a GitHub run); every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The first 37 also passed in [GitHub run 43703185290](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43703185290). The [report](verification-report.json), [logs and axiom lists](evidence-linux/) and [input hashes](evidence-linux/source.json) are saved in this package.
 
 ## At a glance
 
@@ -65,11 +65,35 @@ The writes are at ticks 11, 23 and 41. The first write is tick 11, at time 0.4. 
 
 **Scope and limits.** *Not sharp:* the sharp constant is `1/λ₁` with `λ₁ = 4 sin²(π/(2n))`, about `n²/π²`. The proved constant `n(n-1)/2` is larger by roughly a factor `π²/2 ≈ 4.9` for large `n` (n = 64: 2016 versus 415). A sharp version needs the discrete Fourier transform. *Path, not cycle:* free (Neumann) ends; the periodic version is not included. *Use:* the inequality is the step that turns the energy identity of a discrete diffusion `u' = ν Δ_h u` into exponential decay of the mean-zero part, while the mean is conserved and does not decay; that step is not itself proved here. Source: `discrete-poincare-lean/Poincare.lean`.
 
+## The sharp discrete Wirtinger inequality on a cycle (15)
+
+**Theorem (`wirtinger`).** For `f : ZMod n → ℝ` with `∑ j, f j = 0`, `(2 - 2 cos (2π/n)) * ∑ j, f j ^ 2 ≤ ∑ j, (f (j + 1) - f j) ^ 2`.
+
+**Sharpness (`wirtinger_sharp`).** For `n ≥ 3`, `f j = cos (2π j / n)` has mean zero and gives equality, so `2 - 2 cos (2π/n) = 4 sin²(π/n)` is the best constant: the smallest nonzero eigenvalue of the cycle Laplacian. (For `n = 2` every mean-zero `f` gives equality.) This is the classical discrete Wirtinger inequality (Fan, Taussky and Todd, 1955), here with a machine-checkable proof, by the discrete Fourier transform.
+
+| Lemma | Content |
+|---|---|
+| `ortho` | `∑ₖ e(k m) = n` if `m = 0`, else `0` (from `AddChar.sum_mulShift` and `ZMod.isPrimitive_stdAddChar`) |
+| `conj_e`, `fourier_neg` | `conj e(x) = e(-x)`; for real data `F(-k) = conj F(k)` |
+| `parseval`, `parseval_real` | `∑ₖ |F k|² = n ∑ⱼ f j ²` |
+| `fourier_step` | the step `j ↦ f(j+1) - f(j)` multiplies `F k` by `e(-k) - 1` |
+| `normSq_e_sub_one`, `normSq_e_neg_sub_one` | `|e(±k) - 1|² = 2 - 2 cos(2π k/n)` |
+| `cos_step`, `cos_le` | for `k ≠ 0`, `cos(2π k/n) ≤ cos(2π/n)` |
+| `re_sq`, `sum_re_sq` | `∑ⱼ (Re (e(j) w))² = n |w|²/2` when `2 ≠ 0` in `ZMod n` (used for the equality case) |
+
+Here `e = ZMod.stdAddChar`, `e(j) = exp(2πi j/n)`, and `F k = ∑ⱼ f j · e(j k)`.
+
+Numerical check outside Lean: the inequality holds on random mean-zero data for `n = 1 … 59`, the cosine attains equality for `n ≥ 3`, and Parseval holds.
+
+**Related.** `discrete-poincare-lean` proves an elementary, non-sharp inequality for the path (free ends) with constant `n(n-1)/2`. The sharp path constant `1/(4 sin²(π/(2n)))` needs the cosine transform and is not included.
+
+Source: `cycle-wirtinger-lean/Wirtinger.lean`, with two proof-only repairs for this Mathlib (`ortho` and one type annotation in `wirtinger_sharp`), recorded in [source-provenance.json](source-provenance.json).
+
 ## Files
 
-`ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalPoincareChallenge.lean` freezes all 185 statements: through `ViscousTimeReversalFilterChallenge.lean` the first 180, and the 5 on the discrete Poincaré–Wirtinger inequality (definition in `ViscousTimeReversalPoincareDefinitions.lean`, proofs in `ViscousTimeReversalPoincareProofs.lean`, the solution). `ViscousTimeReversalFilterChallenge.lean` holds, through `ViscousTimeReversalMeterChallenge.lean`, the first 165, of which `ViscousTimeReversalChallenge.lean` holds the first 141, and the 15 on the write, the remainder, the filter loop and the freeze. The 24 on the meter, the guards and reversal have definitions in `ViscousTimeReversalMeterDefinitions.lean` and proofs in `ViscousTimeReversalMeterProofs.lean`. The 15 on the filter loop and the freeze have definitions in `ViscousTimeReversalFilterDefinitions.lean` and proofs in `ViscousTimeReversalFilterProofs.lean`. `ViscousTimeReversalChallenge.lean` freezes the 37 statements, and through `ViscousTimeReversalBucketChallenge.lean` the 104 statements on starts and the bucket rule; it is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs, with those for starts and the bucket rule in `ViscousTimeReversalBucketProofs.lean` (definitions in `ViscousTimeReversalBucketDefinitions.lean`). `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources. `HugWallPushDefinitions.lean`, `HugWallPushProofs.lean` and the six `V3Source*.lean` files are byte-for-byte copies so the package builds on its own, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
+`ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalWirtingerChallenge.lean` freezes all 200 statements: through `ViscousTimeReversalPoincareChallenge.lean` the first 185, and the 15 on the sharp discrete Wirtinger inequality on a cycle (definitions in `ViscousTimeReversalWirtingerDefinitions.lean`, proofs in `ViscousTimeReversalWirtingerProofs.lean`, the solution). `ViscousTimeReversalPoincareChallenge.lean` holds, through `ViscousTimeReversalFilterChallenge.lean` the first 180, and the 5 on the discrete Poincaré–Wirtinger inequality (definition in `ViscousTimeReversalPoincareDefinitions.lean`, proofs in `ViscousTimeReversalPoincareProofs.lean`). `ViscousTimeReversalFilterChallenge.lean` holds, through `ViscousTimeReversalMeterChallenge.lean`, the first 165, of which `ViscousTimeReversalChallenge.lean` holds the first 141, and the 15 on the write, the remainder, the filter loop and the freeze. The 24 on the meter, the guards and reversal have definitions in `ViscousTimeReversalMeterDefinitions.lean` and proofs in `ViscousTimeReversalMeterProofs.lean`. The 15 on the filter loop and the freeze have definitions in `ViscousTimeReversalFilterDefinitions.lean` and proofs in `ViscousTimeReversalFilterProofs.lean`. `ViscousTimeReversalChallenge.lean` freezes the 37 statements, and through `ViscousTimeReversalBucketChallenge.lean` the 104 statements on starts and the bucket rule; it is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs, with those for starts and the bucket rule in `ViscousTimeReversalBucketProofs.lean` (definitions in `ViscousTimeReversalBucketDefinitions.lean`). `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources. `HugWallPushDefinitions.lean`, `HugWallPushProofs.lean` and the six `V3Source*.lean` files are byte-for-byte copies so the package builds on its own, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
 
-From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 185 theorems. `evidence-linux/` now holds the local run of those same steps; the GitHub artifact for the first 37 is in git history.
+From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 200 theorems. `evidence-linux/` now holds the local run of those same steps; the GitHub artifact for the first 37 is in git history.
 
 ## Scope
 

@@ -1,6 +1,6 @@
 {
-  "challenge_module": "ViscousTimeReversalPoincareChallenge",
-  "solution_module": "ViscousTimeReversalPoincareProofs",
+  "challenge_module": "ViscousTimeReversalWirtingerChallenge",
+  "solution_module": "ViscousTimeReversalWirtingerProofs",
   "enable_nanoda": true,
   "theorem_names": [
     "ViscousTimeReversal.reverseTime_twice",
@@ -187,7 +187,22 @@
     "DiscretePoincare.step_bound",
     "DiscretePoincare.pair_sum",
     "DiscretePoincare.poincare",
-    "DiscretePoincare.mean_has_no_gap"
+    "DiscretePoincare.mean_has_no_gap",
+    "CycleWirtinger.ortho",
+    "CycleWirtinger.conj_e",
+    "CycleWirtinger.e_eq_exp",
+    "CycleWirtinger.normSq_e_sub_one",
+    "CycleWirtinger.normSq_e_neg_sub_one",
+    "CycleWirtinger.cos_step",
+    "CycleWirtinger.cos_le",
+    "CycleWirtinger.fourier_neg",
+    "CycleWirtinger.parseval",
+    "CycleWirtinger.parseval_real",
+    "CycleWirtinger.fourier_step",
+    "CycleWirtinger.wirtinger",
+    "CycleWirtinger.re_sq",
+    "CycleWirtinger.sum_re_sq",
+    "CycleWirtinger.wirtinger_sharp"
   ],
   "permitted_axioms": [
     "propext",

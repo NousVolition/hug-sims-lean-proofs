@@ -1,6 +1,6 @@
 name = "ViscousTimeReversal"
 version = "0.1.0"
-defaultTargets = ["ViscousTimeReversalPoincareProofs"]
+defaultTargets = ["ViscousTimeReversalWirtingerProofs"]
 
 [[require]]
 name = "mathlib"
@@ -88,3 +88,12 @@ name = "ViscousTimeReversalPoincareChallenge"
 
 [[lean_lib]]
 name = "ViscousTimeReversalPoincareProofs"
+
+[[lean_lib]]
+name = "ViscousTimeReversalWirtingerDefinitions"
+
+[[lean_lib]]
+name = "ViscousTimeReversalWirtingerChallenge"
+
+[[lean_lib]]
+name = "ViscousTimeReversalWirtingerProofs"

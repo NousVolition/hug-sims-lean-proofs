@@ -85,6 +85,23 @@
       "source": "discrete-poincare-lean/Poincare.lean",
       "source_sha256": "e4a76d125f57885221ac70ed59749b9ea12143bcbca3a71c56e74ee6c05b4fd0",
       "changes": "split into definitions, statements and proofs; imports changed; statements, proofs and docstrings unchanged"
+    },
+    "ViscousTimeReversalWirtingerDefinitions.lean, ViscousTimeReversalWirtingerChallenge.lean, ViscousTimeReversalWirtingerProofs.lean": {
+      "source": "cycle-wirtinger-lean/Wirtinger.lean",
+      "source_sha256": "37cd9d37bc25ba9ec776accc23631b645f7d57f3932973ffbc850d06daa1546a",
+      "changes": "split into definitions, statements and proofs; imports changed; statements unchanged; two proof-only repairs",
+      "repairs": [
+        {
+          "where": "ortho, proof line",
+          "before": "  rw [AddChar.sum_mulShift m (ZMod.isPrimitive_stdAddChar n), ZMod.card]",
+          "after": "  rw [AddChar.sum_mulShift m (ZMod.isPrimitive_stdAddChar n), ZMod.card, Nat.cast_ite, Nat.cast_zero]"
+        },
+        {
+          "where": "wirtinger_sharp, inner `have hstep` (proof, not the statement)",
+          "before": "        = (ZMod.stdAddChar j * (ZMod.stdAddChar 1 - 1)).re := by",
+          "after": "        = (ZMod.stdAddChar j * (ZMod.stdAddChar (1 : ZMod n) - 1)).re := by"
+        }
+      ]
     }
   }
 }
