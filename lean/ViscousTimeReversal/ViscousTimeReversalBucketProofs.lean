@@ -277,7 +277,7 @@ example : (List.range 13).map (runHeld 1) = (List.range 13).map heldAt := by
   simp [List.range_succ, runHeld, heldAt, hw, hl, held, lossDial, loss, afterWrite_one]
 
 /-- The imported `afterWrite` alone, dial 5/5: at 0 after one tick, back to 1 at index 4 with nothing
-    taken from anywhere. `runPair` in `Breaks.lean` takes the refill from the partner bucket. -/
+    taken from anywhere. `runPair` takes the refill from the partner bucket. -/
 example : runHeld 5 1 = 0 ∧ runHeld 5 3 = 0 ∧ runHeld 5 4 = 1 := by
   have h1 : isWrite 1 = false := by decide
   have h2 : isWrite 2 = false := by decide

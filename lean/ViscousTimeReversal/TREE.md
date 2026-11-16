@@ -2,7 +2,7 @@
 
 Each statement has its own page. Every page shows the Lean statement exactly as checked, then plain-words versions in English, Español, Français, Deutsch, 中文, 日本語, العربية, हिन्दी and Português, and the statement in Lean/Unicode, ASCII and LaTeX. Only the Lean text is checked; the other versions are reading aids. The terms mentor, student, gap, split, freeze, wall and tick are kept as written in every language.
 
-Time is counted from the 0,0 split (tick 2): forward is after the split, the past is before it.
+Time is counted from the 0,0 split (tick 2): 0 holds the past and the future together, and forward and back are both counted from it.
 
 ```mermaid
 graph TD

@@ -1,97 +1,375 @@
-Running as unit: run-u0.service; invocation ID: ed65827e181745a18140849287e217eb
-Building ViscousTimeReversalChallenge
-✔ [3366/3370] Built MentorStudentModel (1.3s)
-✔ [3367/3370] Built FullModel (1.9s)
-✔ [3368/3370] Built ViscousTimeReversalDefinitions (1.4s)
-⚠ [3369/3370] Built ViscousTimeReversalChallenge (2.1s)
-warning: ViscousTimeReversalChallenge.lean:8:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:12:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:17:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:22:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:29:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:33:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:37:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:41:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:45:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:49:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:53:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:57:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:61:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:65:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:70:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:76:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:80:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:85:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:89:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:94:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:99:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:107:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:115:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:122:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:126:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:129:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:134:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:139:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:144:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:149:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:154:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:160:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:166:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:170:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:175:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:180:8: declaration uses `sorry`
-warning: ViscousTimeReversalChallenge.lean:186:8: declaration uses `sorry`
-Build completed successfully (3370 jobs).
-Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, ViscousTimeReversal.reverseTime_twice, ViscousTimeReversal.timeReverse_derivative, ViscousTimeReversal.viscosity_reversal, ViscousTimeReversal.whole_rhs_reversal, ViscousTimeReversal.forwardFactor_derivative, ViscousTimeReversal.backwardFactor_derivative, ViscousTimeReversal.forward_damping, ViscousTimeReversal.backward_amplification, ViscousTimeReversal.forward_strict_damping, ViscousTimeReversal.backward_strict_amplification, ViscousTimeReversal.higher_frequency_amplification, ViscousTimeReversal.factor_cancellation, ViscousTimeReversal.negative_step_reverses_rate, ViscousTimeReversal.double_sign_flip_restores_forward, ViscousTimeReversal.split_at_tick_two, ViscousTimeReversal.reverse_twice, ViscousTimeReversal.reversal_keeps_one, ViscousTimeReversal.reflect_flips_margin, ViscousTimeReversal.forward_gap_becomes_backward_overlap, ViscousTimeReversal.touch_stays_touch, ViscousTimeReversal.tick23_gap_reverses_to_overlap, ViscousTimeReversal.freeze_at_tick23_both_ways, ViscousTimeReversal.share_change_undone, ViscousTimeReversal.wall_is_single_system_viscosity, ViscousTimeReversal.thin_and_thick_wall, ViscousTimeReversal.wall_between_thin_and_thick, ViscousTimeReversal.reversed_wall_range, ViscousTimeReversal.wall_flips_under_reversal, ViscousTimeReversal.forward_wall_only_damps, ViscousTimeReversal.backward_wall_only_amplifies, ViscousTimeReversal.thick_wall_amplifies_most, ViscousTimeReversal.thick_wall_damps_most, ViscousTimeReversal.wall_factors_multiply_to_one, ViscousTimeReversal.backward_step_is_reversed_wall, ViscousTimeReversal.wall_takes_forward_from_split, ViscousTimeReversal.wall_gives_backward_from_split, ViscousTimeReversal.both_directions_add, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ViscousTimeReversalChallenge
-Building ViscousTimeReversalProofs
-ℹ [3369/3370] Built ViscousTimeReversalProofs (2.0s)
-info: ViscousTimeReversalProofs.lean:368:0: 'ViscousTimeReversal.reverseTime_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:369:0: 'ViscousTimeReversal.timeReverse_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:370:0: 'ViscousTimeReversal.viscosity_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:371:0: 'ViscousTimeReversal.whole_rhs_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:372:0: 'ViscousTimeReversal.forwardFactor_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:373:0: 'ViscousTimeReversal.backwardFactor_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:374:0: 'ViscousTimeReversal.forward_damping' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:375:0: 'ViscousTimeReversal.backward_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:376:0: 'ViscousTimeReversal.forward_strict_damping' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:377:0: 'ViscousTimeReversal.backward_strict_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:378:0: 'ViscousTimeReversal.higher_frequency_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:379:0: 'ViscousTimeReversal.factor_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:380:0: 'ViscousTimeReversal.negative_step_reverses_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:381:0: 'ViscousTimeReversal.double_sign_flip_restores_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:382:0: 'ViscousTimeReversal.split_at_tick_two' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:383:0: 'ViscousTimeReversal.reverse_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:384:0: 'ViscousTimeReversal.reversal_keeps_one' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:385:0: 'ViscousTimeReversal.reflect_flips_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:386:0: 'ViscousTimeReversal.forward_gap_becomes_backward_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:387:0: 'ViscousTimeReversal.touch_stays_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:388:0: 'ViscousTimeReversal.tick23_gap_reverses_to_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:389:0: 'ViscousTimeReversal.freeze_at_tick23_both_ways' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:390:0: 'ViscousTimeReversal.share_change_undone' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:391:0: 'ViscousTimeReversal.wall_is_single_system_viscosity' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:392:0: 'ViscousTimeReversal.thin_and_thick_wall' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:393:0: 'ViscousTimeReversal.wall_between_thin_and_thick' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:394:0: 'ViscousTimeReversal.reversed_wall_range' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:395:0: 'ViscousTimeReversal.wall_flips_under_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:396:0: 'ViscousTimeReversal.forward_wall_only_damps' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:397:0: 'ViscousTimeReversal.backward_wall_only_amplifies' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:398:0: 'ViscousTimeReversal.thick_wall_amplifies_most' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:399:0: 'ViscousTimeReversal.thick_wall_damps_most' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:400:0: 'ViscousTimeReversal.wall_factors_multiply_to_one' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:401:0: 'ViscousTimeReversal.backward_step_is_reversed_wall' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:402:0: 'ViscousTimeReversal.wall_takes_forward_from_split' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:403:0: 'ViscousTimeReversal.wall_gives_backward_from_split' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: ViscousTimeReversalProofs.lean:404:0: 'ViscousTimeReversal.both_directions_add' depends on axioms: [propext, Classical.choice, Quot.sound]
-Build completed successfully (3370 jobs).
-Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, ViscousTimeReversal.reverseTime_twice, ViscousTimeReversal.timeReverse_derivative, ViscousTimeReversal.viscosity_reversal, ViscousTimeReversal.whole_rhs_reversal, ViscousTimeReversal.forwardFactor_derivative, ViscousTimeReversal.backwardFactor_derivative, ViscousTimeReversal.forward_damping, ViscousTimeReversal.backward_amplification, ViscousTimeReversal.forward_strict_damping, ViscousTimeReversal.backward_strict_amplification, ViscousTimeReversal.higher_frequency_amplification, ViscousTimeReversal.factor_cancellation, ViscousTimeReversal.negative_step_reverses_rate, ViscousTimeReversal.double_sign_flip_restores_forward, ViscousTimeReversal.split_at_tick_two, ViscousTimeReversal.reverse_twice, ViscousTimeReversal.reversal_keeps_one, ViscousTimeReversal.reflect_flips_margin, ViscousTimeReversal.forward_gap_becomes_backward_overlap, ViscousTimeReversal.touch_stays_touch, ViscousTimeReversal.tick23_gap_reverses_to_overlap, ViscousTimeReversal.freeze_at_tick23_both_ways, ViscousTimeReversal.share_change_undone, ViscousTimeReversal.wall_is_single_system_viscosity, ViscousTimeReversal.thin_and_thick_wall, ViscousTimeReversal.wall_between_thin_and_thick, ViscousTimeReversal.reversed_wall_range, ViscousTimeReversal.wall_flips_under_reversal, ViscousTimeReversal.forward_wall_only_damps, ViscousTimeReversal.backward_wall_only_amplifies, ViscousTimeReversal.thick_wall_amplifies_most, ViscousTimeReversal.thick_wall_damps_most, ViscousTimeReversal.wall_factors_multiply_to_one, ViscousTimeReversal.backward_step_is_reversed_wall, ViscousTimeReversal.wall_takes_forward_from_split, ViscousTimeReversal.wall_gives_backward_from_split, ViscousTimeReversal.both_directions_add, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ViscousTimeReversalProofs
+Building ViscousTimeReversalMeterChallenge
+✔ [6128/6518] Built MentorStudentModel (1.4s)
+✔ [8763/8779] Built FullModel (2.4s)
+✔ [8765/8779] Built V3SourceCore (2.4s)
+✔ [8766/8779] Built ViscousTimeReversalDefinitions (2.1s)
+✔ [8767/8779] Built V3SourceMemory (2.4s)
+✔ [8768/8779] Built HugWallPushDefinitions (4.2s)
+✔ [8769/8779] Built V3SourceSocial (2.5s)
+✔ [8770/8779] Built V3SourceFlow (2.5s)
+⚠ [8771/8779] Built HugWallPushProofs (6.6s)
+warning: HugWallPushProofs.lean:20:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:20:4: Unused tactic linter: `exact Fintype.sum_equiv (Equiv.subRight e) _ _ (fun _ => rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:35:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:35:6: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:159:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:159:4: Unused tactic linter: `simpa using (hasDerivAt_id' (x := t)).const_mul c` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:268:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:270:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:268:21: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:270:23: Unused tactic linter: `nlinarith [ha, hb]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:380:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:380:23: Unused tactic linter: `nlinarith [ih, hc]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:413:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:413:8: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:472:0: automatically included section variable(s) unused in theorem `HugWallPush.clayHeat_nonneg`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HugWallPushProofs.lean:478:0: automatically included section variable(s) unused in theorem `HugWallPush.clay_energy`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8772/8779] Built V3SourceGeometry (10s)
+✔ [8773/8779] Built V3SourceSystem (2.3s)
+⚠ [8774/8779] Built ViscousTimeReversalBucketDefinitions (5.5s)
+warning: ViscousTimeReversalBucketDefinitions.lean:371:23: `if_true` has been deprecated: Use `ite_true` instead
+warning: ViscousTimeReversalBucketDefinitions.lean:379:19: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ViscousTimeReversalBucketDefinitions.lean:412:75: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Sum.elim_inl, Sum.elim_inr, zero_add, add_zero, Finset.sum_const, Finset.card_univ,
+    Fintype.card_fin, Fintype.card_unit, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8775/8779] Built ViscousTimeReversalMeterDefinitions (4.3s)
+⚠ [8776/8779] Built ViscousTimeReversalBucketChallenge (5.4s)
+warning: ViscousTimeReversalBucketChallenge.lean:27:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:30:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:35:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:38:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:44:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:50:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:55:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:59:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:63:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:68:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:77:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:83:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:88:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:94:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:97:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:101:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:105:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:108:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:114:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:118:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:124:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:127:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:130:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:133:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:136:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:140:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:145:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:149:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:155:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:159:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:162:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:166:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:172:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:175:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:180:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:188:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:192:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:197:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:207:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:210:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:213:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:216:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:220:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:239:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:242:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:247:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:251:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:255:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:259:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:265:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:269:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:273:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:276:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:279:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:283:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:287:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:291:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:297:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:302:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:308:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:317:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:321:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:326:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:332:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:340:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:350:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:356:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:364:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:370:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:376:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:381:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:385:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:389:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:395:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:400:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:427:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:430:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:435:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:441:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:445:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:449:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:454:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:460:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:466:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:470:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:474:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:478:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:483:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:491:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:498:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:507:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:511:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:515:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:523:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:535:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:544:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:549:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:557:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:571:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:576:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:583:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:591:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:600:8: declaration uses `sorry`
+warning: ViscousTimeReversalBucketChallenge.lean:611:8: declaration uses `sorry`
+⚠ [8777/8779] Built ViscousTimeReversalChallenge (6.3s)
+warning: ViscousTimeReversalChallenge.lean:9:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:13:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:18:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:23:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:30:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:34:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:38:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:42:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:46:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:50:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:54:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:58:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:62:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:66:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:71:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:77:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:81:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:86:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:90:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:95:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:100:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:108:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:116:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:123:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:127:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:130:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:135:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:140:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:145:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:150:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:155:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:161:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:167:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:171:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:176:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:181:8: declaration uses `sorry`
+warning: ViscousTimeReversalChallenge.lean:187:8: declaration uses `sorry`
+⚠ [8778/8779] Built ViscousTimeReversalMeterChallenge (4.2s)
+warning: ViscousTimeReversalMeterChallenge.lean:16:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:20:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:25:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:32:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:37:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:41:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:49:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:55:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:61:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:66:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:70:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:75:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:81:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:91:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:98:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:106:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:118:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:132:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:141:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:148:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:155:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:165:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:178:8: declaration uses `sorry`
+warning: ViscousTimeReversalMeterChallenge.lean:189:8: declaration uses `sorry`
+Build completed successfully (8779 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, ViscousTimeReversal.reverseTime_twice, ViscousTimeReversal.timeReverse_derivative, ViscousTimeReversal.viscosity_reversal, ViscousTimeReversal.whole_rhs_reversal, ViscousTimeReversal.forwardFactor_derivative, ViscousTimeReversal.backwardFactor_derivative, ViscousTimeReversal.forward_damping, ViscousTimeReversal.backward_amplification, ViscousTimeReversal.forward_strict_damping, ViscousTimeReversal.backward_strict_amplification, ViscousTimeReversal.higher_frequency_amplification, ViscousTimeReversal.factor_cancellation, ViscousTimeReversal.negative_step_reverses_rate, ViscousTimeReversal.double_sign_flip_restores_forward, ViscousTimeReversal.split_at_tick_two, ViscousTimeReversal.reverse_twice, ViscousTimeReversal.reversal_keeps_one, ViscousTimeReversal.reflect_flips_margin, ViscousTimeReversal.forward_gap_becomes_backward_overlap, ViscousTimeReversal.touch_stays_touch, ViscousTimeReversal.tick23_gap_reverses_to_overlap, ViscousTimeReversal.freeze_at_tick23_both_ways, ViscousTimeReversal.share_change_undone, ViscousTimeReversal.wall_is_single_system_viscosity, ViscousTimeReversal.thin_and_thick_wall, ViscousTimeReversal.wall_between_thin_and_thick, ViscousTimeReversal.reversed_wall_range, ViscousTimeReversal.wall_flips_under_reversal, ViscousTimeReversal.forward_wall_only_damps, ViscousTimeReversal.backward_wall_only_amplifies, ViscousTimeReversal.thick_wall_amplifies_most, ViscousTimeReversal.thick_wall_damps_most, ViscousTimeReversal.wall_factors_multiply_to_one, ViscousTimeReversal.backward_step_is_reversed_wall, ViscousTimeReversal.wall_takes_forward_from_split, ViscousTimeReversal.wall_gives_backward_from_split, ViscousTimeReversal.both_directions_add, ViscousTimeReversal.labels_eq, ViscousTimeReversal.two_le_of_primeLabel, ViscousTimeReversal.scheduleWith_32_25, ViscousTimeReversal.scheduleWith_get, ViscousTimeReversal.pastSchedule_get, ViscousTimeReversal.past_same_ticks, ViscousTimeReversal.past_one_to_one, ViscousTimeReversal.past_length, ViscousTimeReversal.past_place_negative, ViscousTimeReversal.past_counts_back, ViscousTimeReversal.partners_match, ViscousTimeReversal.past_shares_one, ViscousTimeReversal.shares_across_split, ViscousTimeReversal.past_gap_same, ViscousTimeReversal.past_gap_value, ViscousTimeReversal.past_gap_grows, ViscousTimeReversal.gapZ_value, ViscousTimeReversal.past_gapZ_same, ViscousTimeReversal.past_record_fixed, ViscousTimeReversal.forward_runs_held, ViscousTimeReversal.heldDial_one, ViscousTimeReversal.heldDial_formula, ViscousTimeReversal.heldDial_pos, ViscousTimeReversal.heldDial_five_zero, ViscousTimeReversal.own_dial_forward, ViscousTimeReversal.own_dial_past, ViscousTimeReversal.past_five_forward_pos, ViscousTimeReversal.forward_five_past_pos, ViscousTimeReversal.afterWrite_one, ViscousTimeReversal.heldAt_write, ViscousTimeReversal.runHeld_bounds, ViscousTimeReversal.write_no_loss, ViscousTimeReversal.freezeAt_23, ViscousTimeReversal.freezePartners_are_writes, ViscousTimeReversal.freeze_partners, ViscousTimeReversal.backStep_eq_opening, ViscousTimeReversal.backStep_below_zero, ViscousTimeReversal.back_partner_both, ViscousTimeReversal.shares_in_out, ViscousTimeReversal.shares_split, ViscousTimeReversal.shares_both_sides, ViscousTimeReversal.shares_after_move, ViscousTimeReversal.shares_returns, ViscousTimeReversal.dialPair_total, ViscousTimeReversal.triageMove_total, ViscousTimeReversal.triageMove_no_fill, ViscousTimeReversal.triageMove_runs, ViscousTimeReversal.writeMove_total, ViscousTimeReversal.writeMove_from_partner, ViscousTimeReversal.writeMove_empty_partner, ViscousTimeReversal.writeMove_afterWrite, ViscousTimeReversal.runPair_eq, ViscousTimeReversal.runPair_total, ViscousTimeReversal.runPair_bounds, ViscousTimeReversal.runPair_write, ViscousTimeReversal.sidePair_own_forward, ViscousTimeReversal.sidePair_own_past, ViscousTimeReversal.resolve_keeps, ViscousTimeReversal.resolve_lands, ViscousTimeReversal.same_either_way, ViscousTimeReversal.moveWithin_shares, ViscousTimeReversal.moveWithin_mentor, ViscousTimeReversal.moveWithin_fits, ViscousTimeReversal.breath_heat, ViscousTimeReversal.breath_heat_freeze, ViscousTimeReversal.breath_heat_nonneg, ViscousTimeReversal.breath_clay, ViscousTimeReversal.write_times, ViscousTimeReversal.write_08_heat, ViscousTimeReversal.lead_from_overlap, ViscousTimeReversal.steps_between_match, ViscousTimeReversal.lead_values, ViscousTimeReversal.time_gap, ViscousTimeReversal.one_full_start, ViscousTimeReversal.steps_per_tick, ViscousTimeReversal.Bucket.share_sum, ViscousTimeReversal.Bucket.share_nonneg, ViscousTimeReversal.Bucket.gather_share, ViscousTimeReversal.Bucket.meet_share, ViscousTimeReversal.Bucket.meet_clean_le, ViscousTimeReversal.Bucket.meet_dirty_le, ViscousTimeReversal.Bucket.meet_swap, ViscousTimeReversal.Bucket.meet_gradual, ViscousTimeReversal.Bucket.meetAll_share, ViscousTimeReversal.Bucket.meetAll_full, ViscousTimeReversal.Bucket.meetAll_clean_le, ViscousTimeReversal.Bucket.meetAll_dirty_le, ViscousTimeReversal.Bucket.meetAll_dirty, ViscousTimeReversal.collide_totals, ViscousTimeReversal.collide_swap, ViscousTimeReversal.meetAll_sides, ViscousTimeReversal.leftTotal_collide, ViscousTimeReversal.rightTotal_collide, ViscousTimeReversal.run_result, ViscousTimeReversal.run_left_cleaner, ViscousTimeReversal.dialPair_bucket, ViscousTimeReversal.writeMove_is_transfer, ViscousTimeReversal.triageMove_is_transfer, ViscousTimeReversal.start_holds_both, ViscousTimeReversal.history_any_length, ViscousTimeReversal.past_meetings_same_rule, ViscousTimeReversal.start_run_same_rule, ViscousTimeReversal.starts_meet, ViscousTimeReversal.transfer_changes_side, ViscousTimeReversal.move_stays_in_meter, ViscousTimeReversal.meter_stays_in_meter, ViscousTimeReversal.meter_starts_full, ViscousTimeReversal.windows_take_turns, ViscousTimeReversal.hop_stays_in_meter, ViscousTimeReversal.leapfrog_stays_in_meter, ViscousTimeReversal.two_full_meters_one_bucket, ViscousTimeReversal.meeting_stays_in_meter, ViscousTimeReversal.empty_then_fill_from_full, ViscousTimeReversal.round_returns_full, ViscousTimeReversal.infinity_bucket, ViscousTimeReversal.no_last_round, ViscousTimeReversal.reversal_keeps_meter, ViscousTimeReversal.guard_meters_set_the_wall, ViscousTimeReversal.leapfrog_keeps_the_wall, ViscousTimeReversal.contact_through_guards, ViscousTimeReversal.reversal_moves_both_guards, ViscousTimeReversal.reversal_keeps_bucket_full, ViscousTimeReversal.reversal_keeps_start, ViscousTimeReversal.schedule_get_some, ViscousTimeReversal.back_ticks_at_reversed_time, ViscousTimeReversal.zero_holds_past_and_future, ViscousTimeReversal.count_through_zero, ViscousTimeReversal.count_meets_ticks, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ViscousTimeReversalMeterChallenge
+Building ViscousTimeReversalMeterProofs
+⚠ [8773/8779] Replayed HugWallPushProofs
+warning: HugWallPushProofs.lean:20:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:20:4: Unused tactic linter: `exact Fintype.sum_equiv (Equiv.subRight e) _ _ (fun _ => rfl)` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:35:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:35:6: Unused tactic linter: `simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:159:4: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:159:4: Unused tactic linter: `simpa using (hasDerivAt_id' (x := t)).const_mul c` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:268:21: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:270:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:268:21: Unused tactic linter: `field_simp` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:270:23: Unused tactic linter: `nlinarith [ha, hb]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:380:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:380:23: Unused tactic linter: `nlinarith [ih, hc]` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:413:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: HugWallPushProofs.lean:413:8: Unused tactic linter: `omega` does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: HugWallPushProofs.lean:472:0: automatically included section variable(s) unused in theorem `HugWallPush.clayHeat_nonneg`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: HugWallPushProofs.lean:478:0: automatically included section variable(s) unused in theorem `HugWallPush.clay_energy`:
+  [AddCommGroup G]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [AddCommGroup G] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [8774/8779] Replayed ViscousTimeReversalBucketDefinitions
+warning: ViscousTimeReversalBucketDefinitions.lean:371:23: `if_true` has been deprecated: Use `ite_true` instead
+warning: ViscousTimeReversalBucketDefinitions.lean:379:19: This simp argument is unused:
+  Fintype.sum_bool
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ViscousTimeReversalBucketDefinitions.lean:412:75: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Sum.elim_inl, Sum.elim_inr, zero_add, add_zero, Finset.sum_const, Finset.card_univ,
+    Fintype.card_fin, Fintype.card_unit, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8776/8779] Built ViscousTimeReversalBucketProofs (8.7s)
+warning: ViscousTimeReversalBucketProofs.lean:993:42: `if_false` has been deprecated: Use `ite_false` instead
+ℹ [8777/8779] Built ViscousTimeReversalProofs (6.2s)
+info: ViscousTimeReversalProofs.lean:369:0: 'ViscousTimeReversal.reverseTime_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:370:0: 'ViscousTimeReversal.timeReverse_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:371:0: 'ViscousTimeReversal.viscosity_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:372:0: 'ViscousTimeReversal.whole_rhs_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:373:0: 'ViscousTimeReversal.forwardFactor_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:374:0: 'ViscousTimeReversal.backwardFactor_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:375:0: 'ViscousTimeReversal.forward_damping' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:376:0: 'ViscousTimeReversal.backward_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:377:0: 'ViscousTimeReversal.forward_strict_damping' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:378:0: 'ViscousTimeReversal.backward_strict_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:379:0: 'ViscousTimeReversal.higher_frequency_amplification' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:380:0: 'ViscousTimeReversal.factor_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:381:0: 'ViscousTimeReversal.negative_step_reverses_rate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:382:0: 'ViscousTimeReversal.double_sign_flip_restores_forward' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:383:0: 'ViscousTimeReversal.split_at_tick_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:384:0: 'ViscousTimeReversal.reverse_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:385:0: 'ViscousTimeReversal.reversal_keeps_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:386:0: 'ViscousTimeReversal.reflect_flips_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:387:0: 'ViscousTimeReversal.forward_gap_becomes_backward_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:388:0: 'ViscousTimeReversal.touch_stays_touch' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:389:0: 'ViscousTimeReversal.tick23_gap_reverses_to_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:390:0: 'ViscousTimeReversal.freeze_at_tick23_both_ways' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:391:0: 'ViscousTimeReversal.share_change_undone' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:392:0: 'ViscousTimeReversal.wall_is_single_system_viscosity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:393:0: 'ViscousTimeReversal.thin_and_thick_wall' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:394:0: 'ViscousTimeReversal.wall_between_thin_and_thick' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:395:0: 'ViscousTimeReversal.reversed_wall_range' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:396:0: 'ViscousTimeReversal.wall_flips_under_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:397:0: 'ViscousTimeReversal.forward_wall_only_damps' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:398:0: 'ViscousTimeReversal.backward_wall_only_amplifies' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:399:0: 'ViscousTimeReversal.thick_wall_amplifies_most' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:400:0: 'ViscousTimeReversal.thick_wall_damps_most' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:401:0: 'ViscousTimeReversal.wall_factors_multiply_to_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:402:0: 'ViscousTimeReversal.backward_step_is_reversed_wall' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:403:0: 'ViscousTimeReversal.wall_takes_forward_from_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:404:0: 'ViscousTimeReversal.wall_gives_backward_from_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ViscousTimeReversalProofs.lean:405:0: 'ViscousTimeReversal.both_directions_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8778/8779] Built ViscousTimeReversalMeterProofs (4.6s)
+Build completed successfully (8779 jobs).
+Exporting #[Nat, String, String.mk, Char, Quot, Quot.mk, Quot.lift, Quot.ind, ViscousTimeReversal.reverseTime_twice, ViscousTimeReversal.timeReverse_derivative, ViscousTimeReversal.viscosity_reversal, ViscousTimeReversal.whole_rhs_reversal, ViscousTimeReversal.forwardFactor_derivative, ViscousTimeReversal.backwardFactor_derivative, ViscousTimeReversal.forward_damping, ViscousTimeReversal.backward_amplification, ViscousTimeReversal.forward_strict_damping, ViscousTimeReversal.backward_strict_amplification, ViscousTimeReversal.higher_frequency_amplification, ViscousTimeReversal.factor_cancellation, ViscousTimeReversal.negative_step_reverses_rate, ViscousTimeReversal.double_sign_flip_restores_forward, ViscousTimeReversal.split_at_tick_two, ViscousTimeReversal.reverse_twice, ViscousTimeReversal.reversal_keeps_one, ViscousTimeReversal.reflect_flips_margin, ViscousTimeReversal.forward_gap_becomes_backward_overlap, ViscousTimeReversal.touch_stays_touch, ViscousTimeReversal.tick23_gap_reverses_to_overlap, ViscousTimeReversal.freeze_at_tick23_both_ways, ViscousTimeReversal.share_change_undone, ViscousTimeReversal.wall_is_single_system_viscosity, ViscousTimeReversal.thin_and_thick_wall, ViscousTimeReversal.wall_between_thin_and_thick, ViscousTimeReversal.reversed_wall_range, ViscousTimeReversal.wall_flips_under_reversal, ViscousTimeReversal.forward_wall_only_damps, ViscousTimeReversal.backward_wall_only_amplifies, ViscousTimeReversal.thick_wall_amplifies_most, ViscousTimeReversal.thick_wall_damps_most, ViscousTimeReversal.wall_factors_multiply_to_one, ViscousTimeReversal.backward_step_is_reversed_wall, ViscousTimeReversal.wall_takes_forward_from_split, ViscousTimeReversal.wall_gives_backward_from_split, ViscousTimeReversal.both_directions_add, ViscousTimeReversal.labels_eq, ViscousTimeReversal.two_le_of_primeLabel, ViscousTimeReversal.scheduleWith_32_25, ViscousTimeReversal.scheduleWith_get, ViscousTimeReversal.pastSchedule_get, ViscousTimeReversal.past_same_ticks, ViscousTimeReversal.past_one_to_one, ViscousTimeReversal.past_length, ViscousTimeReversal.past_place_negative, ViscousTimeReversal.past_counts_back, ViscousTimeReversal.partners_match, ViscousTimeReversal.past_shares_one, ViscousTimeReversal.shares_across_split, ViscousTimeReversal.past_gap_same, ViscousTimeReversal.past_gap_value, ViscousTimeReversal.past_gap_grows, ViscousTimeReversal.gapZ_value, ViscousTimeReversal.past_gapZ_same, ViscousTimeReversal.past_record_fixed, ViscousTimeReversal.forward_runs_held, ViscousTimeReversal.heldDial_one, ViscousTimeReversal.heldDial_formula, ViscousTimeReversal.heldDial_pos, ViscousTimeReversal.heldDial_five_zero, ViscousTimeReversal.own_dial_forward, ViscousTimeReversal.own_dial_past, ViscousTimeReversal.past_five_forward_pos, ViscousTimeReversal.forward_five_past_pos, ViscousTimeReversal.afterWrite_one, ViscousTimeReversal.heldAt_write, ViscousTimeReversal.runHeld_bounds, ViscousTimeReversal.write_no_loss, ViscousTimeReversal.freezeAt_23, ViscousTimeReversal.freezePartners_are_writes, ViscousTimeReversal.freeze_partners, ViscousTimeReversal.backStep_eq_opening, ViscousTimeReversal.backStep_below_zero, ViscousTimeReversal.back_partner_both, ViscousTimeReversal.shares_in_out, ViscousTimeReversal.shares_split, ViscousTimeReversal.shares_both_sides, ViscousTimeReversal.shares_after_move, ViscousTimeReversal.shares_returns, ViscousTimeReversal.dialPair_total, ViscousTimeReversal.triageMove_total, ViscousTimeReversal.triageMove_no_fill, ViscousTimeReversal.triageMove_runs, ViscousTimeReversal.writeMove_total, ViscousTimeReversal.writeMove_from_partner, ViscousTimeReversal.writeMove_empty_partner, ViscousTimeReversal.writeMove_afterWrite, ViscousTimeReversal.runPair_eq, ViscousTimeReversal.runPair_total, ViscousTimeReversal.runPair_bounds, ViscousTimeReversal.runPair_write, ViscousTimeReversal.sidePair_own_forward, ViscousTimeReversal.sidePair_own_past, ViscousTimeReversal.resolve_keeps, ViscousTimeReversal.resolve_lands, ViscousTimeReversal.same_either_way, ViscousTimeReversal.moveWithin_shares, ViscousTimeReversal.moveWithin_mentor, ViscousTimeReversal.moveWithin_fits, ViscousTimeReversal.breath_heat, ViscousTimeReversal.breath_heat_freeze, ViscousTimeReversal.breath_heat_nonneg, ViscousTimeReversal.breath_clay, ViscousTimeReversal.write_times, ViscousTimeReversal.write_08_heat, ViscousTimeReversal.lead_from_overlap, ViscousTimeReversal.steps_between_match, ViscousTimeReversal.lead_values, ViscousTimeReversal.time_gap, ViscousTimeReversal.one_full_start, ViscousTimeReversal.steps_per_tick, ViscousTimeReversal.Bucket.share_sum, ViscousTimeReversal.Bucket.share_nonneg, ViscousTimeReversal.Bucket.gather_share, ViscousTimeReversal.Bucket.meet_share, ViscousTimeReversal.Bucket.meet_clean_le, ViscousTimeReversal.Bucket.meet_dirty_le, ViscousTimeReversal.Bucket.meet_swap, ViscousTimeReversal.Bucket.meet_gradual, ViscousTimeReversal.Bucket.meetAll_share, ViscousTimeReversal.Bucket.meetAll_full, ViscousTimeReversal.Bucket.meetAll_clean_le, ViscousTimeReversal.Bucket.meetAll_dirty_le, ViscousTimeReversal.Bucket.meetAll_dirty, ViscousTimeReversal.collide_totals, ViscousTimeReversal.collide_swap, ViscousTimeReversal.meetAll_sides, ViscousTimeReversal.leftTotal_collide, ViscousTimeReversal.rightTotal_collide, ViscousTimeReversal.run_result, ViscousTimeReversal.run_left_cleaner, ViscousTimeReversal.dialPair_bucket, ViscousTimeReversal.writeMove_is_transfer, ViscousTimeReversal.triageMove_is_transfer, ViscousTimeReversal.start_holds_both, ViscousTimeReversal.history_any_length, ViscousTimeReversal.past_meetings_same_rule, ViscousTimeReversal.start_run_same_rule, ViscousTimeReversal.starts_meet, ViscousTimeReversal.transfer_changes_side, ViscousTimeReversal.move_stays_in_meter, ViscousTimeReversal.meter_stays_in_meter, ViscousTimeReversal.meter_starts_full, ViscousTimeReversal.windows_take_turns, ViscousTimeReversal.hop_stays_in_meter, ViscousTimeReversal.leapfrog_stays_in_meter, ViscousTimeReversal.two_full_meters_one_bucket, ViscousTimeReversal.meeting_stays_in_meter, ViscousTimeReversal.empty_then_fill_from_full, ViscousTimeReversal.round_returns_full, ViscousTimeReversal.infinity_bucket, ViscousTimeReversal.no_last_round, ViscousTimeReversal.reversal_keeps_meter, ViscousTimeReversal.guard_meters_set_the_wall, ViscousTimeReversal.leapfrog_keeps_the_wall, ViscousTimeReversal.contact_through_guards, ViscousTimeReversal.reversal_moves_both_guards, ViscousTimeReversal.reversal_keeps_bucket_full, ViscousTimeReversal.reversal_keeps_start, ViscousTimeReversal.schedule_get_some, ViscousTimeReversal.back_ticks_at_reversed_time, ViscousTimeReversal.zero_holds_past_and_future, ViscousTimeReversal.count_through_zero, ViscousTimeReversal.count_meets_ticks, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce] from ViscousTimeReversalMeterProofs
 Running nanoda kernel on solution
 nanoda kernel accepts the solution
 Running Lean default kernel on solution.
 Lean default kernel accepts the solution
 Your solution is okay!
-Finished with result: success
-Main processes terminated with: code=exited/status=0
-Service runtime: 34.053s
-CPU time consumed: 38.775s
-Memory peak: 256.0K
-Memory swap peak: 0B

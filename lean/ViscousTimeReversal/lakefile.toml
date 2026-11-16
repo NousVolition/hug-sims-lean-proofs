@@ -1,6 +1,6 @@
 name = "ViscousTimeReversal"
 version = "0.1.0"
-defaultTargets = ["ViscousTimeReversalProofs"]
+defaultTargets = ["ViscousTimeReversalMeterProofs"]
 
 [[require]]
 name = "mathlib"
@@ -37,3 +37,36 @@ name = "ViscousTimeReversalChallenge"
 
 [[lean_lib]]
 name = "ViscousTimeReversalProofs"
+
+[[lean_lib]]
+name = "HugWallPushDefinitions"
+
+[[lean_lib]]
+name = "HugWallPushProofs"
+
+[[lean_lib]]
+name = "V3SourceCore"
+
+[[lean_lib]]
+name = "V3SourceMemory"
+
+[[lean_lib]]
+name = "V3SourceSocial"
+
+[[lean_lib]]
+name = "V3SourceFlow"
+
+[[lean_lib]]
+name = "V3SourceGeometry"
+
+[[lean_lib]]
+name = "V3SourceSystem"
+
+[[lean_lib]]
+name = "ViscousTimeReversalMeterDefinitions"
+
+[[lean_lib]]
+name = "ViscousTimeReversalMeterChallenge"
+
+[[lean_lib]]
+name = "ViscousTimeReversalMeterProofs"

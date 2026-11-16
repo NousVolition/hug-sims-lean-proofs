@@ -1,14 +1,28 @@
 {
   "files": {
-    "ViscousTimeReversalDefinitions.lean": "230482327325cf2526f8f7c0b9c6843df92a9fa88d624e4c4ef291936e4b68b6",
-    "ViscousTimeReversalChallenge.lean": "4c2a0902145dce2a2fb04ca2e38cb1d9f871f7acaa61563d9f19aaf88af89a69",
-    "ViscousTimeReversalProofs.lean": "eac49570833bbb0acb14508d356ef487e2d929767baff4b81a85abd0032cf9e0",
-    "MentorStudentModel.lean": "05ef696788f1e8d790d57922dac8687cc449945f8f5652833a6058bbb8ad7ad5",
     "FullModel.lean": "928e00f664817fe3c85144265ff824d7014334b1866d4904741f8d367a2119c6",
-    "comparator.json": "70f83c3a2e2974edc82cfca9ee91a2d8af5f98ddea0227760e1a1144dbb3936f",
-    "lakefile.toml": "d9952ece3ceab5e23ede6b6862583c3d325d33e07550bda1f7e46aa43e3c64e4",
+    "HugWallPushDefinitions.lean": "c69bcc6d1173459f276ee7dd24e1c14f9d215be0a657ab95925c58ffdadf61b7",
+    "HugWallPushProofs.lean": "0b79eb5539790a55dc0ff1d6abaf6f64cd4b6c10357c348c6c2906f3e11f2f52",
+    "MentorStudentModel.lean": "05ef696788f1e8d790d57922dac8687cc449945f8f5652833a6058bbb8ad7ad5",
+    "V3SourceCore.lean": "d32dbdc25d512c66f0f7c4b6ce3e9a1aaa2fd44ec472fa7672c51fd2b5a5ac27",
+    "V3SourceFlow.lean": "6d0de72dd9ea0f2b72d612ae0bb79f05c1c215a3785c2f380b9a04681c35e651",
+    "V3SourceGeometry.lean": "9743ee670643f6b1c96b6f6d09b537dae06952c9bf791665d91b8f8f3835f7b9",
+    "V3SourceMemory.lean": "77e3e4859708781de92993596004defadd4e77b61f27d452b39bd6b9c0245e07",
+    "V3SourceSocial.lean": "1f968992f77d8be1d9379532a613816b58dac6d924c2a4ebff475ff9e9d92007",
+    "V3SourceSystem.lean": "7d7fe007bbb2a9197563f6d755190e89fdc7ede96c42d8e3e6539960773a673d",
+    "ViscousTimeReversalBucketChallenge.lean": "2f605fe7914c53b69e7c7099d637eb54c360a58e38813324ca701d66f40973bb",
+    "ViscousTimeReversalBucketDefinitions.lean": "357d70e6c3ea572ad76716c81427e6f8aad73bb0407c8f24cd32b58a6cce8c39",
+    "ViscousTimeReversalBucketProofs.lean": "b87496ac0ec4ebf437c9665d6a26f7314887db178a0419bf03c31d95b60fd3b5",
+    "ViscousTimeReversalChallenge.lean": "46f3b9c03c802243297335372857302426626c6cf7c50b8710e97f6d6303f608",
+    "ViscousTimeReversalDefinitions.lean": "fbcbbaae3b2487e424ba6f3a2180c93209393b51ed1abaff5658227eb1cc3ed4",
+    "ViscousTimeReversalMeterChallenge.lean": "fa4cd1517e80535e68dd93cdecabc13df5fc8b53234105dd2e4509828fa2077f",
+    "ViscousTimeReversalMeterDefinitions.lean": "a17b082e1ddd36c1418a9ea7080810f37cb301fcec33b8e6bbe4fb8976305e07",
+    "ViscousTimeReversalMeterProofs.lean": "aa4391c123c230d65670c2c3e68171f3c09a23730e911f63cb42235090350686",
+    "ViscousTimeReversalProofs.lean": "3c78d3474e758679fb3ee75d71967a920c000cf71982b07eff8f9c9016aba4d7",
+    "comparator.json": "6b0d395c9bdee36dc39eedb0b75cb85abb89fda16c33fce04feba69194120b31",
+    "lakefile.toml": "ef49e831040b01a12a2e66fbfc0cbe967bcfcfe3c38985b7a1f463da82f2d511",
     "lake-manifest.json": "10b1ae73dc69f16c055fe9fef3b3271670780276c27dae479a13652ad34e4605",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88"
   },
-  "scope": "Thirty-seven statements: the time-reversal chain rule, sign reversal of a given viscous rate and complete scalar RHS, exponential damping/amplification for an assumed Laplacian eigenmode, Euler-increment sign identities, and their form in the mentor and student model: reversal around the 0,0 split, shares, gap/touch/overlap, the tick 23 freeze, the wall viscosity 1/50 + (1/25)(gAB + gBA), and what the wall takes forward and gives backward on one ripple counted from the split."
+  "scope": "One hundred sixty-five statements. The thirty-seven on time reversal, the ripple factors and the wall at the 0,0 split; the one hundred four on prime ticks counted ahead and back, the paired buckets, the bucket rule and starts; and twenty-four that join them: a meter from 0 to 5/5 with fills and empties, two windows taking turns, two full meters meeting at 0,0 into one full bucket, rounds without end, the guards gAB and gBA from FullModel.lean as meter levels that keep the wall between 1/50 and 1/10, contact through the guards, reversal on both guards together, reversal on a bucket or start of any number of parts, every prime tick counted back at the reversed time, 0 holding the past and the future together, and one count through 0."
 }

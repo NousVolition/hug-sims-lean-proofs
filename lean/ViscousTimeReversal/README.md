@@ -1,6 +1,6 @@
 # Viscosity under time reversal
 
-**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build. All 37 configured statements passed in [GitHub run 43703185290](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43703185290); every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The [report](verification-report.json), [logs and axiom lists](evidence-linux/) and [checked revision and input hashes](evidence-linux/source.json) are saved in this package.
+**Verification: PASS** for Comparator, Lean’s kernel, nanoda and the default build, for all 165 configured statements, in a local run on this package (not yet a GitHub run); every statement depends only on `propext`, `Classical.choice` and `Quot.sound`. The first 37 also passed in [GitHub run 43703185290](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43703185290). The [report](verification-report.json), [logs and axiom lists](evidence-linux/) and [input hashes](evidence-linux/source.json) are saved in this package.
 
 ## At a glance
 
@@ -15,7 +15,7 @@ The sign flip of viscosity under time reversal is proved, not assumed: it follow
 
 ## Model
 
-Time is counted from the 0,0 split at tick 2: forward is after the split, the past is before it. The wall is the single-system viscosity `1/50 + (1/25)(gAB + gBA)`; the thin wall (both guards down) is `1/50` and the thick wall (both guards up) is `1/10`.
+Time is counted from the 0,0 split at tick 2: 0 holds the past and the future together, and forward and back are both counted from it. The wall is the single-system viscosity `1/50 + (1/25)(gAB + gBA)`; the thin wall (both guards down) is `1/50` and the thick wall (both guards up) is `1/10`.
 
 [TREE.md](TREE.md) connects the 37 statements. Each statement has its own page with the Lean statement as checked, plain-words versions in English, Español, Français, Deutsch, 中文, 日本語, العربية, हिन्दी and Português, and Lean/Unicode, ASCII and LaTeX forms. Only the Lean files are checked.
 
@@ -39,11 +39,25 @@ The bucket rule. These hold for any finite type of parts, every share, every mee
 
 Starts. A start at 0 is one full bucket whose parts are history parts and ahead parts, of any types. History and what is ahead are in the same bucket and together make 1, and a history may have any number of parts. The meeting at each prime tick, and all of them in order, act on a start by one rule, on history parts and ahead parts alike. Two starts meet at 0,0 into one full bucket, and each start's history and ahead parts are carried in at their shares.
 
+## The meter, the guards and reversal (24)
+
+These statements import the time-reversal results and the bucket rule above, and the guards `gAB` and `gBA` from `FullModel.lean`.
+
+The meter. A meter reads from 0 to 5/5. A fill stops at 5/5 and an empty stops at 0, and any run of fills and empties stays in the meter. As in the penne diagram, there are two windows, A and B: when A hops, B stays fixed, and when B hops, A stays fixed. Both start full at the marked piece. Two full meters, 5/5 and 5/5, make 2 before the meeting at 0,0 and one full 5/5 bucket after it, for every placement; whatever the two meters read, the bucket they make stays in the meter. One round, A empties and fills and then B does, ends full again, and so does any number of rounds. There is no last round: after any run of hops, both windows fill back to 5/5 and more rounds follow.
+
+The guards. When the two guard readings at a point are meter levels, the wall there, `HugNavierSingle.viscosity`, lies between the thin wall 1/50 and the thick wall 1/10, by `wall_between_thin_and_thick`. With both guards full the wall is the thick wall. Contact passes through the guards: the part of A's reaction that comes from B is `weightAB * gAB * (xB - xA)`, and B's is `weightBA * gBA * (xA - xB)`; with a guard at 0 that part is 0. Run backward around the split, both guards are read at the same reversed time, and so is the wall made from them.
+
+Reversal on a whole. Run backward around the split, a bucket of any number of parts is still full, a start's history and what is ahead still make 1 together, the meters and their 0,0 bucket stay in the meter, and reversing twice gives each of them back.
+
+Back ticks, 0 and the count through 0. For every prime tick in the schedule, the back tick at the same index is the same tick placed at `-p`; the forward tick is at time `i/10` and the back tick at the reversed time `-(i/10)`. At 0 a start holds its history and what is ahead together and reversal leaves it in place, and the forward and back ticks at index 0 are the same instant. One count runs over all whole numbers, back places below 0 and ahead places above 0, each step 1/10 with no break at 0. Reversal sends place `n` to place `-n`; at every place the forward and backward factors multiply to 1, the backward factor at `n` is the forward factor at `-n`, and the forward factor has its derivative there. Place `i` is the forward tick at index `i` and place `-i` is its back tick.
+
+There is no reversal of the mentor alone; reversal acts on both sides together.
+
 ## Files
 
-`ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalChallenge.lean` freezes the 37 statements, and through `ViscousTimeReversalBucketChallenge.lean` the 104 statements on starts and the bucket rule; it is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs, with those for starts and the bucket rule in `ViscousTimeReversalBucketProofs.lean` (definitions in `ViscousTimeReversalBucketDefinitions.lean`). `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
+`ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalMeterChallenge.lean` freezes all 165 statements: through `ViscousTimeReversalChallenge.lean` the first 141, and the 24 on the meter, the guards and reversal (definitions in `ViscousTimeReversalMeterDefinitions.lean`, proofs in `ViscousTimeReversalMeterProofs.lean`, the solution). `ViscousTimeReversalChallenge.lean` freezes the 37 statements, and through `ViscousTimeReversalBucketChallenge.lean` the 104 statements on starts and the bucket rule; it is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs, with those for starts and the bucket rule in `ViscousTimeReversalBucketProofs.lean` (definitions in `ViscousTimeReversalBucketDefinitions.lean`). `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources. `HugWallPushDefinitions.lean`, `HugWallPushProofs.lean` and the six `V3Source*.lean` files are byte-for-byte copies so the package builds on its own, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
 
-From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 37 theorems. Its `proof-viscous-time-reversal-lean-1` artifact is saved unchanged in `evidence-linux/`.
+From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 165 theorems. `evidence-linux/` now holds the local run of those same steps; the GitHub artifact for the first 37 is in git history.
 
 ## Scope
 

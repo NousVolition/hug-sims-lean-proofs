@@ -183,5 +183,618 @@
     "propext",
     "Classical.choice",
     "Quot.sound"
+  ],
+  "ViscousTimeReversal.labels_eq": [],
+  "ViscousTimeReversal.two_le_of_primeLabel": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.scheduleWith_32_25": [],
+  "ViscousTimeReversal.scheduleWith_get": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.pastSchedule_get": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_same_ticks": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_one_to_one": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_length": [
+    "propext"
+  ],
+  "ViscousTimeReversal.past_place_negative": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_counts_back": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.partners_match": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_shares_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.shares_across_split": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_gap_same": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_gap_value": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_gap_grows": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.gapZ_value": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_gapZ_same": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_record_fixed": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forward_runs_held": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.heldDial_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.heldDial_formula": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.heldDial_pos": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.heldDial_five_zero": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.own_dial_forward": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.own_dial_past": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_five_forward_pos": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.forward_five_past_pos": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.afterWrite_one": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.heldAt_write": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.runHeld_bounds": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.write_no_loss": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.freezeAt_23": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.freezePartners_are_writes": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.freeze_partners": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backStep_eq_opening": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.backStep_below_zero": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.back_partner_both": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.shares_in_out": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.shares_split": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.shares_both_sides": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.shares_after_move": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.shares_returns": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.dialPair_total": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.triageMove_total": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.triageMove_no_fill": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.triageMove_runs": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.writeMove_total": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.writeMove_from_partner": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.writeMove_empty_partner": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.writeMove_afterWrite": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.runPair_eq": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.runPair_total": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.runPair_bounds": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.runPair_write": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.sidePair_own_forward": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.sidePair_own_past": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.resolve_keeps": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.resolve_lands": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.same_either_way": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.moveWithin_shares": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.moveWithin_mentor": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.moveWithin_fits": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.breath_heat": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.breath_heat_freeze": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.breath_heat_nonneg": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.breath_clay": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.write_times": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.write_08_heat": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.lead_from_overlap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.steps_between_match": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.lead_values": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.time_gap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.one_full_start": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.steps_per_tick": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.share_sum": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.share_nonneg": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.gather_share": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meet_share": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meet_clean_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meet_dirty_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meet_swap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meet_gradual": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meetAll_share": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meetAll_full": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meetAll_clean_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meetAll_dirty_le": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.Bucket.meetAll_dirty": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.collide_totals": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.collide_swap": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.meetAll_sides": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.leftTotal_collide": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.rightTotal_collide": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.run_result": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.run_left_cleaner": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.dialPair_bucket": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.writeMove_is_transfer": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.triageMove_is_transfer": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.start_holds_both": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.history_any_length": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.past_meetings_same_rule": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.start_run_same_rule": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.starts_meet": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.transfer_changes_side": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.move_stays_in_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.meter_stays_in_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.meter_starts_full": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.windows_take_turns": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.hop_stays_in_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.leapfrog_stays_in_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.two_full_meters_one_bucket": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.meeting_stays_in_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.empty_then_fill_from_full": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.round_returns_full": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.infinity_bucket": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.no_last_round": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reversal_keeps_meter": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.guard_meters_set_the_wall": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.leapfrog_keeps_the_wall": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.contact_through_guards": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reversal_moves_both_guards": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reversal_keeps_bucket_full": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.reversal_keeps_start": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.schedule_get_some": [
+    "propext",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.back_ticks_at_reversed_time": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.zero_holds_past_and_future": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.count_through_zero": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.count_meets_ticks": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }

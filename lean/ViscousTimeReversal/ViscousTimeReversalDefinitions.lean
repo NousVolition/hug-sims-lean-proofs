@@ -9,7 +9,7 @@ only comments differ from the sources (see `source-provenance.json`). The wall v
 `FullModel.lean`.
 
 Time is counted from the 0,0 split: the split is time 0 (tick 2, mentor step 0, student
-step 0, clock offset 0). Forward is after the split, the past is before it. -/
+step 0, clock offset 0). 0 holds the past and the future together, and forward and back are both counted from it. -/
 
 namespace ViscousTimeReversal
 
