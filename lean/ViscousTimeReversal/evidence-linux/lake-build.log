@@ -1,4 +1,4 @@
-⚠ [8773/8785] Replayed HugWallPushProofs
+⚠ [8773/8787] Replayed HugWallPushProofs
 warning: HugWallPushProofs.lean:20:4: this tactic is never executed
 
 Note: This linter can be disabled with `set_option linter.unreachableTactic false`
@@ -53,7 +53,7 @@ consider restructuring your `variable` declarations so that the variables are no
   omit [AddCommGroup G] in theorem ...
 
 Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
-⚠ [8774/8785] Replayed ViscousTimeReversalBucketDefinitions
+⚠ [8774/8787] Replayed ViscousTimeReversalBucketDefinitions
 warning: ViscousTimeReversalBucketDefinitions.lean:371:23: `if_true` has been deprecated: Use `ite_true` instead
 warning: ViscousTimeReversalBucketDefinitions.lean:379:19: This simp argument is unused:
   Fintype.sum_bool
@@ -70,9 +70,9 @@ Hint: Omit it from the simp argument list.
     Fintype.card_fin, Fintype.card_unit, nsmul_eq_mul]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [8775/8785] Replayed ViscousTimeReversalBucketProofs
+⚠ [8775/8787] Replayed ViscousTimeReversalBucketProofs
 warning: ViscousTimeReversalBucketProofs.lean:993:42: `if_false` has been deprecated: Use `ite_false` instead
-ℹ [8776/8785] Replayed ViscousTimeReversalProofs
+ℹ [8776/8787] Replayed ViscousTimeReversalProofs
 info: ViscousTimeReversalProofs.lean:369:0: 'ViscousTimeReversal.reverseTime_twice' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: ViscousTimeReversalProofs.lean:370:0: 'ViscousTimeReversal.timeReverse_derivative' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: ViscousTimeReversalProofs.lean:371:0: 'ViscousTimeReversal.viscosity_reversal' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -110,7 +110,7 @@ info: ViscousTimeReversalProofs.lean:402:0: 'ViscousTimeReversal.backward_step_i
 info: ViscousTimeReversalProofs.lean:403:0: 'ViscousTimeReversal.wall_takes_forward_from_split' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: ViscousTimeReversalProofs.lean:404:0: 'ViscousTimeReversal.wall_gives_backward_from_split' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: ViscousTimeReversalProofs.lean:405:0: 'ViscousTimeReversal.both_directions_add' depends on axioms: [propext, Classical.choice, Quot.sound]
-⚠ [8784/8785] Replayed ViscousTimeReversalWirtingerProofs
+⚠ [8784/8787] Replayed ViscousTimeReversalWirtingerProofs
 warning: ViscousTimeReversalWirtingerProofs.lean:48:0: automatically included section variable(s) unused in theorem `CycleWirtinger.cos_step`:
   [NeZero n]
 consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
@@ -127,4 +127,4 @@ But this is not relevant for proofs because of proof irrelevance.
 
 Note: This linter can be disabled with `set_option linter.style.haveILetI false`
 warning: ViscousTimeReversalWirtingerProofs.lean:225:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
-Build completed successfully (8785 jobs).
+Build completed successfully (8787 jobs).

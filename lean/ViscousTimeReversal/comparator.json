@@ -1,6 +1,6 @@
 {
-  "challenge_module": "ViscousTimeReversalWirtingerChallenge",
-  "solution_module": "ViscousTimeReversalWirtingerProofs",
+  "challenge_module": "ViscousTimeReversalTorusChallenge",
+  "solution_module": "ViscousTimeReversalTorusProofs",
   "enable_nanoda": true,
   "theorem_names": [
     "ViscousTimeReversal.reverseTime_twice",
@@ -202,7 +202,19 @@
     "CycleWirtinger.wirtinger",
     "CycleWirtinger.re_sq",
     "CycleWirtinger.sum_re_sq",
-    "CycleWirtinger.wirtinger_sharp"
+    "CycleWirtinger.wirtinger_sharp",
+    "TorusPoincare.mean_sq_le",
+    "TorusPoincare.step_mean_le",
+    "TorusPoincare.add_direction",
+    "TorusPoincare.plane",
+    "TorusPoincare.torus",
+    "TorusPoincare.gap_anti",
+    "TorusPoincare.gap_min",
+    "TorusPoincare.torus_sharp",
+    "TorusPoincare.torus_attained",
+    "TorusPoincare.mean_has_no_gap",
+    "TorusPoincare.scaled_gap_le",
+    "TorusPoincare.scaled_gap_tendsto"
   ],
   "permitted_axioms": [
     "propext",
