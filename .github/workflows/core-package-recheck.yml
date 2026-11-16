@@ -44,7 +44,7 @@ jobs:
               raise SystemExit("Expected exactly 19 distinct core packages")
           paths = []
           for name in requested:
-              if not re.fullmatch(r"[a-z0-9-]+", name):
+              if not re.fullmatch(r"[A-Za-z0-9-]+", name):
                   raise SystemExit(f"Invalid package name: {name!r}")
               directory = Path("lean") / name
               for pin in ("lakefile.toml", "lean-toolchain", "lake-manifest.json",

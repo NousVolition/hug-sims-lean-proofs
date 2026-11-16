@@ -10,16 +10,16 @@ $$
 \partial_t g+u_{\rm read}\cdot\nabla g=\tfrac{3}{200}\Delta g+R_g+(u_{\rm read}-u)\cdot\nabla g.
 $$
 
-For a differentiable guard along a curve with velocity $u_{\rm read}$, the left side is the derivative of the guard on that curve by the chain rule. Both diffusion and the directional reaction still contribute when $u_{\rm read}=u$. The [Lean supplement](../../../lean/hug-navier-wellposedness-lean/GuardTransport.lean) checks the pointwise rate identity for both original guard equations, linearity of the velocity blend against a common gradient, and the two-history advection decomposition.
+For a differentiable guard along a curve with velocity $u_{\rm read}$, the left side is the derivative of the guard on that curve by the chain rule. Both diffusion and the directional reaction still contribute when $u_{\rm read}=u$. The [Lean supplement](../../../lean/HugNavierWellposedness/GuardTransport.lean) checks the pointwise rate identity for both original guard equations, linearity of the velocity blend against a common gradient, and the two-history advection decomposition.
 
-In the [classical uniqueness argument](../../../lean/hug-navier-wellposedness-lean/CLASSICAL-UNIQUENESS-ARGUMENT.md), take $\delta u=u-\tilde u$, let $h=g-\tilde g$, and use the comparison guard's gradient $\nabla\tilde g$. After separating common advection, the remaining integrand satisfies the pointwise Lean estimate,
+In the [classical uniqueness argument](../../../lean/HugNavierWellposedness/CLASSICAL-UNIQUENESS-ARGUMENT.md), take $\delta u=u-\tilde u$, let $h=g-\tilde g$, and use the comparison guard's gradient $\nabla\tilde g$. After separating common advection, the remaining integrand satisfies the pointwise Lean estimate,
 
 $$
 |h\,\delta u\cdot\nabla\tilde g|\ \le\
 \tfrac12\bigl(|\delta u|^2+h^2|\nabla\tilde g|^2\bigr).
 $$
 
-A bounded comparison gradient therefore controls this term by the difference energy. The sampled velocities below illustrate the term. The theorem holds for arbitrary pointwise values. Lean also integrates this inequality over the whole periodic square and proves that shared, incompressible transport contributes exactly zero under the stated smoothness and periodicity hypotheses. The momentum, diffusion and time-dependent parts of the full energy argument still require formalization. Existence and full-system uniqueness remain open at the scope stated in the [proof status](../../../lean/hug-navier-wellposedness-lean/PROOF-STATUS.md).
+A bounded comparison gradient therefore controls this term by the difference energy. The sampled velocities below illustrate the term. The theorem holds for arbitrary pointwise values. Lean also integrates this inequality over the whole periodic square and proves that shared, incompressible transport contributes exactly zero under the stated smoothness and periodicity hypotheses. The momentum, diffusion and time-dependent parts of the full energy argument still require formalization. Existence and full-system uniqueness remain open at the scope stated in the [proof status](../../../lean/HugNavierWellposedness/PROOF-STATUS.md).
 
 ## Withhold a field and predict it
 
@@ -63,7 +63,7 @@ Marker step 192 and mentor step 150 meet at 0.6, tagged 17. The next shared time
 
 ## Reproduce the checks
 
-In the Hug–Navier well-posedness package, `lake build` builds the configured solution including the transport proofs. The Comparator comparison lists all ten declarations and checks them with the default Lean kernel and nanoda. [Verification report](../../../lean/hug-navier-wellposedness-lean/verification-report.json) · [Saved logs](../../../lean/hug-navier-wellposedness-lean/evidence-linux/)
+In the Hug–Navier well-posedness package, `lake build` builds the configured solution including the transport proofs. The Comparator comparison lists all ten declarations and checks them with the default Lean kernel and nanoda. [Verification report](../../../lean/HugNavierWellposedness/verification-report.json) · [Saved logs](../../../lean/HugNavierWellposedness/evidence-linux/)
 
 Use NumPy and SciPy for the numerical checks. Run these commands beside the scripts. The two Hug–Navier checks require the upstream model folder at commit `f7b923c40011b2c3a261dc118959f75259cb5ce4`. The basin check uses the included closed-disk source. Its optional `--archive` argument points to the original `continued/` directory for bytewise comparison.
 

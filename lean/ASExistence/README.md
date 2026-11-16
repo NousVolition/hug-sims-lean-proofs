@@ -1,6 +1,6 @@
 # Full A/S existence and uniqueness
 
-**A/S update:** The [suppression comparison](../as-suppression-lean/README.md) is now proved for both S coordinates throughout each finite interval, with matched starting data and inputs. **The repeated-encounter process remains open.**
+**A/S update:** The [suppression comparison](../ASSuppression/README.md) is now proved for both S coordinates throughout each finite interval, with matched starting data and inputs. **The repeated-encounter process remains open.**
 
 **PASS: the full seven-state existence-and-uniqueness theorem is proved.**
 The native Lean build, fresh Linux build, Comparator reference comparison,
@@ -97,9 +97,9 @@ not replaced by an easier continuous-input assumption.
 ## Scope that remains outside this theorem
 
 - Both meaning coordinates remain in [0,1] on each finite interval by the
-  later [invariance proof](../as-invariance-lean/README.md). Load nonnegativity
+  later [invariance proof](../ASInvariance/README.md). Load nonnegativity
   is already proved and used in this existence construction.
-- The [suppression comparison](../as-suppression-lean/README.md) now compares
+- The [suppression comparison](../ASSuppression/README.md) now compares
   complete S trajectories with suppression removed.
 - This theorem concerns the seven-state continuous evolution. The encounter
   probabilities and H updates in E6–E10 are retained in `ASModel.lean`, but a
@@ -133,7 +133,7 @@ user under real Landrun isolation with systemd's AF_UNIX restriction and
 nanoda enabled. The ordinary Linux build follows the protected comparison.
 
 The preceding 30-claim package and its evidence remain preserved separately in
-`as-lean`. The new Comparator target is the full existence-and-uniqueness theorem;
+`AS`. The new Comparator target is the full existence-and-uniqueness theorem;
 its transitive proof dependencies are checked as part of that target.
 
 Run `lake build` for the pinned package's ordinary build.

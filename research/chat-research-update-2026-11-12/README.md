@@ -23,7 +23,7 @@ On 13 November UTC (12 November Pacific), nine current check batches passed fres
 
 These were found on the repository's current main branch and are linked rather than duplicated:
 
-- [A/S suppression comparison](../../lean/as-suppression-lean/README.md): matched inputs and initial data; both S coordinates stay at or below their no-suppression counterparts on the specified finite interval. The repeated-encounter process remains open.
+- [A/S suppression comparison](../../lean/ASSuppression/README.md): matched inputs and initial data; both S coordinates stay at or below their no-suppression counterparts on the specified finite interval. The repeated-encounter process remains open.
 - [Fresh checks of the 19 core packages](../../provenance/core-package-recheck-2026-11-12/README.md), retaining each package's scope.
 - [Hug heat-grid study](../hug-v3/heat-grid-study/README.md) and [414 finite Lean checks](../hug-v3/heat-grid-lean/README.md). The recorded grid-settling failure remains a finding, despite the finite record checks passing.
 - [Matched-stretch final matrix](../matched-stretch/final-matrix/README.md) and [verification evidence](../matched-stretch/evidence/). The 48-run matrix through time 0.40 remains complete. No newer replacement final matrix was found in the reviewed chats. The spatial and time-resolution failures are retained; a difference between two numerical runs is not a measured error against an exact continuum solution.

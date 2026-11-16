@@ -22,7 +22,7 @@ The historical comparison clock supplies timing. For this experiment we also adv
 | 7.52 | 19 | 0.000001353 | 0.00000415 | 0.01625 |
 | 7.67 | 19 | 0.000001473 | 0.00000475 | 0.01713 |
 
-For the last column we hid the velocity readout at the shared tick, estimated it from the two adjacent prime ticks, and evaluated both the estimate and the withheld field at the *same* baseline marker positions. The positions themselves came from the ordinary saved-field trajectory. This column measures reconstruction of a field reading. The preceding column measures the velocity difference caused by the two integrated paths arriving at slightly different places. Only a comparison at a common position gives the velocity residual used in the [guard transport proof](../../../lean/hug-navier-wellposedness-lean/GuardTransport.lean). [All 13 catch-ups and 11 interior field checks per case](prime-results.json)
+For the last column we hid the velocity readout at the shared tick, estimated it from the two adjacent prime ticks, and evaluated both the estimate and the withheld field at the *same* baseline marker positions. The positions themselves came from the ordinary saved-field trajectory. This column measures reconstruction of a field reading. The preceding column measures the velocity difference caused by the two integrated paths arriving at slightly different places. Only a comparison at a common position gives the velocity residual used in the [guard transport proof](../../../lean/HugNavierWellposedness/GuardTransport.lean). [All 13 catch-ups and 11 interior field checks per case](prime-results.json)
 
 ## The same times in the 3D cylinder records
 

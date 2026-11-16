@@ -16,7 +16,7 @@ The recorded prime labels in this range are **37 and 41**. Labels 35, 36, 38, 39
 | Between 37 and 41 | The newer distance table saves every 0.0005, giving 201 times including endpoints | The continuing and fresh-listener protocols have no additional interviews between their two checkpoints |
 | Prime 41 | Model time 1.2, with separate before-write and after-write states | 1.2 seconds after the last word; listener step 384, mentor step 300 |
 
-The matching relative labels help organize the reading. Each experiment keeps its own clock, state and measurements. [Fluid meter](../hug-v3/finer-grid-study/prime-meter.csv) · [Continuing-B clock](../../lean/sims-mentor-first-thought-lean/one-traveller/protocol.json)
+The matching relative labels help organize the reading. Each experiment keeps its own clock, state and measurements. [Fluid meter](../hug-v3/finer-grid-study/prime-meter.csv) · [Continuing-B clock](../../lean/SimsMentorFirstThought/one-traveller/protocol.json)
 
 ## Endpoint agreement survives the denser reading
 
@@ -95,7 +95,7 @@ In the continuing **K27** session, the four late turns are:
 | 37 | I wonder if by “earlier” they mean just a moment ago. | POSSIBLE; “I’m unsure whether that was the buzz I felt.” |
 | 41 | “I’m still looking at the blank receipt. I guess that buzz was the pager.” | POSSIBLE; the full source, judgment and basis fields are identical to prime 37 |
 
-The open wording changes from a timing question to a tentative attribution. There is no new settled source judgment in this interval. The released 26-turn reply hash chain checks out; this recount used the stored input fingerprints and did not regenerate the interview prompts. [Verbatim continuing record](../../lean/sims-mentor-first-thought-lean/one-traveller/reports.json)
+The open wording changes from a timing question to a tentative attribution. There is no new settled source judgment in this interval. The released 26-turn reply hash chain checks out; this recount used the stored input fingerprints and did not regenerate the interview prompts. [Verbatim continuing record](../../lean/SimsMentorFirstThought/one-traveller/reports.json)
 
 The other Traveller protocols answer different questions:
 
@@ -104,7 +104,7 @@ The other Traveller protocols answer different questions:
 | Five fresh listeners at each prime | 1 of 5 identifies the pager when asked, case R35; no settled open answer | 0 of 5 identifies it; no settled open answer | Each prime has fresh listeners. The count change does not establish one listener reversing a judgment. |
 | Earlier two-probe study | Quiet checkpoint, no interview | Original mentor wording: 5 of 5 identify the pager; comparison wording: 3 of 5 | First thoughts were collected at prime 2, then source answers at prime 41. |
 
-The earlier 5/5 result, the later fresh-group 0/5 result and the continuing B's POSSIBLE answer remain attached to their actual protocols. [Fresh groups](../../lean/sims-mentor-first-thought-lean/prime-sweep/README.md) · [Earlier two-probe study](../../lean/sims-mentor-first-thought-lean/README.md)
+The earlier 5/5 result, the later fresh-group 0/5 result and the continuing B's POSSIBLE answer remain attached to their actual protocols. [Fresh groups](../../lean/SimsMentorFirstThought/prime-sweep/README.md) · [Earlier two-probe study](../../lean/SimsMentorFirstThought/README.md)
 
 ## Reproduce and continue
 

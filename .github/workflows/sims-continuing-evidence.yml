@@ -5,16 +5,16 @@ on:
     branches: [main]
     paths:
       - "research/sims-continuing-evidence/**"
-      - "lean/sims-mentor-first-thought-lean/**"
-      - "lean/sims-meeting-thread-lean/observations/pager-return/**"
+      - "lean/SimsMentorFirstThought/**"
+      - "lean/SimsMeetingThread/observations/pager-return/**"
       - ".github/workflows/sims-continuing-evidence.yml"
       - "scripts/ci-lean-toolchain.sh"
   push:
     branches: [main]
     paths:
       - "research/sims-continuing-evidence/**"
-      - "lean/sims-mentor-first-thought-lean/**"
-      - "lean/sims-meeting-thread-lean/observations/pager-return/**"
+      - "lean/SimsMentorFirstThought/**"
+      - "lean/SimsMeetingThread/observations/pager-return/**"
       - ".github/workflows/sims-continuing-evidence.yml"
       - "scripts/ci-lean-toolchain.sh"
   workflow_dispatch:

@@ -85,7 +85,7 @@ A checkpoint reading depends on what brought the model to it. The intended share
 
 The threshold-1 record reports that each accepted write preserved water positions, velocity and context across the write instant. Those preserved values alone do not determine whether every coupled rate is unchanged. Rate claims must be traced through the corresponding equations and state. The source correction and single-system package retain that distinction from reduced implementations.
 
-[Single-system source meaning](../../research/comparisons/hug-navier-single-system-scope-correction.md) · [Shared-flow rate definitions](../../lean/hug-navier-single-system-lean/FullModel.lean) · [Threshold-1 write record](../../research/hug-v3/threshold-one-follow-up/README.md#what-changed-and-what-stayed-the-same)
+[Single-system source meaning](../../research/comparisons/hug-navier-single-system-scope-correction.md) · [Shared-flow rate definitions](../../lean/HugNavierSingleSystem/FullModel.lean) · [Threshold-1 write record](../../research/hug-v3/threshold-one-follow-up/README.md#what-changed-and-what-stayed-the-same)
 
 The finer-grid record adds a concrete ordering check. Its third write occurs after the tick-41 gap sample, so that write cannot cause the earlier differences at 1.169 or 1.182. The matched meter rows keep gap, closest arclength, local spin and strain at the same pair and time. They describe the comparison without yet isolating its cause. [Matched meters and decoded writes](../../research/hug-v3/finer-grid-study/README.md#the-useful-meter-readings)
 
@@ -105,7 +105,7 @@ The encounter keeps a reference to the earlier feeling while the cause remains u
 
 This study brings the research question back to records and later use. Its clock and observations remain those of the restaurant protocol.
 
-[One continuing B: all replies and protocol](../../lean/sims-mentor-first-thought-lean/one-traveller/README.md) · [Related first-thought studies](../../lean/sims-mentor-first-thought-lean/README.md)
+[One continuing B: all replies and protocol](../../lean/SimsMentorFirstThought/one-traveller/README.md) · [Related first-thought studies](../../lean/SimsMentorFirstThought/README.md)
 
 ## Carry the result forward
 

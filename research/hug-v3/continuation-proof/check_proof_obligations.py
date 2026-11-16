@@ -7,7 +7,7 @@ import sys
 from datetime import datetime, timezone
 
 OUT = Path(__file__).resolve().parent
-SOURCE = OUT.parents[2] / 'lean' / 'hug-v3-transfer-lean' / 'sources'
+SOURCE = OUT.parents[2] / 'lean' / 'HugV3Transfer' / 'sources'
 PROOF = OUT.parent / 'corrected-proof-revision-2' / 'proof.md'
 
 def sha(path):

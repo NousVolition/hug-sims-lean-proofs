@@ -1,6 +1,6 @@
 # Meaning bounds for the unchanged A/S equation
 
-**A/S update:** The [suppression comparison](../as-suppression-lean/README.md) is now proved for both S coordinates throughout each finite interval, with matched starting data and inputs. **The repeated-encounter process remains open.**
+**A/S update:** The [suppression comparison](../ASSuppression/README.md) is now proved for both S coordinates throughout each finite interval, with matched starting data and inputs. **The repeated-encounter process remains open.**
 
 This package proves `SocialAS.Verified.full_state_invariance`, with exactly
 the previously recorded type `SocialAS.Open.FullStateInvariance`. See
@@ -97,7 +97,7 @@ destination. The latter runs Comparator and the ordinary Linux build. A standard
 
 ## What remains outside this result
 
-- The [whole-trajectory suppression comparison](../as-suppression-lean/README.md) is now proved.
+- The [whole-trajectory suppression comparison](../ASSuppression/README.md) is now proved.
 - A repeated-encounter stochastic process and its event ordering/coupling remain
   to be specified and verified.
 - Numerical approximation error bounds remain uncertified.

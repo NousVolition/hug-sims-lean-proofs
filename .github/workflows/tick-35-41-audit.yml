@@ -7,7 +7,7 @@ on:
       - 'research/tick-35-41-audit/**'
       - 'research/hug-v3/finer-grid-study/**'
       - 'research/hug-v3/fluid-grid-study/source/**'
-      - 'lean/sims-mentor-first-thought-lean/**'
+      - 'lean/SimsMentorFirstThought/**'
       - '.github/workflows/tick-35-41-audit.yml'
   pull_request:
     branches: [main]
@@ -15,7 +15,7 @@ on:
       - 'research/tick-35-41-audit/**'
       - 'research/hug-v3/finer-grid-study/**'
       - 'research/hug-v3/fluid-grid-study/source/**'
-      - 'lean/sims-mentor-first-thought-lean/**'
+      - 'lean/SimsMentorFirstThought/**'
       - '.github/workflows/tick-35-41-audit.yml'
   workflow_dispatch:
 

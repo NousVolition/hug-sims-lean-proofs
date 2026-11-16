@@ -2,10 +2,10 @@ import os,subprocess,sys,time
 from pathlib import Path
 sys.stdout.reconfigure(encoding='utf-8',errors='backslashreplace')
 root=Path(__file__).resolve().parent.parent
-pkg=root/'hug-navier-full-audit-lean'
+pkg=root/'HugNavierWellposedness'
 lib=pkg/'.lake/build/lib/lean';lib.mkdir(parents=True,exist_ok=True)
 deps=root/'work/NavierStokesAndEuler-audit/.lake/packages'
-imports=[lib,root/'hug-existence-lean/.lake/build/lib/lean']
+imports=[lib,root/'HugNavierSingleSystem/.lake/build/lib/lean']
 imports.extend(p/'.lake/build/lib/lean' for p in deps.iterdir() if (p/'.lake/build/lib/lean').is_dir())
 env=os.environ.copy();env['LEAN_PATH']=';'.join(map(str,imports));env['LEAN_NUM_THREADS']='4'
 lean=root/'work/toolchains/lean-4.34.0-rc2-windows/bin/lean.exe'
@@ -13,7 +13,7 @@ label=sys.argv[1]
 log=pkg/f'native-{label}.log'
 if log.exists():raise FileExistsError(log)
 with log.open('w',encoding='utf-8') as handle:
- for name in (sys.argv[2:] or ('FullEquationSpecification','AuditSolution')):
+ for name in (sys.argv[2:] or ('WellposednessTargets','GuardTransportDefs','GuardTransport','GuardTransportTimeDefs','GuardTransportTime','EnergyDefs','EnergyEstimate','TimeIntegralDefs','TimeIntegral','WellposednessProofs')):
   print('Checking '+name,flush=True)
   started=time.monotonic()
   result=subprocess.run([str(lean),'-o',str(lib/(name+'.olean')),name+'.lean'],cwd=pkg,env=env,

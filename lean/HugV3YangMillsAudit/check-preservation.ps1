@@ -15,7 +15,7 @@ $checks = foreach ($name in $baseline.files.Keys) {
     if ($hash -ne $baseline.files[$name] -or $hash -ne $original) { throw "Preserved input changed: $name" }
     @{file=$name; source="$($baseline.source_directory)/$name"; sha256=$hash; unchanged=$true}
 }
-$sealedDirectory = Join-Path $repo 'lean/hug-v3-source-lean/sources'
+$sealedDirectory = Join-Path $repo 'lean/HugV3Source/sources'
 $seal = Get-Content -Raw -LiteralPath (Join-Path $sealedDirectory 'source_seal.json') | ConvertFrom-Json -AsHashtable
 $roots = [ordered]@{published=$sealedDirectory}
 if ($ArchiveRoot) { $roots['external_archive'] = $ArchiveRoot }

@@ -8,7 +8,7 @@
       "differs_only_in": "comments and docstrings"
     },
     "FullModel.lean": {
-      "source": "lean/hug-navier-single-system-lean/FullModel.lean",
+      "source": "lean/HugNavierSingleSystem/FullModel.lean",
       "source_commit": "b0ac331d38da8131002d5abace1190f031248cb8",
       "source_sha256": "edbb83823ea0b59fb76477166c3b5020f8de549ef7da3ff81cdb451f213d9723",
       "sha256": "928e00f664817fe3c85144265ff824d7014334b1866d4904741f8d367a2119c6",

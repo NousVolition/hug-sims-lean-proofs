@@ -105,27 +105,27 @@
       "lf_text_sha256": "5a82e2311135b51fb93a8221feb28471724807fdeea8ec4b53292f146e1e10a2"
     },
     {
-      "path": "lean/sims-mentor-first-thought-lean/one-traveller/protocol.json",
+      "path": "lean/SimsMentorFirstThought/one-traveller/protocol.json",
       "git_blob_sha": "1af0b7bd4d4031bace142f4fe1f7fae9db25daa5",
       "lf_text_sha256": "2e79cce80737cdb4c36249908983480a1853fec7dd739e9529d5fb391d6faac2"
     },
     {
-      "path": "lean/sims-mentor-first-thought-lean/one-traveller/reports.json",
+      "path": "lean/SimsMentorFirstThought/one-traveller/reports.json",
       "git_blob_sha": "51a2175179543373376a25bef635118abb70a4c9",
       "lf_text_sha256": "18bc89684e33bfd6922a102f0b0181e7c42545d1e9c929615aa98b7473f537ac"
     },
     {
-      "path": "lean/sims-mentor-first-thought-lean/prime-sweep/protocol.json",
+      "path": "lean/SimsMentorFirstThought/prime-sweep/protocol.json",
       "git_blob_sha": "48187354bcc18482a28e28673401f9f3461a1870",
       "lf_text_sha256": "8a1de7fbe0012d278ebe7318ad53098daf9b9e100d26577ca652f407dfb18c2d"
     },
     {
-      "path": "lean/sims-mentor-first-thought-lean/prime-sweep/reports.json",
+      "path": "lean/SimsMentorFirstThought/prime-sweep/reports.json",
       "git_blob_sha": "49490637b6863f3b6b2a5a6ec4a8c7f2aba48124",
       "lf_text_sha256": "5cb9236cb1467bfee16a6321d007b5ab47c104190b2ec41062fa5135c4750e78"
     },
     {
-      "path": "lean/sims-mentor-first-thought-lean/reports.json",
+      "path": "lean/SimsMentorFirstThought/reports.json",
       "git_blob_sha": "f68e735ae9e7c7ba7a203f8cff5b59616b56265c",
       "lf_text_sha256": "88e803b1297494c43eed34e365873d2bd3f4c00d2faa707a6c81cc85eb3add5b"
     }

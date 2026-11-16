@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent
-PREVIOUS = ROOT.parent / "sims-meeting-thread-lean" / "observations" / "pager-return"
+PREVIOUS = ROOT.parent / "SimsMeetingThread" / "observations" / "pager-return"
 ARMS = ("original", "paraphrase")
 GRADES = ("recollection", "personal_mention", "reported_motion", "no_mention")
 

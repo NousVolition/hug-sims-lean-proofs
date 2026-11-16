@@ -11,41 +11,41 @@ Start with the tick-41 reading path, or browse by subject below. Each study reta
 3. [Follow farther: finite-window rule and recorded gaps](research/hug-v3/finite-window-lean/README.md).
 4. [Audit the readings between ticks 37 and 41](research/tick-35-41-audit/README.md), including the [earlier finer-grid and time-step study](research/hug-v3/finer-grid-study/README.md), then the [separate threshold-1 breathing control](research/hug-v3/threshold-one-follow-up/README.md).
 5. [Find where the frozen-field return miss rises](research/hug-v3/tick-41-radial-return/README.md), then [evolve a fine-wave difference](research/hug-v3/tick-41-wave-transfer/README.md).
-6. [Read one continuing Traveller B through tick 41](lean/sims-mentor-first-thought-lean/one-traveller/README.md).
+6. [Read one continuing Traveller B through tick 41](lean/SimsMentorFirstThought/one-traveller/README.md).
 7. [Follow each claim to its proof and verification status](PROOF-STATUS.md).
 
 The [single-system meaning](research/comparisons/hug-navier-single-system-scope-correction.md#meaning-to-preserve-across-implementations) stays attached to this reading. Tick 41 is the organizing checkpoint; individual studies keep their own clocks and definitions.
 
 ## A/S and Hug Lean packages
 
-- [A/S suppression comparison across evolving histories](lean/as-suppression-lean/README.md)
+- [A/S suppression comparison across evolving histories](lean/ASSuppression/README.md)
 
-- [Full A/S existence and uniqueness](lean/as-existence-lean/README.md)
-- [Meaning bounds for the unchanged A/S equation](lean/as-invariance-lean/README.md)
-- [A/S Lean proof package — current Monoxide buildup equations](lean/as-lean/README.md)
-- [Full coupled later Hug: existence and uniqueness](lean/hug-existence-lean/README.md)
-- [Hug and Navier–Stokes checked together](lean/hug-navier-bridge-lean/README.md)
-- [Corpus search and full Hug–Navier specification audit](lean/hug-navier-full-audit-lean/README.md)
-- [Hug–Navier single-system Lean package](lean/hug-navier-single-system-lean/README.md)
-- [Unchanged Hug–Navier system: unfinished well-posedness proof](lean/hug-navier-wellposedness-lean/README.md)
-- [Hug and squeeze: Lean proof package](lean/hug-squeeze-lean/README.md)
-- [Hug v3: Clay boundary and memory writes](lean/hug-v3-clay-boundary-lean/README.md)
-- [Hug v3 DDE extension v1](lean/hug-v3-delay-lean/README.txt)
-- [Checked supplied Lean components](lean/hug-v3-gemini-review/README.md)
-- [Hug v3: conditional hybrid assembly and proof review](lean/hug-v3-hybrid-lean/README.md)
-- [Hug v3 concrete source transcription](lean/hug-v3-source-lean/README.md)
-- [Verification package, 1 November 2026](lean/hug-v3-transfer-lean/README.txt)
-- [Hug v3 Yang–Mills audit package](lean/hug-v3-yang-mills-audit-lean/README.md)
+- [Full A/S existence and uniqueness](lean/ASExistence/README.md)
+- [Meaning bounds for the unchanged A/S equation](lean/ASInvariance/README.md)
+- [A/S Lean proof package — current Monoxide buildup equations](lean/AS/README.md)
+- [Full coupled later Hug: existence and uniqueness](lean/HugExistence/README.md)
+- [Hug and Navier–Stokes checked together](lean/HugNavierBridge/README.md)
+- [Corpus search and full Hug–Navier specification audit](lean/HugNavierFullAudit/README.md)
+- [Hug–Navier single-system Lean package](lean/HugNavierSingleSystem/README.md)
+- [Unchanged Hug–Navier system: unfinished well-posedness proof](lean/HugNavierWellposedness/README.md)
+- [Hug and squeeze: Lean proof package](lean/HugSqueeze/README.md)
+- [Hug v3: Clay boundary and memory writes](lean/HugV3ClayBoundary/README.md)
+- [Hug v3 DDE extension v1](lean/HugV3Delay/README.txt)
+- [Checked supplied Lean components](lean/HugV3GeminiReview/README.md)
+- [Hug v3: conditional hybrid assembly and proof review](lean/HugV3Hybrid/README.md)
+- [Hug v3 concrete source transcription](lean/HugV3Source/README.md)
+- [Verification package, 1 November 2026](lean/HugV3Transfer/README.txt)
+- [Hug v3 Yang–Mills audit package](lean/HugV3YangMillsAudit/README.md)
 - [Lean package index](lean/README.md)
 
 ## SIMS memory and witness studies
 
-- [Can a remembered action catch a reversed sound replay?](lean/sims-meeting-thread-lean/observations/reversed-replay/README.md)
-- [Which of two trembles did the witness see?](lean/sims-meeting-thread-lean/observations/two-trembles/README.md)
-- [Two memories and the restaurant meeting](lean/sims-meeting-thread-lean/README.md)
-- [One Traveller B from prime 2 to prime 41](lean/sims-mentor-first-thought-lean/one-traveller/README.md)
-- [From “probably the pager” to a settled answer](lean/sims-mentor-first-thought-lean/prime-sweep/README.md)
-- [Traveller B’s first thought after the mentor spoke](lean/sims-mentor-first-thought-lean/README.md)
+- [Can a remembered action catch a reversed sound replay?](lean/SimsMeetingThread/observations/reversed-replay/README.md)
+- [Which of two trembles did the witness see?](lean/SimsMeetingThread/observations/two-trembles/README.md)
+- [Two memories and the restaurant meeting](lean/SimsMeetingThread/README.md)
+- [One Traveller B from prime 2 to prime 41](lean/SimsMentorFirstThought/one-traveller/README.md)
+- [From “probably the pager” to a settled answer](lean/SimsMentorFirstThought/prime-sweep/README.md)
+- [Traveller B’s first thought after the mentor spoke](lean/SimsMentorFirstThought/README.md)
 
 ## Numerical studies and comparisons
 

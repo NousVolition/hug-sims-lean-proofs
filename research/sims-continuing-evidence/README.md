@@ -19,7 +19,7 @@ No quiet-window answer explicitly referred to B's own felt sensation. After the 
 
 The other clarified B said, “That clears it up for me: the pager vibrated when they pressed TEST, right when I reacted.” This names a reaction and observed device motion. It does not explicitly report what was felt. No answer describes reliving the sensation. These are classifications of the recorded words.
 
-The four new paths therefore contain no observed case of a personal-feeling reference preceding certainty. The earlier continuing K27 path did contain such references while still uncertain. Both records retain their own conditions and replies. [Earlier path](../../lean/sims-mentor-first-thought-lean/one-traveller/README.md) · [All 120 new replies and actual delivered inputs](reports.json)
+The four new paths therefore contain no observed case of a personal-feeling reference preceding certainty. The earlier continuing K27 path did contain such references while still uncertain. Both records retain their own conditions and replies. [Earlier path](../../lean/SimsMentorFirstThought/one-traveller/README.md) · [All 120 new replies and actual delivered inputs](reports.json)
 
 ## The encounter and the added observation
 

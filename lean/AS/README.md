@@ -1,6 +1,6 @@
 # A/S Lean proof package — current Monoxide buildup equations
 
-**A/S update:** The [suppression comparison](../as-suppression-lean/README.md) is now proved for both S coordinates throughout each finite interval, with matched starting data and inputs. **The repeated-encounter process remains open.**
+**A/S update:** The [suppression comparison](../ASSuppression/README.md) is now proved for both S coordinates throughout each finite interval, with matched starting data and inputs. **The repeated-encounter process remains open.**
 
 **Result: 30 component claims verified.** Later packages prove evolution,
 state bounds and suppression comparison; repeated encounters remain open.
@@ -63,8 +63,8 @@ redistribution would overstate what the current equation says.
 ## Targets recorded by this package
 
 `ASOpenClaims.lean` defines three targets proved in the
-[existence](../as-existence-lean/README.md), [invariance](../as-invariance-lean/README.md),
-and [suppression](../as-suppression-lean/README.md) packages:
+[existence](../ASExistence/README.md), [invariance](../ASInvariance/README.md),
+and [suppression](../ASSuppression/README.md) packages:
 
 1. **FullExistenceUniqueness:** on each finite interval, admissible initial
    states and inputs produce a unique solution of the complete seven-coordinate
