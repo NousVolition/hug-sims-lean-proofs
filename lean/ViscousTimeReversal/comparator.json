@@ -180,7 +180,9 @@
     "ViscousTimeReversal.A_filter_settles",
     "ViscousTimeReversal.filter_loop_settles",
     "ViscousTimeReversal.A_filter_limit",
-    "ViscousTimeReversal.filter_loop_reversal"
+    "ViscousTimeReversal.filter_loop_reversal",
+    "ViscousTimeReversal.first_write_then_freeze",
+    "ViscousTimeReversal.freeze_shares_match_keep_and_loss"
   ],
   "permitted_axioms": [
     "propext",

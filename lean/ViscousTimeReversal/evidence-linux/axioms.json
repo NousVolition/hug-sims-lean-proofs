@@ -861,5 +861,15 @@
     "propext",
     "Classical.choice",
     "Quot.sound"
+  ],
+  "ViscousTimeReversal.first_write_then_freeze": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "ViscousTimeReversal.freeze_shares_match_keep_and_loss": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
   ]
 }

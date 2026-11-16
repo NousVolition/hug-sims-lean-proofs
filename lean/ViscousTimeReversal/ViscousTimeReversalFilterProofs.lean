@@ -1,7 +1,14 @@
 import ViscousTimeReversalMeterProofs
 import ViscousTimeReversalFilterDefinitions
 
-/-! Proofs for the write, the remainder and the filter loop. -/
+/-! Proofs for the write, the remainder and the filter loop.
+
+Four results about the model: a write conserves the overlap exactly (bucket gain plus remainder
+is the whole overlap); the user's bucket never leaves the meter, 0 to 5/5, however many filter
+passes run; a filter with a fixed share settles geometrically, at the same rate `keep` at which
+the chain loses what it holds between writes; and all of this is symmetric under reversal around
+the 0,0 split. Sources: `MentorStudentModel.lean`, `ViscousTimeReversalBucketDefinitions.lean`,
+`HugWallPush/HugWallPushDefinitions.lean`, `HugWallPush/HugWallPushProofs.lean`. -/
 
 namespace ViscousTimeReversal
 
@@ -101,8 +108,9 @@ theorem filter_share_settles (q : ℚ) (hq0 : 0 ≤ q) (hq1 : q ≤ 1) (x : Filt
     rw [hfit, hr', hp', hb', pow_succ]
     refine ⟨by ring, by ring, by ring⟩
 
-/-- A's filter: passing the let-go of 1/5 each pass and keeping 4/5 unsettled, the remainder
-    after `n` passes is `held n` times the start, which is `(4/5)^n` times the start. -/
+/-- The chain's own rate as the filter share: passing `loss` (1/5) each pass and leaving `keep`
+    (4/5), the remainder after `n` passes is `held n` times the start, that is `(4/5)^n` times the
+    start. The loop decays at exactly the rate the chain loses what it holds between writes. -/
 theorem A_filter_settles (x : FilterLoop) (hb : 0 ≤ x.bucket) (hr : 0 ≤ x.rest)
     (hroom : x.bucket + x.rest ≤ 1) (n : Nat) :
     (filterLoop loss x n).rest = held n * x.rest ∧ held n = keep ^ n ∧
@@ -136,8 +144,8 @@ theorem filter_loop_settles (q : ℚ) (hq0 : 0 < q) (hq1 : q ≤ 1) (x : FilterL
     have := ((tendsto_const_nhds (x := (1 : ℝ))).sub hp).mul_const (x.rest : ℝ)
     simpa using (tendsto_const_nhds (x := (x.passed : ℝ))).add this
 
-/-- A's filter settles: the remainder goes to 0 and the total passed goes to everything that went
-    out to be filtered. -/
+/-- At the chain's rate the loop settles: the remainder goes to 0 and the total passed goes to
+    everything that went out to be filtered. -/
 theorem A_filter_limit (x : FilterLoop) (hb : 0 ≤ x.bucket) (hr : 0 ≤ x.rest)
     (hroom : x.bucket + x.rest ≤ 1) :
     Tendsto (fun n => ((filterLoop loss x n).rest : ℝ)) atTop (𝓝 0) ∧
@@ -160,5 +168,40 @@ theorem filter_loop_reversal (q : ℚ) (x : FilterLoop) (hx : InMeter x.bucket) 
         filterLoop q x (f t) :=
   ⟨(filter_loop_counts_whole q x hx _).1, (filter_loop_counts_whole q x hx _).2.1,
     (filter_loop_counts_whole q x hx _).2.2, reverse_twice _ t⟩
+
+/-! ## The first write and the freeze -/
+
+/-- The writes are at ticks 11, 23 and 41. The first write is tick 11 at time 4/10; the freeze
+    follows it at tick 23, time 8/10, after 200 mentor steps and 256 student steps, for every
+    placement. Sources: `MentorStudentModel.lean` (`writeTicks`, `schedule`, `Freeze`),
+    `HugWallPush/HugWallPushProofs.lean` (`freeze_step_counts`). -/
+theorem first_write_then_freeze (p : Placement) :
+    writeTicks = [11, 23, 41] ∧ labels[4]? = some 11 ∧ labels[8]? = some 23 ∧
+      (schedule[4]?).map tickTime = some (4 / 10) ∧ (schedule[8]?).map tickTime = some (8 / 10) ∧
+      Freeze p 8 ∧ (200 : ℚ) * HugWallPush.mentorStep = 8 / 10 ∧
+      (256 : ℚ) * HugWallPush.studentStep = 8 / 10 := by
+  refine ⟨rfl, by decide, by decide, ?_, ?_, (freeze_at_tick23_both_ways p).1,
+    HugWallPush.freeze_step_counts⟩
+  · rw [show schedule[4]? = some ⟨11, 128, 100, 400000⟩ by decide]; simp [tickTime]; norm_num
+  · rw [show schedule[8]? = some ⟨23, 256, 200, 800000⟩ by decide]; simp [tickTime]; norm_num
+
+/-- The balance at the freeze closes the gap in the same proportions as the chain's `keep` and
+    `loss`: the mentor moves `keep` (4/5) of the gap and the student `loss` (1/5), the shared total
+    is kept, and 2/25 of the squared gap is given off. Sources:
+    `HugWallPush/HugWallPushDefinitions.lean` section 6, `HugWallPush/HugWallPushProofs.lean`
+    (`gap_split`, `freeze_keeps_total`, `freeze_gives_off`), `MentorStudentModel.lean`. -/
+theorem freeze_shares_match_keep_and_loss (xM xS : ℝ) :
+    ((loss : ℚ) : ℝ) = 1 / 5 ∧ ((keep : ℚ) : ℝ) = 4 / 5 ∧
+      HugWallPush.balance xM xS - xM = (keep : ℝ) * (xS - xM) ∧
+      xS - HugWallPush.balance xM xS = (loss : ℝ) * (xS - xM) ∧
+      1 / 5 * HugWallPush.balance xM xS + 4 / 5 * HugWallPush.balance xM xS =
+        1 / 5 * xM + 4 / 5 * xS ∧
+      (1 / 5 * xM ^ 2 + 4 / 5 * xS ^ 2) / 2 - (1 / 5 + 4 / 5) * HugWallPush.balance xM xS ^ 2 / 2
+        = 2 / 25 * (xS - xM) ^ 2 := by
+  have hl : ((loss : ℚ) : ℝ) = 1 / 5 := by norm_num [loss]
+  have hk : ((keep : ℚ) : ℝ) = 4 / 5 := by norm_num [keep]
+  obtain ⟨g1, g2⟩ := HugWallPush.gap_split xM xS
+  exact ⟨hl, hk, by rw [hk]; exact g1, by rw [hl]; exact g2, HugWallPush.freeze_keeps_total xM xS,
+    HugWallPush.freeze_gives_off xM xS⟩
 
 end ViscousTimeReversal

@@ -1,16 +1,16 @@
 {
   "repository": "NousVolition/hug-sims-lean-proofs",
   "run": "local, on the box, not GitHub Actions",
-  "base_commit": "dc1f05aa9764e1984cf3e02de0805ade53421dc3",
+  "base_commit": "51ec855e18e4801762a7fd6e2f10112f9df71dba",
   "note": "Run from this package directory on uncommitted changes on top of base_commit; the inputs checked are the hashes below. scripts/compare-package.sh could not start its systemd-run wrapper (no systemd on the box), so the comparator was run directly with the same pinned landrun, nanoda and lean4export.",
-  "target_count": 178,
+  "target_count": 180,
   "files": {
-    "axioms.json": "18755a5672e911502a8d9e28274f19832be1142e68820c85c51b0874afb913f4",
+    "axioms.json": "78cab422df6ed53b1008d62eeea373502301cff769214d87a1f6abc438f1e973",
     "comparator.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
-    "comparator.log": "f64c82463cd8a91146e8aa648bb92ecea3d192b7f74dce3194cfb206bb2fcda7",
+    "comparator.log": "3277c4c66603ab6319b185fb18568dca98a1d289eadbb98114131de809a38949",
     "lake-build.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
     "lake-build.log": "0f2dd952a1be2d6e4c9d1fe116781571f38edc9d74704232c3415dd4708dab51",
-    "verification-report.json": "c41ed7401278ff13979b5224716536562fa637807638cb7e61930451c1399cbf"
+    "verification-report.json": "b2d4226aaba298b3f3d29d453beb823e47806de935ee46a5dac864b1904a18ca"
   },
   "proof_inputs_sha256": {
     "FullModel.lean": "928e00f664817fe3c85144265ff824d7014334b1866d4904741f8d367a2119c6",
@@ -28,18 +28,18 @@
     "ViscousTimeReversalBucketProofs.lean": "b87496ac0ec4ebf437c9665d6a26f7314887db178a0419bf03c31d95b60fd3b5",
     "ViscousTimeReversalChallenge.lean": "46f3b9c03c802243297335372857302426626c6cf7c50b8710e97f6d6303f608",
     "ViscousTimeReversalDefinitions.lean": "fbcbbaae3b2487e424ba6f3a2180c93209393b51ed1abaff5658227eb1cc3ed4",
-    "ViscousTimeReversalFilterChallenge.lean": "2417fd6384421441b489af17e7b8f6c9f85a16002b2445ce1e6bde92bd47de4c",
+    "ViscousTimeReversalFilterChallenge.lean": "2753775fe67f24f9e91a820180a2bdc4802f4b078d947a0bc5949a2cc743c650",
     "ViscousTimeReversalFilterDefinitions.lean": "eea4b0a27121361aa3109f4d80a160adb971060042dac8a140f76e2663e43e7d",
-    "ViscousTimeReversalFilterProofs.lean": "0041c200446b735aac858e9977ea59e18dc479bcbbaa9410fc8e7e5e0eb4f5e3",
+    "ViscousTimeReversalFilterProofs.lean": "ca855afb7ad1127139560e000e3fcc38f96f3bfaf74110e36de165e9eafa8a14",
     "ViscousTimeReversalMeterChallenge.lean": "fa4cd1517e80535e68dd93cdecabc13df5fc8b53234105dd2e4509828fa2077f",
     "ViscousTimeReversalMeterDefinitions.lean": "a17b082e1ddd36c1418a9ea7080810f37cb301fcec33b8e6bbe4fb8976305e07",
     "ViscousTimeReversalMeterProofs.lean": "aa4391c123c230d65670c2c3e68171f3c09a23730e911f63cb42235090350686",
     "ViscousTimeReversalProofs.lean": "3c78d3474e758679fb3ee75d71967a920c000cf71982b07eff8f9c9016aba4d7",
-    "comparator.json": "b7ad2b28ef9491e640558d425279ca0b5ada8e3f3a4e548d0b8a7b42570365ec",
+    "comparator.json": "b7d6ee5a3e425edba687f93310ddf5158e6793988a001f336b5f2f508e17a69a",
     "lakefile.toml": "8c125831d9e641b21894281f02b6994d4ee2f482a655be0ffc7659e7de6453bd",
     "lake-manifest.json": "10b1ae73dc69f16c055fe9fef3b3271670780276c27dae479a13652ad34e4605",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
-    "verification-inputs.json": "a290f10ea2457ae9b42dc81ab8f9563d1605b8d44266d60a9d6db14942d42110"
+    "verification-inputs.json": "5235830e27667ddd81f177617f48ddbfcb21115e1f78aa3087c7c0b8f004939a"
   },
   "replaces": "the GitHub run 43703185290 evidence for the 37 statements, kept in git history at 871e2d8"
 }
