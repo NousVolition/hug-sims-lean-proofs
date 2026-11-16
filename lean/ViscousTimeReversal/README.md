@@ -27,9 +27,21 @@ The 0,0 split, shares, gap and freeze (9). Reversing around the split twice is t
 
 The wall (14). The wall equals `HugNavierSingle.viscosity` point by point. It lies in `[1/50, 1/10]`, and reversed in `[-1/10, -1/50]`. Reversal turns the wall term into the reversed wall term. Forward the wall only damps and backward it only amplifies; the thick wall damps and amplifies most. The wall factors multiply to 1. A backward step through the wall equals a forward step through the reversed wall. Counted from the split, what the wall takes forward and what the reversed wall gives backward are nonnegative, strictly positive for a nonzero ripple, and add without cancelling.
 
+## Starts and the bucket rule (104)
+
+These statements import the rules in `MentorStudentModel.lean` and use none of the time-reversal results above.
+
+Prime ticks counted ahead and back. Counted back (place `-p`), the ticks are the same prime ticks as counted ahead (place `p`): one to one, index by index, with the same gaps for any step sizes. A back step is counted with whole numbers that may go below 0, so 2 back by 4 is `-2`. The back partners of 41, 23 and 11 are 37, 19, 17, 7 and 5, each matched with the tick counted ahead at the same index. Mentor + student = 1 at every tick.
+
+Paired buckets. Two parts fill `k/5` and `(5 - k)/5`; a write moves one into the other and the pair keeps its total. An overlap move keeps both shares between 0 and 1 and their sum at 1. Either one may be ahead by at most one full start when the steps between ticks match, and which one is ahead can change at any tick.
+
+The bucket rule. These hold for any finite type of parts, every share, every meeting and any number of meetings. A bucket is full: each part has a clean and a dirty amount, and all parts together make 1. Parts can be made of smaller parts. A meeting swaps some dirty amount for clean: each share stays the same, clean never falls and dirty never rises. Two full buckets meet into one full bucket with no order between them. Taken back out, both are full. The second holds only its own parts, with no more dirt than it brought. The first never has more dirt than it brought, and has strictly less where a meeting swapped some. The paired buckets are the two-part case.
+
+Starts. A start at 0 is one full bucket whose parts are history parts and ahead parts, of any types. History and what is ahead are in the same bucket and together make 1, and a history may have any number of parts. The meeting at each prime tick, and all of them in order, act on a start by one rule, on history parts and ahead parts alike. Two starts meet at 0,0 into one full bucket, and each start's history and ahead parts are carried in at their shares.
+
 ## Files
 
-`ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalChallenge.lean` freezes the 37 statements and is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs. `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
+`ViscousTimeReversalDefinitions.lean` holds the definitions. `ViscousTimeReversalChallenge.lean` freezes the 37 statements, and through `ViscousTimeReversalBucketChallenge.lean` the 104 statements on starts and the bucket rule; it is excluded from the solution's imports. `ViscousTimeReversalProofs.lean` holds the proofs, with those for starts and the bucket rule in `ViscousTimeReversalBucketProofs.lean` (definitions in `ViscousTimeReversalBucketDefinitions.lean`). `MentorStudentModel.lean` and `FullModel.lean` are copies with unchanged definitions; only comments differ from the sources, as recorded in [source-provenance.json](source-provenance.json). Definitions, statements, solution, copied models and dependency pins are hashed in `verification-inputs.json`.
 
 From this directory, `lake build` builds the proofs. The repository's **Lean verification** workflow also compares the frozen statements, runs both kernels and checks the dependency lists of all 37 theorems. Its `proof-viscous-time-reversal-lean-1` artifact is saved unchanged in `evidence-linux/`.
 

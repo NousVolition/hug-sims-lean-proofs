@@ -24,6 +24,15 @@ name = "FullModel"
 name = "ViscousTimeReversalDefinitions"
 
 [[lean_lib]]
+name = "ViscousTimeReversalBucketDefinitions"
+
+[[lean_lib]]
+name = "ViscousTimeReversalBucketChallenge"
+
+[[lean_lib]]
+name = "ViscousTimeReversalBucketProofs"
+
+[[lean_lib]]
 name = "ViscousTimeReversalChallenge"
 
 [[lean_lib]]

@@ -1,4 +1,5 @@
 import ViscousTimeReversalDefinitions
+import ViscousTimeReversalBucketProofs
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
 
