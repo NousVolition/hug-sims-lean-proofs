@@ -1,23 +1,30 @@
 {
-  "artifact_id": 14010263391,
-  "archive_sha256": "43a8108c8d0f70c092f20ff71c6e65260602ae2dec4a8e791bbd67e5659db7bd",
-  "artifact_name": "continuing-traveller-evidence-1",
-  "pull_request": 58,
-  "execution_context": {
-    "repository": "NousVolition/hug-sims-lean-proofs",
-    "checkout_sha": "867ec9fd0162e7e69edc87578de6a906c2137823",
-    "pull_request_head_sha": "a92786e3d6de21ef85682dcd6fe0b8d73a1fdd04",
-    "event": "pull_request",
-    "run_id": 43367150704,
-    "run_attempt": 1,
-    "run_url": "https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43367150704"
-  },
+  "artifact_id": 14207619832,
+  "artifact_zip_sha256": "5b6965926dc9582bc478e296ef62ff1893f36f3c194e0df4061d68a1f311254c",
   "files_sha256": {
-    "CheckAxioms.log": "eecdc6bb9e2eb7cccfbccc2e35c15b307d05cd141de9ce86e1f93cf41069d3bf",
     "Evidence.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "Recorded.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CheckAxioms.log": "eecdc6bb9e2eb7cccfbccc2e35c15b307d05cd141de9ce86e1f93cf41069d3bf",
     "RecordedData.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "lake-build.log": "b5ab5e79dbd47488420070ee007da8b58c4f5bf80d83ab002d03d8ce5675ad8d",
-    "receipt.json": "31ba548a256c0eedeed9f57e0ff2bfa94cb12ff7325b932ede6257e4579cc32c"
-  }
+    "lake-build.log": "94ba6cd9b013cd76ca0c44ce111aff9f2aefecf5b363f8e1d3bfde0fb42baaf0",
+    "receipt.json": "240ec87c887418044aba72abf0aebf37af88df5270fd2d816464b1320985a223"
+  },
+  "artifact_name": "continuing-traveller-evidence-1",
+  "execution_context": {
+    "repository": "NousVolition/hug-sims-lean-proofs",
+    "checkout_sha": "fb7b1a023ef8c47070e91c16dd5389d301709768",
+    "pull_request_head_sha": null,
+    "event": "push",
+    "run_id": 43831166765,
+    "run_attempt": 1,
+    "run_url": "https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43831166765"
+  },
+  "target_count": 18,
+  "verified_against_main": {
+    "commit": "51c27a5f5d26a47ac370524c1c162f88cd207fb3",
+    "input_count": 12,
+    "input_hashes_match": true,
+    "target_list_matches": true
+  },
+  "scope": "Saved GitHub proof evidence for the unchanged formal statements and recorded inputs. This publication adds no actor trial or fluid simulation."
 }

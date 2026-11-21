@@ -19,6 +19,10 @@ Hug and SIMS explores what persists as surroundings change, and what our observa
 
 **Heat study on 16³–40³ grids:** time-step checks **passed**; the declared grid-settling test **failed**. Between 32³ and 40³, accumulated write heat differs by at most 0.203%; the new-write spatial patterns for writes 2 and 3 reach 1.1077% and 1.0291% against the 1% limit. [Results and diagrams](research/hug-v3/heat-grid-study/README.md). Separately, [414 passing Lean checks](research/hug-v3/heat-grid-lean/README.md) cover five finite accounting rules and 409 claims about recorded numbers and record bits.
 
+**SIMS proof receipts refreshed:** [Current evidence for the mentor, continuing-listener and fixed-tremble studies](provenance/sims-receipt-refresh-2026-11-20/README.md) matches all 20, 18 and 27 named targets and their current inputs. Earlier receipts stay available; Lean's rules and recorded-number checks remain distinct from the conversations they describe.
+
+**New connection to the Lean library:** [Wirtinger: neighboring differences and overall spread](docs/wirtinger/README.md), with a six-reading diagram and the checked smoothing rule. These periodic-ring proofs give a benchmark for a matching update rule; they do not assume the carried water path closes.
+
 **Recent research collected:** [AS vortex comparisons, Hug energy and geometry proofs, and saved verification records](research/chat-research-update-2026-11-12/README.md).
 
 **Explore:** [Proof status](PROOF-STATUS.md) · [Studies](hug-sims-proof-index.md) · [Verification records](provenance/core-package-recheck-2026-11-12/README.md) · [Full research tour](RESEARCH-TOUR.md).
