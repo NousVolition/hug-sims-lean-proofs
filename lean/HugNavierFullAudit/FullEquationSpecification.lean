@@ -122,14 +122,14 @@ def HugProblem (p : Parameters) (force : ℝ → ℝ) (a b : ℝ) (initial : Sta
 
 -- This is a conjunction of two source systems, NOT a coupling law. Even the
 -- shared time variable requires an explicit conversion between the fluid's
--- nondimensional clock and Hug's simulation seconds. No such conversion,
+-- nondimensional clock and the eight-state model's simulation seconds. No such conversion,
 -- load/traction rule, shared-state map or interface is inferred here.
 def SeparateEvolutions (input : FieldInputs) (force : ℝ → ℝ) (a b : ℝ)
     (h0 : State) (z0 : Fields) (h : ℝ → State) (z : ℝ → Fields)
     (pressure : ℝ → ScalarField) : Prop :=
   HugProblem protocol force a b h0 h ∧ FieldProblem input a b z0 z pressure
 
--- A diagnostic source initial field: the scalar Hug state cannot be copied
+-- No single value of the eight-state model's xA response can be copied
 -- uniformly over space and reproduce this existing nonuniform NS initial data.
 def sourceInitialXA (r : Point) : ℝ :=
   -11/20+(3/20)*Real.cos r.1+(1/10)*Real.sin r.2

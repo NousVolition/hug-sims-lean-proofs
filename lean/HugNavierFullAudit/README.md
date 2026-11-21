@@ -16,7 +16,7 @@ The original audit used byte-identical copies of the Lean model files. The [earl
 
 | Corpus source | Connection present | What it supplies for the current joint task |
 | --- | --- | --- |
-| [NS/SIMS methods](https://github.com/NousVolition/My-Sources-Project-ALL/blob/7fbc7f28f685c86f824d7587aff91feedf20d3da/reports/sims-navier-stokes-guard/METHODS.md) | Fluid transport/strain affects two internal fields and two guards; guards alter interaction and viscous stress; all six fields advance together | A complete fluid-side loop, with a periodic square, explicit initial fields, diffusion, pressure and disturbances. It does not contain Hug's four mechanical coordinates or a load sent to them. |
+| [NS/SIMS methods](https://github.com/NousVolition/My-Sources-Project-ALL/blob/7fbc7f28f685c86f824d7587aff91feedf20d3da/reports/sims-navier-stokes-guard/METHODS.md) | Fluid transport/strain affects two internal fields and two guards; guards alter interaction and viscous stress; all six fields advance together | A complete fluid-side loop, with a periodic square, explicit initial fields, diffusion, pressure and disturbances. It does not contain the eight-state model’s four mechanical coordinates or a load sent to them. |
 | [Eight-state active-guard methods](https://github.com/NousVolition/Nous-Volition/blob/b4ae2c54cd85bfef282c501ecfca83de274e2070/studies/hug-active-guard/METHODS.md) | Motion → strain signal → directional guards → damping → motion, alongside the two response states | The unchanged eight-state loop. The source explicitly describes a reduced mechanical model with no Navier–Stokes field. Its source implementation supplies prescribed orbital force or zero force. |
 | [Hug breakdown](https://github.com/NousVolition/Nous-Volition/blob/b4ae2c54cd85bfef282c501ecfca83de274e2070/studies/hug-breakdown/hug_breakdown.py) | Wall force `−K g χ u`; flow speed changes wall integrity `g`, which changes later wall drag | An existing fluid/wall feedback example. Its wall-integrity state and speed-based yield/recovery law differ from the two current transmission guards. It does not provide a reciprocal load equation for the eight-state Hug. Importing those terms would add a new coupling choice. |
 | [Memory feedback](https://github.com/NousVolition/Nous-Volition/blob/b4ae2c54cd85bfef282c501ecfca83de274e2070/studies/hug-memory-feedback/METHODS.md) | Displacement changes the field's gradient/diffusion; a virtual-work projection returns a field force to the mechanical mode | A genuine reduced feedback path, with a stated projection. Its angular memory field, capped sources and extra rules belong to another extension. The fluid velocity follows a prescribed mechanical deformation rather than an independently solved momentum/pressure field. |
@@ -30,7 +30,7 @@ The original corrected Word equations also contain the A/S transport–accumulat
 
 `FullEquationSpecification.lean` records:
 
-- All eight original Hug rates through the unchanged imported `ActiveHug.rhs`.
+- The eight rates defined by `ActiveHug.rhs`, imported unchanged from the active-guard model.
 - Both velocity components and all four internal/guard field rates from the NS/SIMS source. Pressure, advection, diffusion and full variable-viscosity stress divergence remain present.
 - The fluid's periodic boundaries and incompressibility, explicit spatial differentiability requirements, temporal derivatives and initial-data parameters.
 - A deliberately named `SeparateEvolutions` predicate. This states both source problems; it does not invent a relationship between them or imply reciprocal feedback.
@@ -39,7 +39,7 @@ Compiling this specification establishes that its Lean definitions are well-form
 
 `AuditSolution.lean` proves seven narrower statements:
 
-1. Changing the force input from G to F changes Hug's instantaneous acceleration by `(F−G)/mass`.
+1. Changing the force input from G to F changes the eight-state model’s instantaneous acceleration by `(F−G)/mass`.
 2. The force required by a specified state and acceleration is uniquely determined when mass is nonzero. This is an algebraic necessity, not permission to manufacture a force after observing the desired trajectory.
 3. At a fixed state, equal accelerations require equal force inputs.
 4. If the same complete eight-state motion satisfies the Hug differential equations with two force histories, those force histories agree at every point where both differential equations hold. Thus a previously verified prescribed-force trajectory cannot simply be relabeled as a different fluid-loaded trajectory.

@@ -44,7 +44,7 @@ These are proven properties or counterexamples of the unchanged formulas. They a
 
 ## What remains unproved or untested
 
-- Global existence and uniqueness of the full later coupled Hug system; its long-time bounds, limit cycles, synchronization, attraction and recovery claims.
+- Existence and uniqueness for the full spatial Hug–Navier evolution remain open. The eight-state active-guard theorem gives a unique solution on every finite forward interval for the fixed primary parameters, continuous prescribed forcing and initial guards in `[0,1]`. It leaves the study’s long-time questions about bounds, limit cycles, synchronization, attraction and recovery open. [Eight-state theorem](../HugExistence/README.md#exact-scope-of-the-theorem) · [Spatial proof status](../HugNavierWellposedness/PROOF-STATUS.md)
 - The full memory field evolution, its continuum regularity, the claimed field-amplitude bound, spatial convergence and coupling to motion. The six memory checks above do not cover that entire system.
 - The complete timed animation schedule, discrete sampling, Python floating-point behavior, solver tolerances, published trajectories, and parameter calibration. Source inspection is not execution verification.
 - A resolved material model of squeezing, contact, pressure transmission, rupture or a moving interface. The source does not specify a complete Hug field problem with all domains and boundary/interface conditions.
