@@ -34,7 +34,7 @@ The fixed primary settings are mass 0.2, spring stiffness 0.7, volume `10^-7`, l
 
 The continuous-force hypothesis is explicit. No bound fixed in advance is imposed on that force: continuity supplies a finite bound on each compact time interval. Mechanical strains, displacement, velocity and participant states may start at any real values. Initial guards must lie in their stated transmission interval. The theorem does not address arbitrary parameter replacements, discontinuous forcing, or initially out-of-range guards.
 
-The source describes this as a reduced synthetic Hug realization. The distinct memory-field extension is not silently combined with the guard-damper system. No independent memory PDE or additional accumulator has been inserted into these eight equations.
+The active-guard study describes its eight-state model as a reduced mechanical realization with synthetic parameters. The distinct memory-field extension is not silently combined with the guard-damper system. No independent memory PDE or additional accumulator has been inserted into these eight equations.
 
 ## How the proof handles the nonlinear term
 

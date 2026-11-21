@@ -18,7 +18,7 @@ The comparison makes additional assumptions: a physical affine shear profile wit
 
 The local reaction comparison uses the Hug reactions with no additional state inputs (`s_A=s_B=0`). The broader corpus allows such inputs and more general reaction laws. With those present, the residual would also contain their differences. Transport is interpreted along a fluid path, rather than discarded from an equation at a fixed spatial position. Each diffusion contribution is retained as a separate `diffusivity × Laplacian` value; these values are not constructed from solved spatial fields.
 
-**Strain scale.** Under this assumed shear profile, physical `D:D = (1/2)(v/L)^2`, while Hug uses `S = (1/2)(v/Q × t_ref)^2`. Their guard arguments agree when
+**Strain scale.** Under this assumed shear profile, physical `D:D = (1/2)(v/L)^2`, while the eight-state model uses `S = (1/2)(v/Q × t_ref)^2`. Their guard arguments agree when
 
 ```
 chi_NS = chi_Hug (L t_ref / Q)^2.

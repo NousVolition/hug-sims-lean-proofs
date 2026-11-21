@@ -1,7 +1,7 @@
 import ActiveHugModel
 import Mathlib.Data.Matrix.Basic
 
-/- Compatibility audit of the unchanged reduced Hug and the corpus's optional
+/- Compatibility audit of the eight-state active-guard model and the corpus's optional
 Navier--Stokes guard closure. This is NOT a new full coupled PDE model.
 
 The local field comparison assumes an affine physical simple-shear mode and

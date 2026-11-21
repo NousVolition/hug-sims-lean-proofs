@@ -11,7 +11,7 @@ The final verification outcome is in `verification-report.json`; raw results are
 - Separate memory extension and scope clarification: `studies/hug-memory-continuity/METHODS.md` and `studies/hug-movement-sweep/SPECIFICATION_STATUS.md` at the same later commit.
 - The provisional interaction equation is included for provenance. Its general functions are not a fully specified evolution law by themselves.
 
-Retrieved source snapshots are in `sources/`. The current source files explicitly describe prescribed geometry and reduced synthetic models. The later source also identifies added modeling assumptions. This package retains those distinctions.
+Retrieved source snapshots are in `sources/`. The original squeeze study prescribes the geometry. The later active-guard study uses an eight-state mechanical model with synthetic parameters. The later source also identifies added modeling assumptions. This package retains those distinctions.
 
 ## What is checked
 

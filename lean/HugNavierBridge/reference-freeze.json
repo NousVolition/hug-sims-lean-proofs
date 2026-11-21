@@ -17,7 +17,7 @@
     "HugNavierBridge.Verified.simultaneous_conditional_bridge"
   ],
   "files": {
-    "BridgeModel.lean": "7e13d74bca4add433a344e0b7846769c94492a2fe7abba91cfe2a9b2b4301d7c",
+    "BridgeModel.lean": "e6fd70ef2b5d30593cedeb97eaa3804c006fc1cf692269e2b2565f84070a9698",
     "BridgeChallenge.lean": "8fe4fe821022c8ac2e2366b88d8ed0fb8bcb46140986ba0228d106de58b92677",
     "HugModel.lean": "6a79142d5fa42642bc47a0246f62b4ab89d0c07ba6257fd0d41e39d6f89b61f5",
     "ActiveHugModel.lean": "f67055ed502d8d62d6f8a71ed5ad65149dec864208f70e5a55193b2ff0ccc72c",
@@ -53,6 +53,13 @@
       "all_theorem_statements_unchanged": true,
       "mathematical_definitions_unchanged": true,
       "original_model_equations_unchanged": true
+    },
+    {
+      "date": "2026-11-21",
+      "reason": "The opening comment in BridgeModel.lean now names the eight-state active-guard model.",
+      "previous_commit": "8764b04dd4c0087fb92c093c31c2f06e93341099",
+      "previous_freeze_sha256": "b18ea17701ec3dc15c51f7b6e5aa14c58e334d9739721b2458c64fd07140f365",
+      "previous_records": "../../provenance/hug-scope-wording-2026-11-21/8764b04/HugNavierBridge"
     }
   ],
   "comment_revision": {

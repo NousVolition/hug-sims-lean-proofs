@@ -52,7 +52,7 @@ We start here because this smaller model separates three questions that recur la
 
 **Unfinished:** The repeated-encounter process and its connection to the continuous state. This theorem does not compare understanding or establish that it improves.
 
-The **next two concern particular reduced Hug models**.
+The next two packages cover **squeeze geometry, selected memory rules, and the eight-state active-guard model**.
 
 After A/S, we ask the same questions in models involving pressure, shape, guards and energy: **which component rules hold, and can a specified model evolve uniquely while keeping its guards within bounds?** Package 4 checks particular properties and limitations; package 5 answers the evolution question for the specified eight-variable model. These packages have their own equations and assumptions. The full unforced continuum and separate memory-field evolution remain unfinished; the spatial questions follow in packages 6–9.
 
