@@ -53,4 +53,17 @@ For SIMS, the useful connection is the question **“Which differences does this
 
 These are existing proofs in [NousVolition/discrete-gap-inequalities-lean](https://github.com/NousVolition/discrete-gap-inequalities-lean/tree/f59b86b915af55ccf55223761f21d2116883a0a7), revision `f59b86b915af55ccf55223761f21d2116883a0a7`. [GitHub run 44839304050](https://github.com/NousVolition/discrete-gap-inequalities-lean/actions/runs/44839304050) passed the build and axiom audit. Its logs include the named Wirtinger and RingDecay targets in the [source record](source.json), using only `propext`, `Classical.choice` and `Quot.sound`. This addition links and explains that evidence; it adds no theorem to Hug/SIMS.
 
+
+## Continuous Wirtinger and Riemann
+
+The next step uses a continuous curve with zero at both ends. A curve that moves away from zero and returns needs enough room or enough slope. The continuous Wirtinger inequality makes that relationship precise.
+
+**Proving the Riemann hypothesis remains our goal.** The proof library now contains 16 named Lean checks covering the real and complex inequality, its application to Riemann's zeta function, and a conditional counting route toward RH. The critical-line gap bound does not assume RH. Completing the RH argument still requires an account of every nontrivial zero and matching critical-line counts at every stage.
+
+Five numerical checks separately evaluate gaps between the first six zeros. Their recorded criteria for precision agreement, endpoint residuals and positive inequality slack passed. Those approximate roots and integrals are numerical evidence; they are not part of the 16 Lean checks.
+
+[Proofs, diagram and five-gap table](https://github.com/NousVolition/discrete-gap-inequalities-lean/blob/26630ea06862404edd1204ddc612613f3d8fedab/docs/riemann-wirtinger.md) · [Source and verification record](riemann-source.json).
+
+The earlier finite-ring proof and its source record above remain unchanged. The new continuous result belongs to the same research effort toward RH; it does not add a result about the fluid simulation or SIMS recognition.
+
 AI-generated; dictated and directed by NousVolition. Explanation and diagram prepared by this Codex chat; the linked proof files retain their own credits.
