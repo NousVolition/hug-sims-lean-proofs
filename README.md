@@ -23,6 +23,10 @@ Hug and SIMS explores what persists as surroundings change, and what our observa
 
 **New connection to the Lean library:** [Wirtinger: neighboring differences and overall spread](docs/wirtinger/README.md), with a six-reading diagram and the checked smoothing rule. These periodic-ring proofs give a benchmark for a matching update rule; they do not assume the carried water path closes.
 
+**Ring spreading fits the store bound:** [WirtingerStore and its 19 Lean checks](https://github.com/NousVolition/discrete-gap-inequalities-lean/blob/main/docs/wirtinger-store.md). For a zero-average pattern spreading around a ring, Lean proves a ceiling on the squared size that remains. The slowest cosine wave reaches that ceiling, so a faster universal release rate would be false.
+
+**Credits:** NousVolition supplied the idea and words and directed the work. Claude first recognized their mathematical shape and connected it to a name, then supplied the proof plan and sharpness test. Codex generated the Lean implementation and carried out the checks.
+
 **Wirtinger and Riemann:** [The continuous proof, five computed gaps and the route toward RH](docs/wirtinger/README.md#continuous-wirtinger-and-riemann). The **16 Lean checks** cover the zero-endpoint inequality, its zeta application and conditional RH implications. The **five numerical gap checks** passed their recorded criteria and remain separate from Lean. **Proving RH is still our goal**; complete zero coverage and matching critical-line counts remain open.
 
 **Recent research collected:** [AS vortex comparisons, Hug energy and geometry proofs, and saved verification records](research/chat-research-update-2026-11-12/README.md).
@@ -32,3 +36,4 @@ Hug and SIMS explores what persists as surroundings change, and what our observa
 Each proof package lists its checked statements and assumptions. [Proof status](PROOF-STATUS.md) tracks the remaining work on full Hug–Navier evolution, full Hug v3 delayed continuation and the other open targets.
 
 **AI-generated; dictated and directed by NousVolition, an independent researcher.** Individual files retain their source and model credits. [Credits](research/ambiguous-observation-lean/CREDITS.md) · [Reuse terms](LICENSE).
+
