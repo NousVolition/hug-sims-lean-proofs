@@ -23,6 +23,8 @@ Hug and SIMS explores what persists as surroundings change, and what our observa
 
 **New connection to the Lean library:** [Wirtinger: neighboring differences and overall spread](docs/wirtinger/README.md), with a six-reading diagram and the checked smoothing rule. These periodic-ring proofs give a benchmark for a matching update rule; they do not assume the carried water path closes.
 
+**Wirtinger and Riemann:** [The continuous proof, five computed gaps and the route toward RH](docs/wirtinger/README.md#continuous-wirtinger-and-riemann). The **16 Lean checks** cover the zero-endpoint inequality, its zeta application and conditional RH implications. The **five numerical gap checks** passed their recorded criteria and remain separate from Lean. **Proving RH is still our goal**; complete zero coverage and matching critical-line counts remain open.
+
 **Recent research collected:** [AS vortex comparisons, Hug energy and geometry proofs, and saved verification records](research/chat-research-update-2026-11-12/README.md).
 
 **Explore:** [Proof status](PROOF-STATUS.md) · [Studies](hug-sims-proof-index.md) · [Verification records](provenance/core-package-recheck-2026-11-12/README.md) · [Full research tour](RESEARCH-TOUR.md).
