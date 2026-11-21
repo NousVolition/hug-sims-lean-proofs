@@ -3,7 +3,7 @@
     "ActiveHugModel.lean": "f67055ed502d8d62d6f8a71ed5ad65149dec864208f70e5a55193b2ff0ccc72c",
     "BridgeChallenge.lean": "8fe4fe821022c8ac2e2366b88d8ed0fb8bcb46140986ba0228d106de58b92677",
     "BridgeModel.initial.txt": "979723e1a633234c67ab4e53e8b91e96519b93c76958132ddf5789c479b0c028",
-    "BridgeModel.lean": "7e13d74bca4add433a344e0b7846769c94492a2fe7abba91cfe2a9b2b4301d7c",
+    "BridgeModel.lean": "e6fd70ef2b5d30593cedeb97eaa3804c006fc1cf692269e2b2565f84070a9698",
     "BridgeSolution.lean": "9f699d866668351efffde910f3595128c343d5d2518b416004f0288eea9ee92c",
     "build-native.ps1": "09ed1aab475b1f8b4129dbd8c18eb8cb3b76233782e31a86b182281b37a05cec",
     "build-native.py": "73c994667d761753b9435348c4c2596d0038137bf409ed48abde44313a04c444",
@@ -30,15 +30,15 @@
     "native-development-4.log": "72bf43bbf266bc9e523a9007a7589653c0f4ebb156b82a5f72f05e85dd586f29",
     "native-development-5.exit": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
     "native-development-5.log": "d6985710503c85886a54ad0dba4f5184c342aafd93bd4ae649739ae3a6b1dc9f",
-    "README.md": "2607dafe0d3c9cb6bf8aebcba0a0b59986a040afd639f0b9e50b6b3db6a2da39",
+    "README.md": "743549c006f87487df3e5fb7d38162c62b29599ff75addaf50eb83da2c410ccf",
     "reference-freeze-initial.json": "c8c76a7776c96effaf8cf0c8741e51f0db09f40ed062ead70484b5487b867a6f",
-    "reference-freeze.json": "b18ea17701ec3dc15c51f7b6e5aa14c58e334d9739721b2458c64fd07140f365",
+    "reference-freeze.json": "1a25254d0ec417ba231a7f58a05b248c001dab28b6c1734cc6c0b92570b2c3dc",
     "run-linux-check.sh": "c4424a240edcc409aa1f8e537ac589d5e956907079aa06ee7b111356b5a969c2",
     "sources/active-guard-METHODS.md": "d1d280ecd06c1f31aaa46c3117b5c84cd6534dd24d19ce10494f633221c047bd",
     "sources/active-guard-model.py": "e1f83325f63c956d399294b6dda748a34d6f469d8a42319f28e1d02ea3366921",
     "sources/active-guard-protocol.json": "56ce38b4ddd8b8e94272f563cfd16b92170e48c7c4769dea15b46133a1293b4f",
     "sources/interaction-equation.md": "5b3621f4832403dd14a07a032b593afed53b53c122d96b858e4a2c6fc959b0ac",
-    "verification-inputs.json": "51c0235920295c8b19fa988143c62907843c3c62022ca22ae5f52456acc7c673",
+    "verification-inputs.json": "eebf28b0043808fbd0ce39659622f1ce8279c4228883db5fcfa0b761494a0652",
     "verification-report.json": "0630612f6d3b03e24e03d8458531271450d5a9aaf51cc6f1f14359e2c20040fd"
   }
 }
