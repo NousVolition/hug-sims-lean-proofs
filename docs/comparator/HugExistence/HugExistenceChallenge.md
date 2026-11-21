@@ -1,4 +1,4 @@
-# One motion in the coupled Hug model
+# One motion in the eight-state active-guard model
 
 For continuous forcing and admissible initial data on a finite interval, construct one integral solution, recover its derivative in the interior and keep its guards admissible.
 
@@ -15,13 +15,13 @@ Primary files for this challenge. [Solution entry module](https://github.com/Nou
 
 </details>
 
-## Does the coupled Hug model determine one admissible motion?
+## Does the eight-state active-guard model determine one admissible motion?
 
 `full_coupled_existence_uniqueness`
 
 **Proof request**
 
-Prove existence, uniqueness on the interval, interior differentiability and admissibility for the specified coupled Hug problem.
+For the eight-state active-guard model, prove existence, uniqueness on the interval, interior differentiability and admissibility.
 
 **Reading the result**
 

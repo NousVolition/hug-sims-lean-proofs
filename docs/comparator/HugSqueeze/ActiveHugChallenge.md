@@ -1,4 +1,4 @@
-# What the active Hug model does to guards and energy
+# Guards and energy in the eight-state model, with separate memory checks
 
 Follow the guard bounds and the energy terms. The passive inequality and the explicit active example concern different parameter choices.
 

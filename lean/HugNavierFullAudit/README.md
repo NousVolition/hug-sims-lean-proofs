@@ -1,6 +1,6 @@
-# Corpus search and full Hug–Navier specification audit
+# Source audit of the proposed eight-state model and flow coupling
 
-**The full joint evolution remains unproved and incompletely specified.** The corpus contains several useful connections, including a complete six-field Navier–Stokes/SIMS model, but the inspected sources do not supply a reciprocal coupling of that field model to the current eight-state Hug. This package preserves the equations, records both complete sets in Lean, and checks specific force and state-mapping obligations. It does not certify a combined trajectory.
+**The proposed coupling between the eight-state active-guard model and the six-field Navier–Stokes/SIMS flow model remains incompletely specified, and its joint evolution remains unproved.** The audit located both sets of equations in the corpus, recorded them in Lean and checked seven propositions about force, power and state mapping. The interface requirements arise from the audit’s choice to represent the mechanical model and the flow separately. [Project scope correction](../../research/comparisons/hug-navier-single-system-scope-correction.md#correction-to-the-previous-conclusions)
 
 Actual compiler and Comparator outcomes are in `verification-report.json`. A successful audit result applies only to the seven stated audit propositions. It is not a successful full-system existence check.
 
@@ -55,16 +55,16 @@ The new full-field transcription selects the existing directional NS/SIMS source
 
 Spatial C² regularity of the six fields and C¹ regularity of pressure are explicit requirements for the stated classical equations. Those requirements are not proved. The force-comparison theorems assume nonzero mass where necessary; the source mass is positive. The rest-state example is a mathematical witness, not an observation of the returning student.
 
-The unresolved joint specification is:
+The audit identified the following open requirements for its proposed coupling of the eight-state model to the flow.
 
-| Missing item | Why the found sources do not finish it |
+| Item | What the proposed coupling still requires |
 | --- | --- |
 | Clock and units | The fluid study is nondimensional. The eight-state active-guard model uses synthetic parameters in physical units and measures time in simulation seconds. A common variable name `t` supplies no conversion. |
-| State–field relationship | Two scalar Hug responses/guards and spatial response/guard fields are distinct objects. The source does not select a sampling point, averaging rule, lifting or additional degrees of freedom that identify them. |
-| Fluid load on Hug | The force slot is present in Hug, but the current source supplies a prescribed waveform. A pressure/traction or distributed-force projection using the evolving fluid remains unspecified for this model. |
-| Hug's action on the fluid | The current fluid source has no independent Hug body or its displacement/velocity interface. A reciprocal boundary or distributed interaction law, with signs and units, is still needed. |
-| Resistance and energy accounting | An added interface could duplicate resistance already represented by Hug's damper and the fluid's guard viscosity. Elastic storage, active Hug power and fluid kinetic energy need one consistent budget. |
-| Joint geometry and initial/boundary data | The fluid source does provide a periodic domain and smooth initial pattern. It does not provide their compatibility with a moving Hug interface. The missing information concerns the joint model, not the absence of every fluid boundary specification. |
+| State–field relationship | The eight-state model has two scalar responses and two scalar guards. The flow model has corresponding spatial fields. The audited sources leave the choice of a sampling point, averaging rule, lifting or additional degrees of freedom open. |
+| Fluid load on the eight-state model | The mechanical equations accept a prescribed force. To obtain the load from the evolving flow, the proposed coupling needs a projection of pressure, traction or distributed force. |
+| Mechanical feedback on the flow | A return path from the eight-state model’s displacement and velocity to the flow would require a boundary or distributed interaction law with specified signs and units. |
+| Resistance and energy accounting | The proposed interface could duplicate resistance already represented by the mechanical damper and the flow model’s guard viscosity. A joint energy budget must account for elastic storage, active power in the eight-state model and fluid kinetic energy. |
+| Joint geometry and initial/boundary data | The flow study specifies a periodic domain and a smooth initial pattern. The proposed coupling still needs to establish their compatibility with its moving mechanical interface. |
 
 What still needs mathematical proof after those connections are fixed: existence of the jointly evolving field and mechanical variables, uniqueness in a stated solution class, preservation of incompressibility and guard bounds, justified interfacial work/energy balance, and continuation or breakdown criteria over the requested time interval. Pressure uniqueness needs a gauge choice or an explicit statement of uniqueness up to its additive function of time. The earlier eight-state ODE existence theorem and the older numerical fluid results do not establish these joint claims.
 
