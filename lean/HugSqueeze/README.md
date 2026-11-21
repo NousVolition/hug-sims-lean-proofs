@@ -58,7 +58,7 @@ The later source's cap, relaxation, exchange, synthetic Burgers mechanics, time 
 
 `HugSolution.lean` proves the original 27 targets. `HugBarrier.lean` supplies a general scalar integral barrier argument, adapted from the existing generic A/S proof utility without modifying that package. `ActiveHugSolution.lean` proves the other 24 targets. `HugAllSolution.lean` prints the axiom dependencies for all 51.
 
-Both model/target pairs were recorded in reference freezes before their proof implementation. One later syntax-only repair renamed the reserved Lean argument name `local` to `own`; the original hashes and reason are retained in `active-reference-freeze.json`. No formula, premise or conclusion changed. `verification-inputs.json` fixes the final inputs supplied to the isolated check.
+Both model/target pairs were recorded in reference freezes before their proof implementation. One later syntax-only repair renamed the reserved Lean argument name `local` to `own`; the original hashes and reason are retained in `active-reference-freeze.json`. No formula, premise or conclusion changed. The [current verification inputs](verification-inputs.json) include the clarified eight-state model comment. The [archived verification inputs](evidence-history/pre-pr-76/verification-inputs.json) record the hashes used for the earlier check.
 
 The verification uses Lean 4.34.0-rc2, mathlib `85e3a25e006c35636f0e53b0e9296caca2685bc0`, and Comparator `19e111e2141cf333c7daff0f64c5f24acc91dd2e`. Comparator is configured to compare all 51 target statements, enforce the axiom allowlist `propext`, `Quot.sound`, `Classical.choice`, and invoke nanoda as well as Lean's kernel.
 

@@ -1,11 +1,14 @@
 {
   "files": {
-    "active-reference-freeze.json": "133b6f63a6251896381d16b55199a4bf2c9dba2a12e8d306bf6d25b3e1512f4e",
+    "active-reference-freeze.json": "e064e3ce97a61c422b3829312eed0309577cfdd9f11a3673fb7b731283e9bd37",
     "ActiveHugChallenge.lean": "fa931e575994ca73aab1a1b1d33d705486101db58c26ddefeb56e3f8e675a451",
-    "ActiveHugModel.lean": "be9d734610480ae9376bfd38b287c2bb9b7758cb50e29109bcf26656a7885f19",
+    "ActiveHugModel.lean": "f67055ed502d8d62d6f8a71ed5ad65149dec864208f70e5a55193b2ff0ccc72c",
     "ActiveHugSolution.lean": "f9ecbc13c50713f85cf8a3268652798be83f03efb0548b7a3ee39d3725415483",
     "build-native.ps1": "44aa6ba5f037bd5313177dc2445e9d858545d2a86c8e625ba156bf6c803353ef",
     "comparator.json": "3d1a038e066bac4efd530002ff8f6cae2632f9ca1743a4574bddd9ea90eef63e",
+    "evidence-history/pre-pr-76/active-reference-freeze.json": "133b6f63a6251896381d16b55199a4bf2c9dba2a12e8d306bf6d25b3e1512f4e",
+    "evidence-history/pre-pr-76/package-manifest.json": "19ed4b5f4fe9ea04a50093020cff2613f23b0e8a22ca03fda19f04dcf1190c4c",
+    "evidence-history/pre-pr-76/verification-inputs.json": "ee24170dc88f5340e0c2af76fa45768e0d6a70fedf63ae7b7de15c5d525794cb",
     "evidence-linux/comparator.exit": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
     "evidence-linux/comparator.finished": "5f4b70d0a46c1ced0511804926f3d83e78456ed5d204aadf15efe6d1df9aac62",
     "evidence-linux/comparator.log": "d9e4981c733c510a8aa2db21b43f84135ec2e433ee81c3992fb0494e4d35eef2",
@@ -25,7 +28,7 @@
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
     "native-final.exit": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
     "native-final.log": "3d410c720da1f8a73cae9fb813bc706486a3e2bcaa4bf5b0622d0b74d610de43",
-    "README.md": "c0d8f6cf955225670b2b1b9321e7b2eaf7a7b3b4fd9efdb27798516c8952250d",
+    "README.md": "ae96cf64aad46a8dccff78a4276cdef9d7fd78227306fe29afff39682fe0d858",
     "reference-freeze.json": "809cfe9f336433d00626b94e94f4f3a3e8cbc924421e32095476eeeb3c3d55ca",
     "RESULTS.txt": "4a4fdc8837a17c56767b75cb9efd72ff841dc2b5f06482b1a7cb2f2c107a0d05",
     "run-linux-check.sh": "afadb917210879cf31838d632a0416f8657e5973f6351231ed91747449f99809",
@@ -39,7 +42,7 @@
     "sources/norm-entropy-mirror.md": "0ecd9b9c68241c5194e6dac3a3cf3f917ff8095fe685084140091a6d90cb1bd3",
     "sources/pressure_envelope.py": "0e49e34fdde4b9f9d6f62b428dcffcef8f64cd70a743d0acacee5c71d01b8146",
     "sources/soft-envelope.md": "d00daaf72ceaf23089164ee4f6ca33d73dd18e0aa4b65fb501b0735ed694c242",
-    "verification-inputs.json": "ee24170dc88f5340e0c2af76fa45768e0d6a70fedf63ae7b7de15c5d525794cb",
+    "verification-inputs.json": "2710742b94480a8b5b226247ebc0aff3a02a94e0b6ef754f248ae8fb54707bc6",
     "verification-report.json": "6b9e6778ab649e1e633f6c3c035b7e973e8a6ad9c4e3e39f5dd828c248c8bf82"
   }
 }

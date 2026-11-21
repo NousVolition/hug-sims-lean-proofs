@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-11-21",
   "target_count": 51,
   "files": {
     "ActiveHugChallenge.lean": "fa931e575994ca73aab1a1b1d33d705486101db58c26ddefeb56e3f8e675a451",
-    "ActiveHugModel.lean": "be9d734610480ae9376bfd38b287c2bb9b7758cb50e29109bcf26656a7885f19",
+    "ActiveHugModel.lean": "f67055ed502d8d62d6f8a71ed5ad65149dec864208f70e5a55193b2ff0ccc72c",
     "ActiveHugSolution.lean": "f9ecbc13c50713f85cf8a3268652798be83f03efb0548b7a3ee39d3725415483",
     "HugAllChallenge.lean": "6931bc01f3adf6fae2fd71492df84dd89051d51271b7ba4b4e6ea63bcec2c991",
     "HugAllSolution.lean": "ece19d811aaa973afa6f6ad1d22c5fecedd37bdd3a66d9dcff621aa2fa0d876a",
@@ -16,7 +16,7 @@
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
     "comparator.json": "3d1a038e066bac4efd530002ff8f6cae2632f9ca1743a4574bddd9ea90eef63e",
     "reference-freeze.json": "809cfe9f336433d00626b94e94f4f3a3e8cbc924421e32095476eeeb3c3d55ca",
-    "active-reference-freeze.json": "133b6f63a6251896381d16b55199a4bf2c9dba2a12e8d306bf6d25b3e1512f4e",
+    "active-reference-freeze.json": "e064e3ce97a61c422b3829312eed0309577cfdd9f11a3673fb7b731283e9bd37",
     "sources/active-guard-METHODS.md": "d1d280ecd06c1f31aaa46c3117b5c84cd6534dd24d19ce10494f633221c047bd",
     "sources/active-guard-model.py": "e1f83325f63c956d399294b6dda748a34d6f469d8a42319f28e1d02ea3366921",
     "sources/active-guard-protocol.json": "56ce38b4ddd8b8e94272f563cfd16b92170e48c7c4769dea15b46133a1293b4f",
