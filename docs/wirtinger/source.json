@@ -1,0 +1,65 @@
+{
+  "repository": "NousVolition/discrete-gap-inequalities-lean",
+  "commit": "f59b86b915af55ccf55223761f21d2116883a0a7",
+  "run_url": "https://github.com/NousVolition/discrete-gap-inequalities-lean/actions/runs/44839304050",
+  "run_id": 44839304050,
+  "job_id": 136643436828,
+  "checked_targets": [
+    "CycleWirtinger.wirtinger",
+    "CycleWirtinger.wirtinger_sharp",
+    "RingDecay.mean_heatStep",
+    "RingDecay.energy_heatStep_le_mean",
+    "RingDecay.energy_iterate_le",
+    "RingDecay.energy_tendsto_zero",
+    "RingDecay.energy_heatStep_wave"
+  ],
+  "source_blobs": {
+    "Wirtinger.lean": "a4e1ee8c47f2eaed524d44d6d37cf6f53aea7861",
+    "RingDecay.lean": "c066bdca273c81ff7ce68373607e9163497da0f9"
+  },
+  "build": "PASS",
+  "axiom_audit": "PASS",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": "Existing periodic-ring inequality and smoothing proofs, linked and explained here. No new Hug/SIMS theorem, simulation or local Lean build.",
+  "observed_axioms": {
+    "CycleWirtinger.wirtinger": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CycleWirtinger.wirtinger_sharp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RingDecay.mean_heatStep": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RingDecay.energy_heatStep_le_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RingDecay.energy_iterate_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RingDecay.energy_tendsto_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RingDecay.energy_heatStep_wave": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

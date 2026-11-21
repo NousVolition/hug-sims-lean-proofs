@@ -40,6 +40,9 @@ The [single-system meaning](research/comparisons/hug-navier-single-system-scope-
 
 ## SIMS memory and witness studies
 
+- [Current mentor, continuing-listener and fixed-tremble proof receipts](provenance/sims-receipt-refresh-2026-11-20/README.md)
+- [The same tremble with different mentor evidence and replay](research/sims-fixed-tremble/README.md)
+- [Continuing Traveller B: waiting and the timing link](research/sims-continuing-evidence/README.md)
 - [Can a remembered action catch a reversed sound replay?](lean/SimsMeetingThread/observations/reversed-replay/README.md)
 - [Which of two trembles did the witness see?](lean/SimsMeetingThread/observations/two-trembles/README.md)
 - [Two memories and the restaurant meeting](lean/SimsMeetingThread/README.md)
@@ -88,6 +91,10 @@ The [single-system meaning](research/comparisons/hug-navier-single-system-scope-
 
 - [Comparator questions in everyday language](docs/comparator/README.md)
 - [Verification receipt for `green_objective`](provenance/green-objective-2026-11-08/README.md)
+
+## Related discrete Lean proofs
+
+- [Wirtinger: neighboring differences, overall spread and a checked smoothing step](docs/wirtinger/README.md)
 
 ## Penne illustration
 

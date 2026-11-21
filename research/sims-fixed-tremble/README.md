@@ -102,5 +102,7 @@ the review excerpts and clocks, and rejects eight corrupted-record fixtures.
 Native elaboration, Lake build, and every theorem's axiom dependencies are
 checked. No `sorry`, custom axiom, or `native_decide` is used.
 
+The [GitHub run 43831166725](https://github.com/NousVolition/hug-sims-lean-proofs/actions/runs/43831166725) passed the record and native Lean jobs. Its saved artifact matches all 14 current source hashes and all 27 targets. The [GitHub receipt and logs](evidence-linux/source.json) are now included; the [earlier local receipt](evidence-local/receipt.json) remains unchanged. This adds the missing GitHub evidence for the existing findings. [Cross-study receipt review](../../provenance/sims-receipt-refresh-2026-11-20/README.md).
+
 [Protocol](protocol.json) · [All actual replies](reports.json) ·
 [Grades](grades.json) · [Results](results.json) · [Sources and translation](SOURCES.md)
