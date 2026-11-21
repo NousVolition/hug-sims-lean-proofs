@@ -12,7 +12,7 @@ The theorem covers every finite forward horizon, not merely a short local interv
 
 ## Preserved equations and assumptions
 
-The imported `ActiveHugModel.lean` is byte-for-byte identical to the model in the earlier 51-claim Hug proof package. Its source is `NousVolition/Nous-Volition` at commit `b4ae2c54cd85bfef282c501ecfca83de274e2070`, specifically the physical-unit equations in `studies/hug-active-guard/METHODS.md`, `model.py` and the primary `protocol.json` settings.
+The current `ActiveHugModel.lean` matches the [HugSqueeze copy](../HugSqueeze/ActiveHugModel.lean) byte for byte. The [earlier verification records](evidence-history/before-eight-state-comment/) and `source-provenance.json` identify the model before the opening comment was clarified. Its source is `NousVolition/Nous-Volition` at commit `b4ae2c54cd85bfef282c501ecfca83de274e2070`, specifically the physical-unit equations in `studies/hug-active-guard/METHODS.md`, `model.py` and the primary `protocol.json` settings.
 
 The equations are:
 

@@ -2,7 +2,7 @@
   "user_facing_date": "2026-10-30",
   "theorem": "ActiveHug.Verified.full_coupled_existence_uniqueness",
   "files": {
-    "ActiveHugModel.lean": "be9d734610480ae9376bfd38b287c2bb9b7758cb50e29109bcf26656a7885f19",
+    "ActiveHugModel.lean": "f67055ed502d8d62d6f8a71ed5ad65149dec864208f70e5a55193b2ff0ccc72c",
     "ActiveHugSolution.lean": "f9ecbc13c50713f85cf8a3268652798be83f03efb0548b7a3ee39d3725415483",
     "HugBarrier.lean": "1fd724d9e2530e148ab3a114a5b52daa8fa6be180ec09c307451b771ac118bd7",
     "HugBounds.lean": "b003f5d850ecb2f4505efdb6499a06520f8cdd17952c37eabdc1078caba71931",
@@ -18,7 +18,7 @@
     "lake-manifest.json": "9a15898542845702f362d847fb2b63ebbff8620f2f52be77ede0522f22f0a3e4",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
     "comparator.json": "ffc1b8c7fec34eacf5953717c258305eed0ba75d4f711fd9add21009840911a0",
-    "existence-reference-freeze.json": "b29056a545d1519ff10fa50c961dc27b9431b1fe70a5a57cf5731302b645e8dc",
+    "existence-reference-freeze.json": "7c9383d915f6da89c67476b1fa8d748f8dde67026482c2f62ce619bdcf778ccf",
     "source-provenance.json": "5df317871148b075d523d351d931469a1a7ca9d47904f177b1ed184db29205fa",
     "sources/active-guard-METHODS.md": "d1d280ecd06c1f31aaa46c3117b5c84cd6534dd24d19ce10494f633221c047bd",
     "sources/active-guard-model.py": "e1f83325f63c956d399294b6dda748a34d6f469d8a42319f28e1d02ea3366921",
