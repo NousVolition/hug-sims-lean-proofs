@@ -24,7 +24,7 @@ The local reaction comparison uses the Hug reactions with no additional state in
 chi_NS = chi_Hug (L t_ref / Q)^2.
 ```
 
-For the unchanged Hug settings this condition gives `chi_NS = 500000 s²`. Reusing Hug's numerical `0.5` as the dimensional field coefficient gives different arguments at a concrete test state. The new package proves both statements. It does not install `500000` into any fluid experiment or claim that a saved fluid run already satisfies this condition.
+With the active-guard study’s fixed parameters, this condition gives `chi_NS = 500000 s²`. Reusing the eight-state model’s numerical `0.5` as the dimensional field coefficient gives different arguments at a concrete test state. The new package proves both statements. It does not install `500000` into any fluid experiment or claim that a saved fluid run already satisfies this condition.
 
 **Spatial variation.** Once the local reaction arguments match, the difference between the material field update and the Hug update is exactly its diffusion contribution. The two response rates and two guard rates agree together if and only if their four diffusion contributions vanish at the point considered. Zero diffusivity or a zero Laplacian can satisfy that local condition; no global removal of diffusion is inferred. A unit nonzero diffusion contribution supplies a proved mismatch.
 
@@ -34,13 +34,13 @@ For the unchanged Hug settings this condition gives `chi_NS = 500000 s²`. Reusi
 V (a_AB g_AB + a_BA g_BA) (v/L)^2.
 ```
 
-Hug's guard loss is `c(g_AB+g_BA)v²`. Equality for all states requires and is implied by
+The eight-state model’s guard loss is `c(g_AB+g_BA)v²`. Equality for all states requires and is implied by
 
 ```
 V a_AB = c L²,    V a_BA = c L².
 ```
 
-The unchanged Hug settings therefore require `a_AB=a_BA=1000 Pa·s` under this projection. This is a matching obligation, not a measured viscosity or a new fitted setting. Equal dissipated power alone does not establish the full force law, pressure balance, base-viscosity contribution or reciprocal exchange of energy.
+With the eight-state study’s parameters, matching guard loss requires `a_AB=a_BA=1000 Pa·s` under this projection. This is a matching obligation, not a measured viscosity or a new fitted setting. Equal dissipated power alone does not establish the full force law, pressure balance, base-viscosity contribution or reciprocal exchange of energy.
 
 **Boundary obstruction.** Nonzero affine shear does not give equal horizontal velocities at `y=0` and a nonzero transverse period `H`. Consequently this assumed profile cannot simply be inserted globally into the corpus's existing two-dimensional periodic example. This rules out that particular identification, not every possible Hug–field connection.
 
@@ -60,7 +60,7 @@ The final theorem joins agreement of all four local rates with agreement of guar
 | `power_matching` | Sufficient coefficient conditions for guard-power agreement |
 | `power_matching_necessary` | Those conditions are necessary for agreement at every state |
 | `primary_required_coefficients` | Exact primary numerical matching conditions |
-| `primary_power_matches` | Primary projected guard power equals Hug guard loss |
+| `primary_power_matches` | Primary projected guard power equals the eight-state model’s guard loss |
 | `same_number_chi_is_not_same_argument` | Concrete failure of an unconverted strain coefficient |
 | `nonzero_diffusion_blocks_local_match` | Concrete nonzero-diffusion obstruction |
 | `simultaneous_conditional_bridge` | Joint agreement of the four rates and guard power under the declared specialization |
