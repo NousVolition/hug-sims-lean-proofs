@@ -1,4 +1,4 @@
-# Matching a shear field to Hug rates
+# Matching a shear field to rates in the eight-state model
 
 Determine which coefficients and diffusion terms make the shear model reproduce the two guard directions, the four local rates and the projected power.
 

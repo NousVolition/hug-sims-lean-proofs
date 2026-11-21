@@ -16,4 +16,4 @@ Primary files for this challenge. [Solution entry module](https://github.com/Nou
 ## Imported questions
 
 - [Pressure, memory and opening in the squeeze model](HugChallenge.md) · `HugChallenge.lean`
-- [What the active Hug model does to guards and energy](ActiveHugChallenge.md) · `ActiveHugChallenge.lean`
+- [Guards and energy in the eight-state model, with separate memory checks](ActiveHugChallenge.md) · `ActiveHugChallenge.lean`

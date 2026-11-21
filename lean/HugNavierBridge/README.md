@@ -1,4 +1,4 @@
-# Hug and Navier–Stokes checked together
+# Conditional comparison of the eight-state model with a guard-dependent flow model
 
 This package checks a conditional connection between the unchanged eight-state Hug model and the optional guard-dependent Navier–Stokes formulation in the saved corpus. It does not define or prove existence of a complete joint fluid–Hug system. Final verification results are recorded separately in `verification-report.json` and `evidence-linux/`.
 
@@ -65,12 +65,12 @@ The final theorem joins agreement of all four local rates with agreement of guar
 | `nonzero_diffusion_blocks_local_match` | Concrete nonzero-diffusion obstruction |
 | `simultaneous_conditional_bridge` | Joint agreement of the four rates and guard power under the declared specialization |
 
-## What still prevents a full combined theorem
+## What a joint evolution theorem for this comparison would require
 
-1. Specify how a spatial velocity and pressure field determine Hug's load, and how Hug's motion and stress act back on that field. The same resistance must not be counted twice.
-2. Give a compatible domain, boundary conditions, initial fields and a rule relating the spatial fields to Hug's eight coordinates. The tested affine profile conflicts with the existing periodic example unless its shear is zero.
-3. Account for the full stress and energy budget. The optional field guard stress is dissipative; Hug also contains elastic storage and an active source. Matching only guard dissipation does not transfer those components automatically.
-4. Prove existence, uniqueness, regularity and the required guard bounds for that fully specified joint system. The previous Hug theorem handles a prescribed continuous force. It does not by itself prove a reciprocal coupling to an unknown fluid trajectory.
+1. Specify how the velocity and pressure fields determine the load on the eight-state model and how its motion and stress act back on the flow. Account for each source of resistance once.
+2. Give a compatible domain, boundary conditions, initial fields and a rule relating the spatial fields to the model's eight coordinates. The tested affine profile conflicts with the existing periodic example unless its shear is zero.
+3. Account for stress and energy in both models. The optional flow model dissipates energy through guard stress. The eight-state model also stores elastic energy and has an active source. Matching guard dissipation establishes only that part of the energy balance.
+4. Prove existence, uniqueness, regularity and the required guard bounds for the resulting coupled equations. The eight-state existence theorem assumes a prescribed continuous force. A load determined by the evolving flow requires a further proof.
 
 The same returning student and the same idea—“Giving someone space to speak can change what I understand”—remain the interpretation. No new person, idea, fixed Smoke/Clay role or measurement map is introduced. The student's experience, their appraisal of the teaching assistant's expectations, the assistant's actual beliefs and observed behavior remain distinct. These Lean results do not establish an empirical map from any of those quantities to the mathematical states.
 

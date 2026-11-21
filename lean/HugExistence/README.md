@@ -1,4 +1,4 @@
-# Full coupled later Hug: existence and uniqueness
+# Existence and uniqueness for the eight-state active-guard model
 
 This package proves `ActiveHug.Verified.full_coupled_existence_uniqueness` for the unchanged eight-state primary directional Hug model. The final check results are recorded in `verification-report.json`; the reference statement was frozen before proof implementation in `existence-reference-freeze.json`.
 

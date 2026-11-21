@@ -14,8 +14,8 @@ The index covers all 55 files ending in `Challenge.lean` at the [source revision
 - [A/S existence in the invariance package](ASInvariance/ASExistenceChallenge.md) · `ASExistenceChallenge.lean`
 - [Do valid A/S states stay valid?](ASInvariance/ASInvarianceChallenge.md) · `ASInvarianceChallenge.lean`
 - [How Smoke and Clay exchange influence](AS/ASChallenge.md) · `ASChallenge.lean`
-- [One motion in the coupled Hug model](HugExistence/HugExistenceChallenge.md) · `HugExistenceChallenge.lean`
-- [What the active Hug model does to guards and energy](HugSqueeze/ActiveHugChallenge.md) · `ActiveHugChallenge.lean`
+- [One motion in the eight-state active-guard model](HugExistence/HugExistenceChallenge.md) · `HugExistenceChallenge.lean`
+- [Guards and energy in the eight-state model, with separate memory checks](HugSqueeze/ActiveHugChallenge.md) · `ActiveHugChallenge.lean`
 - [Where the two squeeze challenges meet](HugSqueeze/HugAllChallenge.md) · `HugAllChallenge.lean`
 - [Pressure, memory and opening in the squeeze model](HugSqueeze/HugChallenge.md) · `HugChallenge.lean`
 - [Probes, encounter updates and delayed responses](HugV3GeminiReview/GeminiChallenge.md) · `GeminiChallenge.lean`
@@ -38,7 +38,7 @@ The index covers all 55 files ending in `Challenge.lean` at the [source revision
 
 - [Turning a measurement and turning its rate](FabricFrameTransitionAudit/TransitionChallenge.md) · `TransitionChallenge.lean`
 - [Hearth and the seven wizard couplings](HearthWizard/HearthChallenge.md) · `HearthChallenge.lean`
-- [Matching a shear field to Hug rates](HugNavierBridge/BridgeChallenge.md) · `BridgeChallenge.lean`
+- [Matching a shear field to rates in the eight-state model](HugNavierBridge/BridgeChallenge.md) · `BridgeChallenge.lean`
 - [Which observations identify a force?](HugNavierFullAudit/AuditChallenge.md) · `AuditChallenge.lean`
 - [Energy, pressure and stress in a single field model](HugNavierSingleSystem/FullChallenge.md) · `FullChallenge.lean`
 - [Small field changes with a persistent rate difference](HugNavierWellposedness/WellposednessChallenge.md) · `WellposednessChallenge.lean`
