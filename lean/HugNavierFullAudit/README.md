@@ -10,7 +10,7 @@ Both repository heads were freshly read: `NousVolition/Nous-Volition` at `b4ae2c
 
 The corrected Word corpus was also checked against SHA-256 `01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf`. All 15 selected original equation/qualification passages freshly matched the Word XML. The newer local continuity/source records distinguish the original A/S field, later candidate equations and reduced Hug. They do not supply a completed joint Hug–Navier force/interface law.
 
-The old Lean Hug model is preserved byte-for-byte. Fresh repository text differs from three earlier source snapshots only in line endings/trailing blank lines; the differences and both hashes are recorded. No equation content changed, and no earlier file was overwritten.
+The original audit used byte-identical copies of the Lean model files. The [earlier verification records](evidence-history/before-eight-state-comment/) preserve the original artifact inventory and the model hash from before the comment change. Fresh repository text differs from three earlier source snapshots only in line endings/trailing blank lines; the differences and both hashes are recorded. No equation content changed, and no earlier file was overwritten.
 
 ## Connections found, and their exact limits
 

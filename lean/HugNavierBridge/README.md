@@ -6,7 +6,7 @@ The two formulations share a feedback pattern: motion and internal response affe
 
 ## What is preserved
 
-`HugModel.lean` and `ActiveHugModel.lean` are byte-identical copies from the existing Hug existence package. The current eight-state model comes from `NousVolition/Nous-Volition` commit `b4ae2c54cd85bfef282c501ecfca83de274e2070`. The four source snapshots are also preserved byte-for-byte. No Hug coefficient, force law, guard rule, source experiment or existing proof was edited.
+`HugModel.lean` and `ActiveHugModel.lean` match their current copies in the Hug existence package byte for byte. The [earlier verification records](evidence-history/before-eight-state-comment/) preserve the original artifact inventory and the model hash from before the comment change. The current eight-state model comes from `NousVolition/Nous-Volition` commit `b4ae2c54cd85bfef282c501ecfca83de274e2070`. The four source snapshots are also preserved byte-for-byte. No Hug coefficient, force law, guard rule, source experiment or existing proof was edited.
 
 The field side is the user's optional guard-stress formulation in `sources/interaction-equation.md`. This is not a recheck of the separate forced Navier–Stokes breakdown construction.
 

@@ -1,6 +1,6 @@
 {
   "files": {
-    "ActiveHugModel.lean": "be9d734610480ae9376bfd38b287c2bb9b7758cb50e29109bcf26656a7885f19",
+    "ActiveHugModel.lean": "f67055ed502d8d62d6f8a71ed5ad65149dec864208f70e5a55193b2ff0ccc72c",
     "AuditChallenge.lean": "26312531ea1a656f26eb8a74030b708394b605bbaafee2aea041f9dd8be1be42",
     "AuditSolution.lean": "d3c34258c30618b8def97977e45d785685fc82918c95a40edf1383c5a01d626e",
     "comparator.json": "a96de4cfe15038efe4858ebd4d02d7cb57c686093d0430f26adc8402e4f5af3a",
@@ -9,7 +9,7 @@
     "lake-manifest.json": "2f249a87bb4c32de17548242a5e5c0b219a63cb5612005f2d3a402e2a71e9029",
     "lakefile.toml": "6913cd3422cca99e3c253be6d517c3e887ab1c3c4be482f5580453c420936289",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
-    "reference-freeze.json": "ef8c0efdb744f8f0cb161df6dcef6639a99cf06c3bbc8d03dcbe3a42a4d40907",
+    "reference-freeze.json": "9ac54b527db022ebc385683740d043f2ca75a425d742d1ff5d9d1a280d477134",
     "run-linux-check.sh": "75f88946236c658f519685a43a70f30751b98785265c6b09d8c446a38060c929",
     "source-audit.json": "a3fca58aea684346dd57d244aca9fb1176cceaf0d8f55c976a1617cfc2ff7538",
     "sources/active_methods.md": "96e9d6c6584111257bf0bf2c1857f46cae63dfeee0a52369dcad3c5bb645231a",

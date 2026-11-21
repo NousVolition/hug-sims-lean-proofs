@@ -4,7 +4,7 @@ import Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp
 
 /- Exact-real physical-unit equations from hug-active-guard/METHODS.md and
 physical_rhs at commit b4ae2c54cd85bfef282c501ecfca83de274e2070.
-These source files explicitly call this a reduced, synthetic realization.
+The active-guard study describes its eight-state model as a reduced mechanical realization with synthetic parameters.
 F denotes the prescribed force at the instant considered. -/
 namespace ActiveHug
 noncomputable section
